@@ -1,0 +1,54 @@
+system System
+
+instance variables
+
+  -- Hardware interface variable required by FMU Import/Export
+  public static hwi: HardwareInterface := new HardwareInterface(); 
+    
+-- controller
+public static controller : [Controller] := nil;
+public static mainthread: [Thread] := nil;
+
+-- architecture
+cpu : CPU := new CPU(<FP>, 1E6);
+
+
+operations
+
+public System : () ==> System
+System () == 
+ (--settings := World'settings;
+ 
+ 	let velX =  new Sensor(lambda -:bool& hwi.velXIn),
+      velY =  new Sensor(lambda -:bool& hwi.velYIn),
+ 			velZ =  new Sensor(lambda -:bool& hwi.velZIn),
+ 			posX =  new Sensor(lambda -:bool& hwi.posXIn),
+ 			posY =  new Sensor(lambda -:bool& hwi.posYIn),
+ 			posZ =  new Sensor(lambda -:bool& hwi.posZIn),
+ 			yaw =  new Sensor(lambda -:bool& hwi.yawIn),
+ 			batteryCharge =  new Sensor(lambda -:bool& hwi.batteryChargeIn),
+		 	pitchOut = new Actuator(lambda x: real & 
+                        Reflect`setMember(System`hwi,"pitchOut",x)),
+ 			rollOut = new Actuator(lambda x: real & 
+                        Reflect`setMember(System`hwi,"rollOut",x)),
+ 			yawOut = new Actuator(lambda x: real & 
+                        Reflect`setMember(System`hwi,"yawOut",x)),
+ 			throttleOut = new Actuator(lambda x: real & 
+                        Reflect`setMember(System`hwi,"throttleOut",x))
+ 	in 
+	(		
+		controller := new Controller(velX , velY , velZ , 
+  							   posX , posY , posZ , 
+  							   yaw ,
+  							   pitchOut , rollOut , yawOut , throttleOut);
+  							   
+  	mainthread := new Thread(25, controller, velX , velY , velZ , 
+  							   posX , posY , posZ , 
+  							   yaw ,
+  							   pitchOut , rollOut , yawOut , throttleOut );
+  );
+  -- deploy the controller
+  cpu.deploy(mainthread);
+ );
+
+end System

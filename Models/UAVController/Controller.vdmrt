@@ -1,0 +1,221 @@
+class Controller
+
+types
+
+instance variables
+
+	Altitude :real:=1.0;
+	--10% angle then down to 1%
+	-- RollAng = +4 * Sqrt-1(0.1 / Sqrt(2)) - pi
+	-- PitchAng Inverse above.
+	RollAng  :real:=0.2; -- 3.0
+	PitchAng :real:=0; -- 2.85
+	CarlAngleTemp :real := 0.2;
+	ThrottleHigh :real:=0.63;
+	ThrottleLow  :real:=0.37;
+	X :real:=0.0;
+	Y :real:=0.0;
+
+	throttleIpart : real := 0;
+	throttlePpart : real := 0;
+	throttleDpart : real := 0;
+
+	xIpart : real := 0;
+	xPpart : real := 0;
+	xDpart : real := 0;
+	desiredPitch : real := 0;
+
+	yIpart : real := 0;
+	yPpart : real := 0;
+	yDpart : real := 0;
+	desiredRoll : real := 0;
+
+	targetX: real :=0.0;
+	targetY: real :=0.0;
+	targetZ: real :=1;
+
+	switchTime : real := 5E9;
+
+
+
+	velX: Sensor;
+	velY: Sensor;
+	velZ: Sensor;
+	posX: Sensor;
+	posY: Sensor;
+	posZ: Sensor;
+	yaw: Sensor;
+
+	pitchOut: Actuator;
+	rollOut: Actuator;
+	yawOut: Actuator;
+	throttleOut: Actuator;
+
+
+operations
+
+	-- constructor for Controller
+	public Controller : Sensor * Sensor * Sensor * Sensor * 
+					Sensor * Sensor * Sensor * Actuator * 
+					Actuator * Actuator * Actuator ==> Controller
+	Controller (VelX,VelY,VelZ,PosX,PosY,PosZ,Yaw,Pitchout,Rollout,Yawout,Throttleout) ==
+ 	(
+		velX := VelX;
+		velY := VelY;
+		velZ := VelZ;
+		posX := PosX;
+		posY := PosY;
+		posZ := PosZ;
+		yaw := Yaw;
+	
+		pitchOut := Pitchout;
+		rollOut := Rollout;
+		yawOut := Yawout;
+		throttleOut := Throttleout;
+ 	);
+
+	public GetThrottleOut: () ==> Actuator
+	GetThrottleOut() == return throttleOut;
+
+	-- MAIN CONTROL LOOP
+	public Step : () ==> ()
+	Step() == 
+	(
+ 		setThrottle();
+		setPitch();
+		setRoll();
+		
+		if (time >2E9 and time < 2.5E9) then
+ 		(
+ 			targetY := 5;
+ 			targetX := 5;
+ 		);
+ 	 	
+ 		if (time >8E9 and time < 8.5E9) then
+ 		(
+ 			targetZ :=0.5
+ 		);
+ 		
+ 		if (time >14E9 and time < 14.5E9) then
+ 		(
+ 			targetZ :=0.2
+ 		);	
+ 		
+ 		if (time >20E9 and time < 20.5E9) then
+ 		(
+ 			targetZ :=0.1
+ 		);	
+ 	
+ 		if (time >26E9 and time < 26.5E9) then
+ 		(
+ 			targetZ :=0
+ 		);	
+ 		
+ 		if (time >50E9 and time < 50.5E9) then
+ 		(
+ 			targetZ :=1.5
+ 		);	
+	);
+ 
+
+	public setThrottle: () ==> ()
+	setThrottle () == (
+  	throttleIpart := throttleIpart + ((targetZ-posZ.GetValue()) * 0.03); 
+    throttlePpart := (targetZ - posZ.GetValue()) * 1.2;
+    if velZ.GetValue() > 0 then(
+    	throttleDpart := velZ.GetValue() * 0.5
+    )
+    else(
+    	throttleDpart := velZ.GetValue() * 1.0
+    );
+    GetThrottleOut().SetValue(throttleIpart + throttlePpart - throttleDpart)
+	); 
+ 
+ 
+	public setPitch: () ==>  ()
+	setPitch() == (
+		--yIpart := yIpart + ((posY.GetValue()-targetY) * 0.00); 
+    yPpart := ( posY.GetValue()- targetY) * 0.28;
+    yDpart := velY.GetValue() * -0.2;
+    desiredPitch := yIpart + yPpart - yDpart;
+    if desiredPitch > 0.35 then
+    	desiredPitch := 0.35;
+    if desiredPitch < -0.35 then
+    	desiredPitch := -0.35;
+ 		pitchOut.SetValue(desiredPitch)
+	);
+
+	public setRoll: () ==>  ()
+	setRoll() == (
+		--xIpart := xIpart + (targetX - (posX.GetValue()) * 0.00); 
+    xPpart := (targetX - posX.GetValue()) * 0.28;
+    xDpart := velX.GetValue() * 0.2;
+    desiredRoll := xIpart + xPpart - xDpart;
+    if desiredRoll > 0.35 then
+    	desiredRoll := 0.35;
+    if desiredRoll < -0.35 then
+    	desiredRoll := -0.35;
+ 		rollOut.SetValue(desiredRoll)
+	);
+
+
+	public Upwards: real ==> ()
+	Upwards(throttle) == (
+    GetThrottleOut().SetValue(throttle);
+	);
+
+	public MoveX: real ==> ()
+	MoveX(x) == (
+		if x <> 0.0 then
+			if x - posX.GetValue()  < x*0.01 then 
+				RollAng := CarlAngleTemp; --3.1;
+		if x <> 0.0 then
+			if x > posX.GetValue() then
+				if velX.GetValue() < abs(posX.GetValue()-x)+0.01 then 
+					rollOut.SetValue(CarlAngleTemp)--(RollAng)
+				else if posX.GetValue() > (x) or velX.GetValue() > (posX.GetValue()-x)  then 
+					rollOut.SetValue(-CarlAngleTemp) 
+				else rollOut.SetValue(CarlAngleTemp)
+    	else if velX.GetValue() > (x - posX.GetValue())+0.01 then 
+    		rollOut.SetValue(-CarlAngleTemp)
+		else if posX.GetValue() < (x) or velX.GetValue() < (x - posX.GetValue())  then 
+			rollOut.SetValue(CarlAngleTemp)
+		else rollOut.SetValue(-CarlAngleTemp);
+	);
+
+	public MoveY: real ==> ()
+	MoveY(y) == (
+		if y <> 0.0 then
+			if y - posY.GetValue() < y*0.01 then 
+				PitchAng := CarlAngleTemp;
+		if y <> 0.0 then
+			if y < posY.GetValue() then
+				if velY.GetValue() > abs(posY.GetValue()-y)+0.01 then 
+					pitchOut.SetValue(CarlAngleTemp)
+				else if posY.GetValue() > (y) or velY.GetValue() > (posY.GetValue()-y) then 
+					pitchOut.SetValue(-CarlAngleTemp) 
+				else pitchOut.SetValue(CarlAngleTemp)
+    	else if velY.GetValue() > (y - posY.GetValue())+0.01 then 
+    		pitchOut.SetValue(-CarlAngleTemp)
+			else if posY.GetValue() < (y) or velY.GetValue() < (y - posY.GetValue())  then 
+				pitchOut.SetValue(CarlAngleTemp) 
+			else pitchOut.SetValue(-CarlAngleTemp);
+	);
+
+	public SetAltitude: real ==> ()
+	SetAltitude(altitude) ==(
+		if altitude > posZ.GetValue() then
+			if velZ.GetValue() < abs(posZ.GetValue()-altitude)+0.025 then 
+				Upwards(ThrottleHigh)
+			else if posZ.GetValue() > (altitude) or velZ.GetValue() > (posZ.GetValue()-altitude) then 
+				Upwards(ThrottleLow) 
+			else Upwards(ThrottleHigh)
+    	else if velZ.GetValue() > (altitude - posZ.GetValue())+0.025 then 
+    		Upwards(ThrottleLow)
+			else if posZ.GetValue() < (altitude) or velZ.GetValue() < (altitude - posZ.GetValue())  
+			then Upwards(ThrottleHigh) 
+			else Upwards(ThrottleLow);
+);
+
+	  
+end Controller
