@@ -1,11 +1,18 @@
 {"fmus":{
 		"{uav}":"UAV.fmu",
-		"{uavCont}":"UAVController.fmu",
+		"{uavCont}":"UAVController_v2.fmu",
 		"{uav2}":"UAV2.fmu",
-		"{uavCont2}":"UAVController2.fmu"
+		"{uavCont2}":"UAVController2_v2.fmu", 
+		"{uavGlobalCont}":"UAVGlobalController.fmu"
 	},
 	"connections":{
-		"{uav}.uav.velX":["{uavCont}.controller.velXIn"],
+	    "{uavGlobalCont}.global.uav1TargetX":["{uavCont}.controller.targetX"],
+	    "{uavGlobalCont}.global.uav1TargetY":["{uavCont}.controller.targetY"],
+	    "{uavGlobalCont}.global.uav1TargetZ":["{uavCont}.controller.targetZ"],
+	    "{uavGlobalCont}.global.uav2TargetX":["{uavCont2}.controller2.targetX"],
+	    "{uavGlobalCont}.global.uav2TargetY":["{uavCont2}.controller2.targetY"],
+	    "{uavGlobalCont}.global.uav2TargetZ":["{uavCont2}.controller2.targetZ"],
+	        "{uav}.uav.velX":["{uavCont}.controller.velXIn"],
 		"{uav}.uav.velY":["{uavCont}.controller.velYIn"],
 		"{uav}.uav.velZ":["{uavCont}.controller.velZIn"],
 		"{uav}.uav.currentYaw":["{uavCont}.controller.yawIn"],
