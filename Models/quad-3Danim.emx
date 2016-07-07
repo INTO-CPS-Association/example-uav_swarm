@@ -7,8 +7,8 @@
     <Version>4.6</Version>
 <IsMainModel>0</IsMainModel>
   <KeepParameterValues>False</KeepParameterValues>
-    <LibraryPath>C:\Users\Richard\Dropbox\University\Shared\Richard-Carl Shared\0.0.3_0.0.4_environment\UAVSwarm\models\quad-3Danim.emx</LibraryPath>
-  <TimeStamp>2016-6-9 14:40:16</TimeStamp>
+    <LibraryPath>C:\Users\Richard\Documents\INTO-CPS\INTO Git\case-study_uav_swarm\Models\quad-3Danim.emx</LibraryPath>
+  <TimeStamp>2016-7-7 15:48:12</TimeStamp>
 </Description>
 </Information>';
  type 'Mainmodel-3Danim'
@@ -72,12 +72,34 @@ variables
 	real global quad1.RotationResponse.yawOut;
 	real global quad1.RotationResponse.pitchOut;
 	real global quad1.RotationResponse.rollOut;
+	
 	real global quad2.TranslationToXYZ.PosX;
 	real global quad2.TranslationToXYZ.PosY;
 	real global quad2.TranslationToXYZ.PosZ;
 	real global quad2.RotationResponse.yawOut;
 	real global quad2.RotationResponse.pitchOut;
 	real global quad2.RotationResponse.rollOut;
+	
+	real global quad3.TranslationToXYZ.PosX;
+	real global quad3.TranslationToXYZ.PosY;
+	real global quad3.TranslationToXYZ.PosZ;
+	real global quad3.RotationResponse.yawOut;
+	real global quad3.RotationResponse.pitchOut;
+	real global quad3.RotationResponse.rollOut;
+	
+	real global quad4.TranslationToXYZ.PosX;
+	real global quad4.TranslationToXYZ.PosY;
+	real global quad4.TranslationToXYZ.PosZ;
+	real global quad4.RotationResponse.yawOut;
+	real global quad4.RotationResponse.pitchOut;
+	real global quad4.RotationResponse.rollOut;
+	
+	real global quad5.TranslationToXYZ.PosX;
+	real global quad5.TranslationToXYZ.PosY;
+	real global quad5.TranslationToXYZ.PosZ;
+	real global quad5.RotationResponse.yawOut;
+	real global quad5.RotationResponse.pitchOut;
+	real global quad5.RotationResponse.rollOut;
 implementation_end;
 specification_end;
 			end;
@@ -100,15 +122,10 @@ specification_end;
   <ModelProperties>
   </ModelProperties>
   <Variables>
-   <Initials>
-   </Initials>
   </Variables>
   <PlotSpecs>
    <VarNames>
     <VarName>time</VarName>
-    <VarName>quad_model\TranslationToXYZ\PosY</VarName>
-    <VarName>quad_model\TranslationToXYZ\PosX</VarName>
-    <VarName>quad_model\TranslationToXYZ\PosZ</VarName>
     <VarName>quad1.TranslationToXYZ.PosY</VarName>
     <VarName>quad1.TranslationToXYZ.PosX</VarName>
     <VarName>quad1.TranslationToXYZ.PosZ</VarName>
@@ -121,6 +138,9 @@ specification_end;
     <VarName>quad2.RotationResponse.yawOut</VarName>
     <VarName>quad2.RotationResponse.pitchOut</VarName>
     <VarName>quad2.RotationResponse.rollOut</VarName>
+    <VarName>quad_model\TranslationToXYZ\PosX</VarName>
+    <VarName>quad_model\TranslationToXYZ\PosY</VarName>
+    <VarName>quad_model\TranslationToXYZ\PosZ</VarName>
    </VarNames>
    <Plots>
     <Plot>
@@ -2166,12 +2186,12 @@ specification_end;
      <ToggleState>Base</ToggleState>
     </PlotPanel>
    </PlotPanels>
-   <WindowRectangles virtualDesktopWidth="5120" virtualDesktopHeight="1846">
-     <WindowRectangle monitor="0" left="0" top="0" right="2560" bottom="1440" plotpanelid="1">
--0.00273437 0 0.5 0.5375
+   <WindowRectangles virtualDesktopWidth="1707" virtualDesktopHeight="1067">
+     <WindowRectangle monitor="0" left="0" top="0" right="1707" bottom="1067" plotpanelid="1">
+0 0 0.503222 0.483599
      </WindowRectangle>
-     <WindowRectangle monitor="0" left="0" top="0" right="2560" bottom="1440" plotpanelid="2">
-0.0902344 0.263194 0.586719 0.792361
+     <WindowRectangle monitor="0" left="0" top="0" right="1707" bottom="1067" plotpanelid="2">
+0.0902168 0.237113 0.586995 0.713215
      </WindowRectangle>
    </WindowRectangles>
   </PlotSpecs>
@@ -2300,17 +2320,6 @@ specification_end;
    <Tolerance>0.001</Tolerance>
    <OptimizationMethod>BroydonFletcherGoldfarbShanno</OptimizationMethod>
    <MultipleRunVariables>
-     <MultipleRunVariable>
-       <Name>quad_model\Quad\motorConstant</Name>
-       <Minimum>0.001</Minimum>
-       <Maximum>3000</Maximum>
-       <SweepMethod>Linear</SweepMethod>
-       <Distribution>Uniform</Distribution>
-       <Mean>1.45982142857143</Mean>
-       <Deviation>1</Deviation>
-       <TolerancePercentage>1</TolerancePercentage>
-       <Nominal>1.45982142857143</Nominal>
-     </MultipleRunVariable>
    </MultipleRunVariables>
   </MultipleRun>
   <ExportData>
