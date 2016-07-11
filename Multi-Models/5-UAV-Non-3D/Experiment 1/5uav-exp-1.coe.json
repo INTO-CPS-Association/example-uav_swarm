@@ -1,0 +1,7 @@
+{
+		"multimodel_path":"Multi-models/5-UAV-Non-3D/5-UAV-Non-3D.mm.json",
+		"algorithm":{
+				"type":"fixed-step",
+				"size":0.05
+		}
+}
