@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="ASCII"?>
-<advanced:Perspective xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmi:id="_BuVpG0OIEeaKZ7d-9Gv2yA" elementId="org.modelio.diagram.perspective" contributorURI="platform:/fragment/com.modeliosoft.modelio.app.ui.ext" selectedElement="_BuVpHEOIEeaKZ7d-9Gv2yA" label="%Diagram.perspective.label" iconURI="platform:/plugin/org.modelio.app.ui/icons/diagramspersp.png" tooltip="%Diagram.perspective.tooltip">
+<advanced:Perspective xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmi:id="__q13O0gwEeaBjsMF5BWdew" elementId="org.modelio.diagram.perspective" contributorURI="platform:/fragment/com.modeliosoft.modelio.app.ui.ext" selectedElement="__q13PEgwEeaBjsMF5BWdew" label="%Diagram.perspective.label" iconURI="platform:/plugin/org.modelio.app.ui/icons/diagramspersp.png" tooltip="%Diagram.perspective.tooltip">
   <tags>project</tags>
   <tags>default</tags>
   <tags>user</tags>
-  <children xsi:type="basic:PartSashContainer" xmi:id="_BuVpHEOIEeaKZ7d-9Gv2yA" elementId="" contributorURI="platform:/fragment/com.modeliosoft.modelio.app.ui.ext">
-    <children xsi:type="advanced:Placeholder" xmi:id="_BuVpHUOIEeaKZ7d-9Gv2yA" elementId="org.eclipse.ui.editorss" contributorURI="platform:/fragment/com.modeliosoft.modelio.app.ui.ext" closeable="true">
-      <ref xsi:type="advanced:Area" href="file:/C:/Users/Richard/.modelio/3.4/.eclipse/data/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi#_mKRssUOGEeaKZ7d-9Gv2yA"/>
+  <children xsi:type="basic:PartSashContainer" xmi:id="__q13PEgwEeaBjsMF5BWdew" elementId="" contributorURI="platform:/fragment/com.modeliosoft.modelio.app.ui.ext">
+    <children xsi:type="advanced:Placeholder" xmi:id="__q13PUgwEeaBjsMF5BWdew" elementId="org.eclipse.ui.editorss" contributorURI="platform:/fragment/com.modeliosoft.modelio.app.ui.ext" closeable="true">
+      <ref xsi:type="advanced:Area" href="file:/Users/nrjp6/.modelio/3.4/.eclipse/data/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi#_aekDZUgvEeaBjsMF5BWdew"/>
     </children>
-    <children xsi:type="basic:PartSashContainer" xmi:id="_BuVpHkOIEeaKZ7d-9Gv2yA" elementId="app.ui.ext_com.partsashcontainer.0" contributorURI="platform:/fragment/com.modeliosoft.modelio.app.ui.ext" horizontal="true">
-      <children xsi:type="basic:PartStack" xmi:id="_BuVpH0OIEeaKZ7d-9Gv2yA" elementId="app.ui.ext_com.partstack.left" contributorURI="platform:/fragment/com.modeliosoft.modelio.app.ui.ext" containerData="">
-        <children xsi:type="advanced:Placeholder" xmi:id="_BuVpIEOIEeaKZ7d-9Gv2yA" elementId="diagram.browser.placeholder" contributorURI="platform:/fragment/com.modeliosoft.modelio.app.ui.ext" closeable="true">
+    <children xsi:type="basic:PartSashContainer" xmi:id="__q13PkgwEeaBjsMF5BWdew" elementId="app.ui.ext_com.partsashcontainer.0" contributorURI="platform:/fragment/com.modeliosoft.modelio.app.ui.ext" horizontal="true">
+      <children xsi:type="basic:PartStack" xmi:id="__q13P0gwEeaBjsMF5BWdew" elementId="app.ui.ext_com.partstack.left" contributorURI="platform:/fragment/com.modeliosoft.modelio.app.ui.ext" containerData="">
+        <children xsi:type="advanced:Placeholder" xmi:id="__q13QEgwEeaBjsMF5BWdew" elementId="diagram.browser.placeholder" contributorURI="platform:/fragment/com.modeliosoft.modelio.app.ui.ext" closeable="true">
           <ref xsi:type="basic:Part" href="file:/Users/nrjp6/.modelio/3.4/.eclipse/data/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi#_tcIaYIkaEeWbO4MnNK7ogg"/>
         </children>
-        <children xsi:type="advanced:Placeholder" xmi:id="_BuVpIUOIEeaKZ7d-9Gv2yA" elementId="diagram.outline.placeholder" contributorURI="platform:/fragment/com.modeliosoft.modelio.app.ui.ext" closeable="true">
+        <children xsi:type="advanced:Placeholder" xmi:id="__q13QUgwEeaBjsMF5BWdew" elementId="diagram.outline.placeholder" contributorURI="platform:/fragment/com.modeliosoft.modelio.app.ui.ext" closeable="true">
           <ref xsi:type="basic:Part" href="file:/Users/nrjp6/.modelio/3.4/.eclipse/data/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi#_Pd-8oKEeEeK4WrLkee8q9w"/>
         </children>
       </children>
-      <children xsi:type="basic:PartStack" xmi:id="_BuVpIkOIEeaKZ7d-9Gv2yA" elementId="app.ui.ext_com.partstack.middle" contributorURI="platform:/fragment/com.modeliosoft.modelio.app.ui.ext" containerData="">
+      <children xsi:type="basic:PartStack" xmi:id="__q13QkgwEeaBjsMF5BWdew" elementId="app.ui.ext_com.partstack.middle" contributorURI="platform:/fragment/com.modeliosoft.modelio.app.ui.ext" containerData="">
         <tags>MODULE_STACK</tags>
-        <children xsi:type="advanced:Placeholder" xmi:id="_BuVpI0OIEeaKZ7d-9Gv2yA" elementId="properties.placeholder" contributorURI="platform:/fragment/com.modeliosoft.modelio.app.ui.ext" closeable="true">
+        <children xsi:type="advanced:Placeholder" xmi:id="__q13Q0gwEeaBjsMF5BWdew" elementId="properties.placeholder" contributorURI="platform:/fragment/com.modeliosoft.modelio.app.ui.ext" closeable="true">
           <ref xsi:type="basic:Part" href="file:/Users/nrjp6/.modelio/3.4/.eclipse/data/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi#_fn78gLoQEeGR05fGaOD0Vw"/>
         </children>
       </children>
-      <children xsi:type="basic:PartStack" xmi:id="_BuVpJEOIEeaKZ7d-9Gv2yA" elementId="app.ui.ext_com.partstack.right" contributorURI="platform:/fragment/com.modeliosoft.modelio.app.ui.ext">
-        <children xsi:type="advanced:Placeholder" xmi:id="_BuVpJUOIEeaKZ7d-9Gv2yA" elementId="symbol.placeholder" contributorURI="platform:/fragment/com.modeliosoft.modelio.app.ui.ext" closeable="true">
+      <children xsi:type="basic:PartStack" xmi:id="__q13REgwEeaBjsMF5BWdew" elementId="app.ui.ext_com.partstack.right" contributorURI="platform:/fragment/com.modeliosoft.modelio.app.ui.ext">
+        <children xsi:type="advanced:Placeholder" xmi:id="__q13RUgwEeaBjsMF5BWdew" elementId="symbol.placeholder" contributorURI="platform:/fragment/com.modeliosoft.modelio.app.ui.ext" closeable="true">
           <ref xsi:type="basic:Part" href="file:/Users/nrjp6/.modelio/3.4/.eclipse/data/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi#_h_BtgFiyEeKw4Kse-CvnOQ"/>
         </children>
       </children>

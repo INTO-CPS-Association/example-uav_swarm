@@ -6,7 +6,7 @@
       <ATT name="LicenseKey">0</ATT>
       <ATT name="MajVersion">1</ATT>
       <ATT name="MinVersion">0</ATT>
-      <ATT name="MinMinVersion"><![CDATA[33]]></ATT>
+      <ATT name="MinMinVersion"><![CDATA[34]]></ATT>
       <ATT name="MinBinVersionCompatibility"></ATT>
       <ATT name="JavaClassName"><![CDATA[org.modelio.module.intocps.impl.INTOCPSModule]]></ATT>
       <ATT name="State">SoModuleStateActivated</ATT>
