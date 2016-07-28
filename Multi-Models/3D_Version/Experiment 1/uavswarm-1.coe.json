@@ -1,7 +1,0 @@
-{
-		"multimodel_path":"Multi-models/3D_Version/3D_Version.mm.json",
-		"algorithm":{
-				"type":"fixed-step",
-				"size":0.05
-		}
-}
