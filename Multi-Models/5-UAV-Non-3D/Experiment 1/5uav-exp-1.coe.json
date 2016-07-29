@@ -1,7 +1,1 @@
-{
-		"multimodel_path":"Multi-models/5-UAV-Non-3D/5-UAV-Non-3D.mm.json",
-		"algorithm":{
-				"type":"fixed-step",
-				"size":0.05
-		}
-}
+{"multimodel_path":"Multi-models\\5-UAV-Non-3D\\5-UAV-Non-3D.mm.json","startTime":0,"endTime":30,"livestream":{},"algorithm":{"type":"fixed-step","size":0.1}}
