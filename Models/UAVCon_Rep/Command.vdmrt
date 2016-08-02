@@ -3,7 +3,7 @@ class Command
 instance variables
 
 -- this value will be set through the co-simulation
-protected value: bool->real;
+protected port: RealPort;
 
 -- local copy of the shared variable
 protected local_val: real := 0;
@@ -11,10 +11,10 @@ protected local_val: real := 0;
 operations
 
 -- constructor for Command
-public Command: (bool->real) ==> Command
-Command(v) == (
-  value := v;
-  local_val := floor value(true);
+public Command: RealPort ==> Command
+Command(p) == (
+  port := p;
+  local_val := port.getValue();
 );
 
 -- get Command value
@@ -23,6 +23,6 @@ GetValue() == return local_val;
 
 -- write local variable to shared variable
 public Sync: () ==> ()
-Sync() == local_val := floor value(true);
+Sync() == local_val := port.getValue();
 
 end Command
