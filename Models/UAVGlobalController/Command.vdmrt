@@ -1,0 +1,30 @@
+class Command
+
+instance variables
+
+-- this value will be set through the co-simulation
+protected value: real->bool;
+
+-- local copy of the shared variable
+protected local_val: real := 0;
+
+operations
+
+-- constructor
+public Command : (real->bool) ==> Command 
+Command(v) ==
+ (value := v;
+ );
+
+-- set actuator value
+public SetValue: real ==> ()
+SetValue(v) == 	local_val := v;
+
+public Read: () ==> real
+Read() == return local_val;
+
+-- write local variable to shared variable
+public Sync: () ==> ()
+Sync() == let - = value(local_val) in skip; 
+
+end Command

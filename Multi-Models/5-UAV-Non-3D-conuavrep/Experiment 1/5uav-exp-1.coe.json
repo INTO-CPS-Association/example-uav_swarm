@@ -1,7 +1,0 @@
-{
-		"multimodel_path":"Multi-models/5-UAV-Non-3D-conuavrep/5-UAV-Non-3D-conuavrep.mm.json",
-		"algorithm":{
-				"type":"fixed-step",
-				"size":0.05
-		}
-}

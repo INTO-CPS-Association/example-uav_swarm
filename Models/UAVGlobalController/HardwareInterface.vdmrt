@@ -1,0 +1,52 @@
+class HardwareInterface
+  
+-- OUTPUT VARIABLES
+instance variables
+
+  -- @ interface: type = output, name="uav1TargetX";
+  public static uav1TargetX : real := 0.0;
+  -- @ interface: type = output, name="uav1TargetY";
+  public static uav1TargetY : real := 0.0;
+  -- @ interface: type = output, name="uav1TargetZ";
+  public static uav1TargetZ : real := 0.0;
+ 
+    -- @ interface: type = output, name="uav2TargetX";
+  public static uav2TargetX : real := 0.0;
+  -- @ interface: type = output, name="uav2TargetY";
+  public static uav2TargetY : real := 0.0;
+  -- @ interface: type = output, name="uav2TargetZ";
+  public static uav2TargetZ : real := 0.0;
+ 
+    -- @ interface: type = output, name="uav3TargetX";
+  public static uav3TargetX : real := 0.0;
+  -- @ interface: type = output, name="uav3TargetY";
+  public static uav3TargetY : real := 0.0;
+  -- @ interface: type = output, name="uav3TargetZ";
+  public static uav3TargetZ : real := 0.0;
+  
+  
+ 
+    -- @ interface: type = output, name="uav4TargetX";
+  public static uav4TargetX : real := 0.0;
+  -- @ interface: type = output, name="uav4TargetY";
+  public static uav4TargetY : real := 0.0;
+  -- @ interface: type = output, name="uav4TargetZ";
+  public static uav4TargetZ : real := 0.0;
+  
+  
+ 
+    -- @ interface: type = output, name="uav5TargetX";
+  public static uav5TargetX : real := 0.0;
+  -- @ interface: type = output, name="uav5TargetY";
+  public static uav5TargetY : real := 0.0;
+  -- @ interface: type = output, name="uav5TargetZ";
+  public static uav5TargetZ : real := 0.0;
+  
+  
+  
+  
+  
+end HardwareInterface
+
+
+  

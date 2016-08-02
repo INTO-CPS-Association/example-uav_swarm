@@ -1,0 +1,112 @@
+class Controller
+
+instance variables
+
+-- command outputs
+public uav1TargetX: [Command] := nil;
+public uav1TargetY: [Command] := nil;
+public uav1TargetZ: [Command] := nil;
+public uav2TargetX: [Command] := nil;
+public uav2TargetY: [Command] := nil;
+public uav2TargetZ: [Command] := nil;
+public uav3TargetX: [Command] := nil;
+public uav3TargetY: [Command] := nil;
+public uav3TargetZ: [Command] := nil;
+public uav4TargetX: [Command] := nil;
+public uav4TargetY: [Command] := nil;
+public uav4TargetZ: [Command] := nil;
+public uav5TargetX: [Command] := nil;
+public uav5TargetY: [Command] := nil;
+public uav5TargetZ: [Command] := nil;
+
+
+operations
+
+	-- constructor for Controller
+	public Controller : Command * Command * Command * Command * 
+					Command * Command* Command * 
+					Command * Command* Command * 
+					Command * Command* Command * 
+					Command * Command ==> Controller
+	Controller (uav1X, uav1Y, uav1Z, uav2X, uav2Y, uav2Z, uav3X, uav3Y, uav3Z, uav4X, uav4Y, uav4Z, uav5X, uav5Y, uav5Z) == (
+	
+	uav1TargetX := uav1X;
+	uav1TargetY := uav1Y;
+	uav1TargetZ := uav1Z;
+	uav2TargetX := uav2X;
+	uav2TargetY := uav2Y;
+	uav3TargetZ := uav3Z;
+	uav3TargetX := uav3X;
+	uav3TargetY := uav3Y;
+	uav2TargetZ := uav2Z;
+	uav4TargetX := uav4X;
+	uav4TargetY := uav4Y;
+	uav4TargetZ := uav4Z;
+	uav5TargetX := uav5X;
+	uav5TargetY := uav5Y;
+	uav5TargetZ := uav5Z;
+	);
+
+	-- MAIN CONTROL LOOP
+	public Step : () ==> ()
+	Step() == 
+	(
+		uav1TargetX.SetValue(10.0);
+		uav1TargetY.SetValue(10.0);
+		uav1TargetZ.SetValue(4.0);
+		
+ 		if (time >2E9) then
+ 		(
+ 			uav2TargetX.SetValue(8.0);
+ 			uav2TargetY.SetValue(8.0);
+ 			uav2TargetZ.SetValue(3.7);	
+ 		);	
+ 		
+		if (time >4E9) then
+ 		(
+ 			uav3TargetX.SetValue(6.0);
+ 			uav3TargetY.SetValue(6.0);
+ 			uav3TargetZ.SetValue(3.4);
+ 		);
+ 	 	
+ 		if (time >6E9) then
+ 		(
+ 			uav4TargetX.SetValue(4.0);
+ 			uav4TargetY.SetValue(4.0);
+ 			uav4TargetZ.SetValue(3.1);
+ 		);
+ 		
+ 		if (time >8E9) then
+ 		(
+ 			uav1TargetZ.SetValue(2.0);
+ 			uav1TargetZ.SetValue(2.0);
+ 			uav1TargetZ.SetValue(2.8);
+ 			
+ 		);	
+ 		
+ 		if (time >10E9) then
+ 		(
+				uav1TargetX.SetValue(-10.0);
+				uav1TargetY.SetValue(-10.0);
+				uav1TargetZ.SetValue(4.0);
+				
+				uav2TargetX.SetValue(-8.0);
+ 				uav2TargetY.SetValue(-8.0);
+ 				uav2TargetZ.SetValue(3.7);	
+ 		
+ 				uav3TargetX.SetValue(-6.0);
+ 				uav3TargetY.SetValue(-6.0);
+ 				uav3TargetZ.SetValue(3.4);
+	 		
+				uav4TargetX.SetValue(-4.0);
+ 				uav4TargetY.SetValue(-4.0);
+ 				uav4TargetZ.SetValue(3.1);
+
+ 				uav1TargetZ.SetValue(-2.0);
+ 				uav1TargetZ.SetValue(-2.0);
+ 				uav1TargetZ.SetValue(2.8);
+		);
+	);
+ 
+	  
+end Controller

@@ -1,7 +1,0 @@
-{
-		"multimodel_path":"Multi-models/5-UAV-Non-3D-conrep/5-UAV-Non-3D-conrep.mm.json",
-		"algorithm":{
-				"type":"fixed-step",
-				"size":0.05
-		}
-}

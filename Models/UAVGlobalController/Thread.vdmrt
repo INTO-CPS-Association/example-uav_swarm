@@ -1,0 +1,87 @@
+class Thread
+
+instance variables
+
+-- thread period
+private period: nat := 1E9;
+
+-- command outputs
+public static uav1TargetX: [Command] := nil;
+public static uav1TargetY: [Command] := nil;
+public static uav1TargetZ: [Command] := nil;
+public static uav2TargetX: [Command] := nil;
+public static uav2TargetY: [Command] := nil;
+public static uav2TargetZ: [Command] := nil;
+public static uav3TargetX: [Command] := nil;
+public static uav3TargetY: [Command] := nil;
+public static uav3TargetZ: [Command] := nil;
+public static uav4TargetX: [Command] := nil;
+public static uav4TargetY: [Command] := nil;
+public static uav4TargetZ: [Command] := nil;
+public static uav5TargetX: [Command] := nil;
+public static uav5TargetY: [Command] := nil;
+public static uav5TargetZ: [Command] := nil;
+
+private controller: [Controller] := nil;
+
+operations
+
+-- constructor for Thread
+public Thread: nat * Controller * Command * Command * Command * Command * 
+					Command * Command* Command * 
+					Command * Command* Command * 
+					Command * Command* Command * 
+					Command * Command  ==> Thread
+Thread(f,c, uav1X, uav1Y, uav1Z, uav2X, uav2Y, uav2Z, uav3X, uav3Y, uav3Z, uav4X, uav4Y, uav4Z, uav5X, uav5Y, uav5Z) == (
+	period := frequency_to_period(f);
+	uav1TargetX := uav1X;
+	uav1TargetY := uav1Y;
+	uav1TargetZ := uav1Z;
+	uav2TargetX := uav2X;
+	uav2TargetY := uav2Y;
+	uav2TargetZ := uav2Z;
+	uav3TargetX := uav3X;
+	uav3TargetY := uav3Y;
+	uav3TargetZ := uav3Z;
+	uav4TargetX := uav4X;
+	uav4TargetY := uav4Y;
+	uav4TargetZ := uav4Z;
+	uav5TargetX := uav5X;
+	uav5TargetY := uav5Y;
+	uav5TargetZ := uav5Z;
+
+	controller := c
+);
+
+-- control loop
+Step: () ==> ()
+Step() == (
+		uav1TargetX.Sync();
+		uav1TargetY.Sync();
+		uav1TargetZ.Sync();
+		uav2TargetX.Sync();
+		uav2TargetY.Sync();
+		uav2TargetZ.Sync();
+		uav3TargetX.Sync();
+		uav3TargetY.Sync();
+		uav3TargetZ.Sync();
+		uav4TargetX.Sync();
+		uav4TargetY.Sync();
+		uav4TargetZ.Sync();
+		uav5TargetX.Sync();
+		uav5TargetY.Sync();
+		uav5TargetZ.Sync();
+		
+		controller.Step();
+);
+
+-- run as a periodic thread
+thread periodic(period, 0 ,0, 0)(Step);
+
+functions 
+
+-- convert frequency to period in nanoseconds
+private frequency_to_period: real -> nat
+frequency_to_period(f) == floor 1E9/f
+
+end Thread
