@@ -1,0 +1,17 @@
+{"fmus":{
+		"{uavCont}":"UAVCon_Rep.fmu",
+		"{uavGlobalCont}":"UAVGlobalController.fmu"
+	},
+	"connections":{
+	    "{uavGlobalCont}.global.uav1TargetX":["{uavCont}.controller.targetX"],
+	    "{uavGlobalCont}.global.uav1TargetY":["{uavCont}.controller.targetY"],
+	    "{uavGlobalCont}.global.uav1TargetZ":["{uavCont}.controller.targetZ"],
+	    "{uavGlobalCont}.global.uav2TargetX":["{uavCont}.controller2.targetX"],
+	    "{uavGlobalCont}.global.uav2TargetY":["{uavCont}.controller2.targetY"],
+	    "{uavGlobalCont}.global.uav2TargetZ":["{uavCont}.controller2.targetZ"],
+	    "{uavGlobalCont}.global.uav3TargetX":["{uavCont}.controller3.targetX"],
+	    "{uavGlobalCont}.global.uav3TargetY":["{uavCont}.controller3.targetY"],
+	    "{uavGlobalCont}.global.uav3TargetZ":["{uavCont}.controller3.targetZ"]
+	},
+	"parameters":{}
+}
