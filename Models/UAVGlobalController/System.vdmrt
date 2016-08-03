@@ -19,36 +19,21 @@ operations
   System () == 
   (--settings := World'settings;
  
- 	  let	uav1TargetX = new Command(lambda x: real & 
-                        Reflect`setMember(System`hwi,"uav1TargetX",x)),
-        uav1TargetY = new Command(lambda x: real & 
-                        Reflect`setMember(System`hwi,"uav1TargetY",x)),
-        uav1TargetZ = new Command(lambda x: real & 
-                        Reflect`setMember(System`hwi,"uav1TargetZ",x)),
-        uav2TargetX = new Command(lambda x: real & 
-                        Reflect`setMember(System`hwi,"uav2TargetX",x)),
-        uav2TargetY = new Command(lambda x: real & 
-                        Reflect`setMember(System`hwi,"uav2TargetY",x)),
-        uav2TargetZ = new Command(lambda x: real & 
-                        Reflect`setMember(System`hwi,"uav2TargetZ",x)),
-        uav3TargetX = new Command(lambda x: real & 
-                        Reflect`setMember(System`hwi,"uav3TargetX",x)),
-        uav3TargetY = new Command(lambda x: real & 
-                        Reflect`setMember(System`hwi,"uav3TargetY",x)),
-        uav3TargetZ = new Command(lambda x: real & 
-                        Reflect`setMember(System`hwi,"uav3TargetZ",x)),
-        uav4TargetX = new Command(lambda x: real & 
-                        Reflect`setMember(System`hwi,"uav4TargetX",x)),
-        uav4TargetY = new Command(lambda x: real & 
-                        Reflect`setMember(System`hwi,"uav4TargetY",x)),
-        uav4TargetZ = new Command(lambda x: real & 
-                        Reflect`setMember(System`hwi,"uav4TargetZ",x)),
-        uav5TargetX = new Command(lambda x: real & 
-                        Reflect`setMember(System`hwi,"uav5TargetX",x)),
-        uav5TargetY = new Command(lambda x: real & 
-                        Reflect`setMember(System`hwi,"uav5TargetY",x)),
-        uav5TargetZ = new Command(lambda x: real & 
-                        Reflect`setMember(System`hwi,"uav5TargetZ",x))
+ 	  let	uav1TargetX = new Command(hwi.uav1TargetX),
+        uav1TargetY = new Command(hwi.uav1TargetY),
+        uav1TargetZ = new Command(hwi.uav1TargetZ),
+        uav2TargetX = new Command(hwi.uav2TargetX),
+        uav2TargetY = new Command(hwi.uav2TargetY),
+        uav2TargetZ = new Command(hwi.uav2TargetZ),
+        uav3TargetX = new Command(hwi.uav3TargetX),
+        uav3TargetY = new Command(hwi.uav3TargetY),
+        uav3TargetZ = new Command(hwi.uav3TargetZ),
+        uav4TargetX = new Command(hwi.uav4TargetX),
+        uav4TargetY = new Command(hwi.uav4TargetY),
+        uav4TargetZ = new Command(hwi.uav4TargetZ),
+        uav5TargetX = new Command(hwi.uav5TargetX),
+        uav5TargetY = new Command(hwi.uav5TargetY),
+        uav5TargetZ = new Command(hwi.uav5TargetZ)
  	in 
 	(		
 		controller := new Controller(uav1TargetX, uav1TargetY, uav1TargetZ, 

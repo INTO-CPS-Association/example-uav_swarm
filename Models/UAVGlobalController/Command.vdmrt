@@ -3,18 +3,18 @@ class Command
 instance variables
 
 -- this value will be set through the co-simulation
-protected value: real->bool;
+protected port: RealPort;
 
 -- local copy of the shared variable
 protected local_val: real := 0;
 
 operations
 
--- constructor
-public Command : (real->bool) ==> Command 
-Command(v) ==
- (value := v;
- );
+-- constructor for PWM
+public Command : RealPort ==> Command
+Command(p) == (
+	port := p;
+);
 
 -- set actuator value
 public SetValue: real ==> ()
@@ -25,6 +25,6 @@ Read() == return local_val;
 
 -- write local variable to shared variable
 public Sync: () ==> ()
-Sync() == let - = value(local_val) in skip; 
+Sync() == port.setValue(local_val); 
 
 end Command

@@ -2,8 +2,8 @@ system System
 
 instance variables
 
-  -- Hardware interface variable required by FMU Import/Export
-  public static hwi: HardwareInterface := new HardwareInterface(); 
+-- Hardware interface variable required by FMU Import/Export
+public static hwi: HardwareInterface := new HardwareInterface(); 
     
 -- controller
 public static controller : [Controller] := nil;
@@ -19,25 +19,21 @@ public System : () ==> System
 System () == 
  (--settings := World'settings;
  
- 	let tarX =  new Command(lambda -:bool& hwi.targetX),
-      tarY =  new Command(lambda -:bool& hwi.targetY),
- 			tarZ =  new Command(lambda -:bool& hwi.targetZ),
- 			velX =  new Sensor(lambda -:bool& hwi.velXIn),
-      velY =  new Sensor(lambda -:bool& hwi.velYIn),
- 			velZ =  new Sensor(lambda -:bool& hwi.velZIn),
- 			posX =  new Sensor(lambda -:bool& hwi.posXIn),
- 			posY =  new Sensor(lambda -:bool& hwi.posYIn),
- 			posZ =  new Sensor(lambda -:bool& hwi.posZIn),
- 			yaw =  new Sensor(lambda -:bool& hwi.yawIn),
- 			batteryCharge =  new Sensor(lambda -:bool& hwi.batteryChargeIn),
-		 	pitchOut = new Actuator(lambda x: real & 
-                        Reflect`setMember(System`hwi,"pitchOut",x)),
- 			rollOut = new Actuator(lambda x: real & 
-                        Reflect`setMember(System`hwi,"rollOut",x)),
- 			yawOut = new Actuator(lambda x: real & 
-                        Reflect`setMember(System`hwi,"yawOut",x)),
- 			throttleOut = new Actuator(lambda x: real & 
-                        Reflect`setMember(System`hwi,"throttleOut",x))
+ 	let tarX =  new Command(hwi.targetX),
+      tarY =  new Command(hwi.targetY),
+ 			tarZ =  new Command(hwi.targetZ),
+ 			velX =  new Sensor(hwi.velXIn),
+      velY =  new Sensor(hwi.velYIn),
+ 			velZ =  new Sensor(hwi.velZIn),
+ 			posX =  new Sensor(hwi.posXIn),
+ 			posY =  new Sensor(hwi.posYIn),
+ 			posZ =  new Sensor(hwi.posZIn),
+ 			yaw =  new Sensor(hwi.yawIn),
+ 			--batteryCharge =  new Sensor(hwi.batteryChargeIn),
+		 	pitchOut = new Actuator(hwi.pitchOut),
+ 			rollOut = new Actuator(hwi.rollOut),
+ 			yawOut = new Actuator(hwi.yawOut),
+ 			throttleOut = new Actuator(hwi.throttleOut)
  	in 
 	(		
 		controller := new Controller(tarX, tarY, tarZ, velX , velY , velZ , 
