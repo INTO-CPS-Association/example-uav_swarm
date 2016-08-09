@@ -1,5 +1,5 @@
 {"fmus":{
-		"{uav}":"UAV_Rep.fmu",
+		"{uav}":"UAV.fmu",
 		"{uavCont}":"UAVCon_Rep.fmu",
 		"{uav3D}":"3DanimationFMU.fmu", 
 		"{uavGlobalCont}":"UAVGlobalController.fmu"
