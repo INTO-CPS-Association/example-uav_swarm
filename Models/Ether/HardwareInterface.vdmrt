@@ -1,0 +1,11 @@
+class HardwareInterface
+
+instance variables
+
+-- @ interface: type = input, name="sender";
+public sender : StringPort := new StringPort("");
+
+-- @ interface: type = output, name="receiver";
+public receiver : StringPort := new StringPort("");
+
+end HardwareInterface

@@ -1,0 +1,65 @@
+class Ether
+
+types
+
+Id = token
+
+instance variables
+
+-- thread period
+private period: nat := 1E9;
+
+-- access shared variables
+incoming: map Id to StringPort;
+outgoing: map Id to StringPort;
+connects: map Id to Id;
+inv dom connects subset dom incoming and 
+	  rng connects subset dom outgoing;
+
+operations
+
+-- constructor for controller
+public Ether: nat1 * map Id to StringPort * map Id to StringPort * map Id to Id ==> Ether
+Ether(p,i,o,c) == (
+	period := p;
+	incoming := i;
+	outgoing := o;
+	connects := c
+)
+pre dom c subset dom i and 
+    rng c subset dom o;
+
+-- constructor for controller (100Hz)
+public Ether: map Id to StringPort * map Id to StringPort * map Id to Id ==> Ether
+Ether(i,o,c) == 
+	Ether(100,i,o,c)
+pre dom c subset dom i and 
+    rng c subset dom o;
+
+operations
+
+-- send counter out and increase counter
+private Step: () ==>()
+Step() == cycles(2) 
+(
+	for all i in set dom connects do (
+		let x = incoming(i).getValue(), o = connects(i) in (
+		    -- pass each input to each output
+			  outgoing(o).setValue(x);
+
+			  -- debug			
+			  IO`printf("Ether: passed %s from %s to %s at %s", [x, i, o, time/1e9]);			  
+		)		
+	);
+);		
+
+-- run as a periodic thread
+thread periodic(period, 0 ,0, 0)(Step);
+
+functions 
+
+-- convert frequency to period in nanoseconds
+private frequency_to_period: real -> nat
+frequency_to_period(f) == floor 1E9/f
+
+end Ether
