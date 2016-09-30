@@ -1,0 +1,28 @@
+class Command
+
+instance variables
+
+-- this value will be set through the co-simulation
+protected port: RealPort;
+
+-- local copy of the shared variable
+protected local_val: real := 0;
+
+operations
+
+-- constructor for Command
+public Command: RealPort ==> Command
+Command(p) == (
+  port := p;
+  local_val := port.getValue();
+);
+
+-- get Command value
+public GetValue: () ==> real
+GetValue() == return local_val;
+
+-- write local variable to shared variable
+public Sync: () ==> ()
+Sync() == local_val := port.getValue();
+
+end Command

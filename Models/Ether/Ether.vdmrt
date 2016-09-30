@@ -2,7 +2,7 @@ class Ether
 
 types
 
-Id = token
+public Id = token
 
 instance variables
 
@@ -11,6 +11,7 @@ private period: nat := 1E9;
 
 -- access shared variables
 incoming: map Id to StringPort;
+outboxes: map Id to seq of seq of char;
 outgoing: map Id to StringPort;
 connects: map Id to Id;
 inv dom connects subset dom incoming and 
@@ -24,7 +25,8 @@ Ether(p,i,o,c) == (
 	period := p;
 	incoming := i;
 	outgoing := o;
-	connects := c
+	connects := c;
+	outboxes := {id |-> [] | id in set rng connects}
 )
 pre dom c subset dom i and 
     rng c subset dom o;
@@ -42,16 +44,33 @@ operations
 private Step: () ==>()
 Step() == cycles(2) 
 (
+  -- gather inputs in outboxes
 	for all i in set dom connects do (
 		let x = incoming(i).getValue(), o = connects(i) in (
-		    -- pass each input to each output
-			  outgoing(o).setValue(x);
-
-			  -- debug			
-			  IO`printf("Ether: passed %s from %s to %s at %s", [x, i, o, time/1e9]);			  
+			  outboxes(o) := outboxes(o) ^ [x];
 		)		
 	);
+	
+	-- flush outboxes
+	for all i in set dom outboxes do (
+	  if len outboxes(i) > 1 then (
+			outgoing(i).setValue(seq_of_seq_of_char2seq_of_char(outboxes(i)));
+			
+			-- debug			
+			IO`printf("Ether: passed %s to %s at %s", [outgoing(i), i, time/1e9]);
+			
+			outboxes(i) := []
+		) 
+	);
 );		
+
+private seq_of_seq_of_char2seq_of_char: seq of seq of char ==> seq of char
+seq_of_seq_of_char2seq_of_char(ss) == (
+	dcl outstr: seq of char := "[";
+	for all i in set inds ss do if len ss(i) > 0 then outstr := outstr ^ ss(i) ^ [','];
+	outstr(len outstr) := ']';
+	return outstr 
+);
 
 -- run as a periodic thread
 thread periodic(period, 0 ,0, 0)(Step);
