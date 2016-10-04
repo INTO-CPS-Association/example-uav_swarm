@@ -66,7 +66,7 @@ instance variables
 
 values
 
-SEND_PERIOD = 1; 
+SEND_PERIOD = 0.1; 
 
 operations
 
@@ -108,25 +108,27 @@ operations
 		setPitch();
 		setRoll();
 
-		IO`println("UAVCon_Auto Step()");
-
+    IO`printf("UAV_CONTROLLER: len etherIn.getValue() = %s at %s\n", [len etherIn.getValue(), time/1e9]);
+    
     -- try to convert from string to list of strings
-	  let mk_(b,v) = VDMUtil`seq_of_char2val[seq of (nat*real*real*real)](etherIn.getValue())
-	  in if b then (
-		  for all i in set inds v do (
-			  let x = v(i) in (
-		      -- N.B. using a tuple until the library can handle custom types 
-			    positions := positions ++ {x.#1 |-> mk_Position(x.#2,x.#3,x.#4)};
+    if len etherIn.getValue() >= 2 then (
+	    let mk_(b,v) = VDMUtilDebug`seq_of_char2val[seq of (nat*real*real*real)](etherIn.getValue())
+	    in if b then (
+		    for all i in set inds v do (
+			    let x = v(i) in (
+		        -- N.B. using a tuple until the library can handle custom types 
+			      positions := positions ++ {x.#1 |-> mk_Position(x.#2,x.#3,x.#4)};
+	        )
 	      )
 	    )
 	  );
     
 		-- convert to string representation and send
-		if time >= lastSendTime * SEND_PERIOD * 1e9 then ( 
+		if time >= lastSendTime + (SEND_PERIOD * 1e9) then ( 
 	    -- N.B. using a tuple until the library can handle custom types
 	    etherOut.setValue(VDMUtil`val2seq_of_char[nat*real*real*real](mk_(id, posX.GetValue(), posY.GetValue(), posZ.GetValue()))); 
 	  	lastSendTime := time;
-	  	IO`printf("UAVCon_Auto.fmu: positions = %s at %s\n", [positions, time/1e9]);
+	  	IO`printf("UAV_CONTROLLER: Positions = %s at %s\n", [positions, time/1e9]);
 	  )
 	);
  
