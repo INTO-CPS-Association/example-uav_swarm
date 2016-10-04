@@ -90,5 +90,11 @@
 		"{uavCont}.controller5.yawOut":["{uav}.uav5.yaw"],
 		"{uavCont}.controller5.throttleOut":["{uav}.uav5.throttle"]
 	},
-	"parameters":{}
+	"parameters": {
+    "{uavCont}.controller.id": 1,
+    "{uavCont}.controller2.id": 2,
+    "{uavCont}.controller3.id": 3,
+    "{uavCont}.controller4.id": 4,
+    "{uavCont}.controller5.id": 5    
+  }
 }

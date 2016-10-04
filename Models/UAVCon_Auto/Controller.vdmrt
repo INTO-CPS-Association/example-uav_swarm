@@ -108,6 +108,8 @@ operations
 		setPitch();
 		setRoll();
 
+		IO`println("UAVCon_Auto Step()");
+
     -- try to convert from string to list of strings
 	  let mk_(b,v) = VDMUtil`seq_of_char2val[seq of (nat*real*real*real)](etherIn.getValue())
 	  in if b then (

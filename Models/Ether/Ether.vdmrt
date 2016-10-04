@@ -2,7 +2,7 @@ class Ether
 
 types
 
-public Id = token
+public Id = seq of char
 
 instance variables
 
@@ -13,30 +13,33 @@ private period: nat := 1E9;
 incoming: map Id to StringPort;
 outboxes: map Id to seq of seq of char;
 outgoing: map Id to StringPort;
-connects: map Id to Id;
-inv dom connects subset dom incoming and 
-	  rng connects subset dom outgoing;
+connects: set of (Id * Id);
+inv forall mk_(i,o) in set connects & 
+  (i in set dom incoming and 
+   o in set dom outgoing);
 
 operations
 
 -- constructor for controller
-public Ether: nat1 * map Id to StringPort * map Id to StringPort * map Id to Id ==> Ether
-Ether(p,i,o,c) == (
+public Ether: nat1 * map Id to StringPort * map Id to StringPort * set of (Id * Id) ==> Ether
+Ether(p,ins,outs,c) == (
 	period := p;
-	incoming := i;
-	outgoing := o;
+	incoming := ins;
+	outgoing := outs;
 	connects := c;
-	outboxes := {id |-> [] | id in set rng connects}
+	outboxes := {id |-> [] | id in set dom outs}
 )
-pre dom c subset dom i and 
-    rng c subset dom o;
+pre forall mk_(i,o) in set c & 
+  (i in set dom ins and 
+   o in set dom outs);
 
 -- constructor for controller (100Hz)
-public Ether: map Id to StringPort * map Id to StringPort * map Id to Id ==> Ether
-Ether(i,o,c) == 
-	Ether(100,i,o,c)
-pre dom c subset dom i and 
-    rng c subset dom o;
+public Ether: map Id to StringPort * map Id to StringPort * set of (Id * Id) ==> Ether
+Ether(ins,outs,c) == 
+	Ether(100,ins,outs,c)
+pre forall mk_(i,o) in set c & 
+  (i in set dom ins and 
+   o in set dom outs);
 
 operations
 
@@ -44,9 +47,10 @@ operations
 private Step: () ==>()
 Step() == cycles(2) 
 (
+  
   -- gather inputs in outboxes
-	for all i in set dom connects do (
-		let x = incoming(i).getValue(), o = connects(i) in (
+	for all mk_(i,o) in set connects do (
+		let x = incoming(i).getValue() in (
 			  outboxes(o) := outboxes(o) ^ [x];
 		)		
 	);
@@ -57,7 +61,7 @@ Step() == cycles(2)
 			outgoing(i).setValue(seq_of_seq_of_char2seq_of_char(outboxes(i)));
 			
 			-- debug			
-			IO`printf("Ether: passed %s to %s at %s", [outgoing(i), i, time/1e9]);
+			IO`printf("ETHER.FMU: Passed %s to %s at %s\n", [outgoing(i).getValue(), i, time/1e9]);	
 			
 			outboxes(i) := []
 		) 
