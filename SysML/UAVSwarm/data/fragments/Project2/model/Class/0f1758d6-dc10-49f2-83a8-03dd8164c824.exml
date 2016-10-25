@@ -275,7 +275,7 @@
             <ATT name="IsBehavior">false</ATT>
             <ATT name="IsService">true</ATT>
             <ATT name="IsConjugated">false</ATT>
-            <ATT name="Direction">Out</ATT>
+            <ATT name="Direction">In</ATT>
             <ATT name="IsConstant">false</ATT>
             <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
             <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
@@ -298,7 +298,7 @@
             <ATT name="IsBehavior">false</ATT>
             <ATT name="IsService">true</ATT>
             <ATT name="IsConjugated">false</ATT>
-            <ATT name="Direction">Out</ATT>
+            <ATT name="Direction">In</ATT>
             <ATT name="IsConstant">false</ATT>
             <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
             <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
@@ -321,7 +321,7 @@
             <ATT name="IsBehavior">false</ATT>
             <ATT name="IsService">true</ATT>
             <ATT name="IsConjugated">false</ATT>
-            <ATT name="Direction">Out</ATT>
+            <ATT name="Direction">In</ATT>
             <ATT name="IsConstant">false</ATT>
             <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
             <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
