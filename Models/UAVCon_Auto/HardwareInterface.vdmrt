@@ -1,3 +1,4 @@
+--##	EXPORT	fb42ff08bae8e8f915842e7bad17627a62d3b32f	UAVCon_Auto.fmu	2017-16-03 16:39:49	tool-wrapper	{"name":"fmu-import-export","version":"0.1.7-SNAPSHOT"}
 --##	EXPORT	760bcd54e722b71819e2a9fd504a0b2038fb9975	UAVCon_Auto.fmu	2016-15-12 11:22:55	tool-wrapper	{"name":"fmu-import-export","version":"0.1.5-SNAPSHOT"}
 class HardwareInterface
 

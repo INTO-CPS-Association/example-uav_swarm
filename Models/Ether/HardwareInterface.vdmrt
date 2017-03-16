@@ -1,3 +1,4 @@
+--##	EXPORT	6b118f7c133c80efe667161f61c61f1845b2ed9	Ether.fmu	2017-16-03 16:39:30	tool-wrapper	{"name":"fmu-import-export","version":"0.1.7-SNAPSHOT"}
 --##	EXPORT	f32737f22a3f18d8a3d3007c74781c8acb1afdf6	Ether.fmu	2016-15-12 11:23:11	tool-wrapper	{"name":"fmu-import-export","version":"0.1.5-SNAPSHOT"}
 class HardwareInterface
 

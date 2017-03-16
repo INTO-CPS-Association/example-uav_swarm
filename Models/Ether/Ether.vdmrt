@@ -23,7 +23,7 @@ operations
 -- constructor for controller
 public Ether: nat1 * map Id to StringPort * map Id to StringPort * set of (Id * Id) ==> Ether
 Ether(p,ins,outs,c) == (
-	period := p;
+	period := frequency_to_period(p);
 	incoming := ins;
 	outgoing := outs;
 	connects := c;
