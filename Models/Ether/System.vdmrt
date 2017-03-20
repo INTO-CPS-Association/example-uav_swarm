@@ -1,0 +1,39 @@
+system System
+
+instance variables
+
+-- interface required by FMU import/export
+public static hwi: HardwareInterface := new HardwareInterface();
+
+-- controller object
+public static ether : [Ether] := nil;
+
+-- CPU
+cpu1: CPU := new CPU(<FP>, 20);
+
+operations
+
+public System: () ==> System
+System() == (
+	ether := new Ether(100,--Hz
+		{
+		  "uav1in" |-> hwi.uav1in,
+		  "uav2in" |-> hwi.uav2in,
+		  "uav3in" |-> hwi.uav3in,
+		  "uav4in" |-> hwi.uav4in,
+		  "uav5in" |-> hwi.uav5in
+		},
+		{
+		  "uav1out" |-> hwi.uav1out,
+		  "uav2out" |-> hwi.uav2out,
+		  "uav3out" |-> hwi.uav3out,
+		  "uav4out" |-> hwi.uav4out,
+		  "uav5out" |-> hwi.uav5out
+		},
+		{mk_("uav" ^ [i] ^ "in", "uav" ^ [j] ^ "out") 
+		  | i,j in set {'1','2','3','4','5'} & i <> j}
+	);
+  cpu1.deploy(ether, "Ether");
+);
+
+end System

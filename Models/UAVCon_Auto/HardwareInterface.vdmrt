@@ -1,0 +1,73 @@
+--##	EXPORT	fb42ff08bae8e8f915842e7bad17627a62d3b32f	UAVCon_Auto.fmu	2017-16-03 16:39:49	tool-wrapper	{"name":"fmu-import-export","version":"0.1.7-SNAPSHOT"}
+--##	EXPORT	760bcd54e722b71819e2a9fd504a0b2038fb9975	UAVCon_Auto.fmu	2016-15-12 11:22:55	tool-wrapper	{"name":"fmu-import-export","version":"0.1.5-SNAPSHOT"}
+class HardwareInterface
+
+-- DESIGN PARAMETERS
+values
+    -- @ interface: type = parameter, name="id";
+    public static id : IntPort = new IntPort(0);
+
+-- INPUT VARIABLES
+instance variables
+    
+  -- @ interface: type = input, name="targetX";
+  public targetX : RealPort := new RealPort(0.0);
+ 
+  -- @ interface: type = input, name="targetY";
+  public targetY : RealPort := new RealPort(0.0);
+
+  -- @ interface: type = input, name="targetZ";
+  public targetZ : RealPort := new RealPort(0.0); 
+    
+  -- @ interface: type = input, name="posXIn";
+  public posXIn : RealPort := new RealPort(0.0);
+  
+  -- @ interface: type = input, name="posYIn";
+  public posYIn : RealPort := new RealPort(0.0);
+    
+  -- @ interface: type = input, name="posZIn";
+  public posZIn : RealPort := new RealPort(0.0);
+  
+  -- @ interface: type = input, name="yawIn";
+  public yawIn : RealPort := new RealPort(0.0);
+    
+  -- @ interface: type = input, name="velXIn";
+  public velXIn : RealPort := new RealPort(0.0);
+  
+  -- @ interface: type = input, name="velYIn";
+  public velYIn : RealPort := new RealPort(0.0);
+    
+  -- @ interface: type = input, name="velZIn";
+  public velZIn : RealPort := new RealPort(0.0);
+  
+  -- @ interface: type = input, name="batteryChargeIn";
+  public batteryChargeIn : RealPort := new RealPort(0.0);
+  
+-- OUTPUT VARIABLES
+instance variables
+
+  -- @ interface: type = output, name="pitchOut";
+  public pitchOut : RealPort := new RealPort(0.0);
+ 
+  -- @ interface: type = output, name="rollOut";
+  public rollOut : RealPort := new RealPort(0.0);
+
+  -- @ interface: type = output, name="yawOut";
+  public yawOut : RealPort := new RealPort(0.0);
+ 
+  -- @ interface: type = output, name="throttleOut";
+  public throttleOut : RealPort := new RealPort(0.0);
+  
+-- ETHER CONNECTIONS
+instance variables
+
+  -- @ interface: type = input, name="etherIn";
+  public etherIn: StringPort := new StringPort("");
+  
+  -- @ interface: type = output, name="etherOut";
+  public etherOut : StringPort := new StringPort("");  
+  
+end HardwareInterface
+
+
+  
