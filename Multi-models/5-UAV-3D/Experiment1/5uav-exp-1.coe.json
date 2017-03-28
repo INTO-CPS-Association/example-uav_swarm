@@ -1,1 +1,1 @@
-{"startTime":0,"endTime":10,"multimodel_path":"Multi-models/5-UAV-3D/5-UAV-3D.mm.json","livestream":{"{uav}.uav5":["velZ"],"{uav}.uav4":["velZ"],"{uav}.uav3":["velZ"],"{uav}.uav2":["velZ"],"{uav}.uav":["velZ"]},"algorithm":{"type":"fixed-step","size":0.1}}
+{"startTime":0,"endTime":10,"multimodel_path":"Multi-models\\5-UAV-3D\\5-UAV-3D.mm.json","livestream":{"{uav}.uav2":["posX"],"{uav}.uav":["posX"],"{uav}.uav5":["posX"],"{uav}.uav4":["posX"],"{uav}.uav3":["posX"]},"algorithm":{"type":"fixed-step","size":0.1}}

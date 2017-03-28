@@ -1,3 +1,4 @@
+--##	EXPORT	c9f6b21a31a0d123857129060bdc0b3a5874a460	UAVGlobalController.fmu	2016-15-12 11:11:32	tool-wrapper	{"name":"fmu-import-export","version":"0.1.5-SNAPSHOT"}
 class HardwareInterface
   
 -- OUTPUT VARIABLES
@@ -27,20 +28,20 @@ instance variables
   
  
     -- @ interface: type = output, name="uav4TargetX";
-  public static uav4TargetX : RealPort := new RealPort(0.0);
+  public uav4TargetX : RealPort := new RealPort(0.0);
   -- @ interface: type = output, name="uav4TargetY";
-  public static uav4TargetY : RealPort := new RealPort(0.0);
+  public uav4TargetY : RealPort := new RealPort(0.0);
   -- @ interface: type = output, name="uav4TargetZ";
-  public static uav4TargetZ : RealPort := new RealPort(0.0);
+  public uav4TargetZ : RealPort := new RealPort(0.0);
   
   
  
     -- @ interface: type = output, name="uav5TargetX";
-  public static uav5TargetX : RealPort := new RealPort(0.0);
+  public uav5TargetX : RealPort := new RealPort(0.0);
   -- @ interface: type = output, name="uav5TargetY";
-  public static uav5TargetY : RealPort := new RealPort(0.0);
+  public uav5TargetY : RealPort := new RealPort(0.0);
   -- @ interface: type = output, name="uav5TargetZ";
-  public static uav5TargetZ : RealPort := new RealPort(0.0);
+  public uav5TargetZ : RealPort := new RealPort(0.0);
   
   
   

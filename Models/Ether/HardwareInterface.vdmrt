@@ -1,0 +1,37 @@
+--##	EXPORT	6b118f7c133c80efe667161f61c61f1845b2ed9	Ether.fmu	2017-16-03 16:39:30	tool-wrapper	{"name":"fmu-import-export","version":"0.1.7-SNAPSHOT"}
+--##	EXPORT	f32737f22a3f18d8a3d3007c74781c8acb1afdf6	Ether.fmu	2016-15-12 11:23:11	tool-wrapper	{"name":"fmu-import-export","version":"0.1.5-SNAPSHOT"}
+class HardwareInterface
+
+instance variables
+
+-- @ interface: type = input, name="uav1in";
+public uav1in : StringPort := new StringPort("");
+
+-- @ interface: type = input, name="uav2in";
+public uav2in : StringPort := new StringPort("");
+
+-- @ interface: type = input, name="uav3in";
+public uav3in : StringPort := new StringPort("");
+
+-- @ interface: type = input, name="uav4in";
+public uav4in : StringPort := new StringPort("");
+
+-- @ interface: type = input, name="uav5in";
+public uav5in : StringPort := new StringPort("");
+
+-- @ interface: type = output, name="uav1out";
+public uav1out : StringPort := new StringPort("");
+
+-- @ interface: type = output, name="uav2out";
+public uav2out : StringPort := new StringPort("");
+
+-- @ interface: type = output, name="uav3out";
+public uav3out : StringPort := new StringPort("");
+
+-- @ interface: type = output, name="uav4out";
+public uav4out : StringPort := new StringPort("");
+
+-- @ interface: type = output, name="uav5out";
+public uav5out : StringPort := new StringPort("");
+
+end HardwareInterface
