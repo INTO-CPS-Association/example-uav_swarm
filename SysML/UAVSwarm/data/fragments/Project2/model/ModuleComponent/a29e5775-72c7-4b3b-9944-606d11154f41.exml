@@ -24,6 +24,9 @@
       <COMP relation="OwnedProfile">
         <COMPID name="LocalProfile" mc="Standard.Profile" uid="58079260-f786-408a-b8eb-c5162d8bb7d8"/>
       </COMP>
+      <LINK relation="Extension">
+        <ID name="EComponent" mc="Standard.Stereotype" uid="f847373b-19f7-4371-9426-a22c48aebf60"/>
+      </LINK>
     </DEPENDENCIES>
   </OBJECT>
 </EXT>

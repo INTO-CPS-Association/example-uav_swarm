@@ -932,6 +932,87 @@
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.InformationFlow" uid="dd71ced8-4cb8-40bd-82d0-ec50036828de"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <REFOBJ>
+                <ID name="uav1TargetX" mc="Standard.Port" uid="662aee55-64af-4a20-98b4-4989997ea864"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <REFOBJ>
+                <ID name="targetX" mc="Standard.Port" uid="8da6bda1-ac7a-4c57-922b-f2fea0613689"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="RealizingLink">
+              <REFOBJ>
+                <ID name="" mc="Standard.ConnectorEnd" uid="1c6716fc-3fdb-4a50-9a47-8302f5e55d7d"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Conveyed">
+              <FOREIGNID name="Real" mc="Standard.DataType" uid="cf54ada1-c5bf-4eaf-9ef5-a2fc8c7edcad"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.InformationFlow" uid="c1c4462d-626f-496e-8480-bf0d6a5e90df"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <REFOBJ>
+                <ID name="uav1TargetY" mc="Standard.Port" uid="9094ca71-a1f3-42f1-889d-42b304dcbbf8"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <REFOBJ>
+                <ID name="targetY" mc="Standard.Port" uid="ad20a9ee-e879-4dae-8f38-03f760b25d95"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="RealizingLink">
+              <REFOBJ>
+                <ID name="" mc="Standard.ConnectorEnd" uid="b6624f67-87bd-45f6-96e7-10bd9a868556"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Conveyed">
+              <FOREIGNID name="Real" mc="Standard.DataType" uid="cf54ada1-c5bf-4eaf-9ef5-a2fc8c7edcad"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.InformationFlow" uid="8bda40d6-d580-4a3d-856f-998708251a68"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <REFOBJ>
+                <ID name="uav1TargetZ" mc="Standard.Port" uid="d5a34c4f-b4c2-440a-b856-0136c3599c7c"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <REFOBJ>
+                <ID name="targetZ" mc="Standard.Port" uid="8c947d6d-52a9-4843-ba90-c93597de1c26"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="RealizingLink">
+              <REFOBJ>
+                <ID name="" mc="Standard.ConnectorEnd" uid="34080201-2a5b-4d5f-b373-f21adbe69c84"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Conveyed">
+              <FOREIGNID name="Real" mc="Standard.DataType" uid="cf54ada1-c5bf-4eaf-9ef5-a2fc8c7edcad"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
       </COMP>
       <COMP relation="Declared">
         <OBJECT>
@@ -1406,6 +1487,72 @@
                         <LINK relation="RepresentedFeature">
                           <REFOBJ>
                             <ID name="posZIn" mc="Standard.Port" uid="b2220592-cefa-48df-a5ad-79ab0839b620"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="targetX" mc="Standard.Port" uid="8da6bda1-ac7a-4c57-922b-f2fea0613689"/>
+                      <ATTRIBUTES>
+                        <ATT name="IsBehavior">false</ATT>
+                        <ATT name="IsService">true</ATT>
+                        <ATT name="IsConjugated">false</ATT>
+                        <ATT name="Direction">In</ATT>
+                        <ATT name="IsConstant">false</ATT>
+                        <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                        <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                        <ATT name="Value"></ATT>
+                        <ATT name="Name"><![CDATA[targetX]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="RepresentedFeature">
+                          <REFOBJ>
+                            <ID name="targetX" mc="Standard.Port" uid="969c3621-9da9-43b8-be57-c396d84f14ec"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="targetY" mc="Standard.Port" uid="ad20a9ee-e879-4dae-8f38-03f760b25d95"/>
+                      <ATTRIBUTES>
+                        <ATT name="IsBehavior">false</ATT>
+                        <ATT name="IsService">true</ATT>
+                        <ATT name="IsConjugated">false</ATT>
+                        <ATT name="Direction">In</ATT>
+                        <ATT name="IsConstant">false</ATT>
+                        <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                        <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                        <ATT name="Value"></ATT>
+                        <ATT name="Name"><![CDATA[targetY]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="RepresentedFeature">
+                          <REFOBJ>
+                            <ID name="targetY" mc="Standard.Port" uid="7839657a-749c-47a0-8392-3f3dc0297810"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="targetZ" mc="Standard.Port" uid="8c947d6d-52a9-4843-ba90-c93597de1c26"/>
+                      <ATTRIBUTES>
+                        <ATT name="IsBehavior">false</ATT>
+                        <ATT name="IsService">true</ATT>
+                        <ATT name="IsConjugated">false</ATT>
+                        <ATT name="Direction">In</ATT>
+                        <ATT name="IsConstant">false</ATT>
+                        <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                        <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                        <ATT name="Value"></ATT>
+                        <ATT name="Name"><![CDATA[targetZ]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="RepresentedFeature">
+                          <REFOBJ>
+                            <ID name="targetZ" mc="Standard.Port" uid="82f00cfe-319d-49d7-b78b-6a2058fc46ad"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
@@ -4125,6 +4272,246 @@
                                     </COMP>
                                     <COMP relation="Opposite">
                                       <COMPID name="" mc="Standard.ConnectorEnd" uid="36e88e3b-e3b0-41b9-8477-03955fc560d4"/>
+                                    </COMP>
+                                  </DEPENDENCIES>
+                                </OBJECT>
+                              </COMP>
+                            </DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Extension">
+                    <FOREIGNID name="BlockInstance" mc="Standard.Stereotype" uid="281c6cee-4f91-476d-bbed-ac66449f0897"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="uavGlobalCont" mc="Standard.BindableInstance" uid="b6fda1e8-2e44-457c-9812-ce6a0375b68d"/>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[uavGlobalCont]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID name="UAV Global Controller" mc="Standard.Class" uid="3c3b8af9-1a3d-44ce-8287-88812732b80d"/>
+                  </LINK>
+                  <COMP relation="Part">
+                    <OBJECT>
+                      <ID name="uav1TargetX" mc="Standard.Port" uid="662aee55-64af-4a20-98b4-4989997ea864"/>
+                      <ATTRIBUTES>
+                        <ATT name="IsBehavior">false</ATT>
+                        <ATT name="IsService">true</ATT>
+                        <ATT name="IsConjugated">false</ATT>
+                        <ATT name="Direction">Out</ATT>
+                        <ATT name="IsConstant">false</ATT>
+                        <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                        <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                        <ATT name="Value"></ATT>
+                        <ATT name="Name"><![CDATA[uav1TargetX]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="RepresentedFeature">
+                          <REFOBJ>
+                            <ID name="uav1TargetX" mc="Standard.Port" uid="c6605146-4910-4adf-9f39-4bb9d5008748"/>
+                          </REFOBJ>
+                        </LINK>
+                        <COMP relation="OwnedEnd">
+                          <OBJECT>
+                            <ID name="" mc="Standard.ConnectorEnd" uid="1c6716fc-3fdb-4a50-9a47-8302f5e55d7d"/>
+                            <ATTRIBUTES>
+                              <ATT name="IsOrdered">false</ATT>
+                              <ATT name="IsUnique">false</ATT>
+                              <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                              <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                              <ATT name="Name"></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES>
+                              <COMP relation="Link">
+                                <OBJECT>
+                                  <ID name="" mc="Standard.Connector" uid="24d5b9d2-8dcb-4cef-838f-c65d336d5534"/>
+                                  <ATTRIBUTES>
+                                    <ATT name="Name"></ATT>
+                                    <ATT name="status">1970354901745664</ATT>
+                                  </ATTRIBUTES>
+                                  <DEPENDENCIES></DEPENDENCIES>
+                                </OBJECT>
+                              </COMP>
+                              <LINK relation="Target">
+                                <REFOBJ>
+                                  <ID name="targetX" mc="Standard.Port" uid="8da6bda1-ac7a-4c57-922b-f2fea0613689"/>
+                                </REFOBJ>
+                              </LINK>
+                              <COMP relation="Opposite">
+                                <OBJECT>
+                                  <ID name="" mc="Standard.ConnectorEnd" uid="c29ac273-e363-452a-8672-7dabf7fcbfa9"/>
+                                  <ATTRIBUTES>
+                                    <ATT name="IsOrdered">false</ATT>
+                                    <ATT name="IsUnique">false</ATT>
+                                    <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                                    <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                                    <ATT name="Name"></ATT>
+                                    <ATT name="status">1970354901745664</ATT>
+                                  </ATTRIBUTES>
+                                  <DEPENDENCIES>
+                                    <COMP relation="Link">
+                                      <COMPID name="" mc="Standard.Connector" uid="24d5b9d2-8dcb-4cef-838f-c65d336d5534"/>
+                                    </COMP>
+                                    <COMP relation="Opposite">
+                                      <COMPID name="" mc="Standard.ConnectorEnd" uid="1c6716fc-3fdb-4a50-9a47-8302f5e55d7d"/>
+                                    </COMP>
+                                  </DEPENDENCIES>
+                                </OBJECT>
+                              </COMP>
+                            </DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="uav1TargetY" mc="Standard.Port" uid="9094ca71-a1f3-42f1-889d-42b304dcbbf8"/>
+                      <ATTRIBUTES>
+                        <ATT name="IsBehavior">false</ATT>
+                        <ATT name="IsService">true</ATT>
+                        <ATT name="IsConjugated">false</ATT>
+                        <ATT name="Direction">Out</ATT>
+                        <ATT name="IsConstant">false</ATT>
+                        <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                        <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                        <ATT name="Value"></ATT>
+                        <ATT name="Name"><![CDATA[uav1TargetY]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="RepresentedFeature">
+                          <REFOBJ>
+                            <ID name="uav1TargetY" mc="Standard.Port" uid="5c154313-96b9-4af7-873c-b0f77bcb08dd"/>
+                          </REFOBJ>
+                        </LINK>
+                        <COMP relation="OwnedEnd">
+                          <OBJECT>
+                            <ID name="" mc="Standard.ConnectorEnd" uid="b6624f67-87bd-45f6-96e7-10bd9a868556"/>
+                            <ATTRIBUTES>
+                              <ATT name="IsOrdered">false</ATT>
+                              <ATT name="IsUnique">false</ATT>
+                              <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                              <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                              <ATT name="Name"></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES>
+                              <COMP relation="Link">
+                                <OBJECT>
+                                  <ID name="" mc="Standard.Connector" uid="d4d04fb6-37e9-4396-b60f-15539043c233"/>
+                                  <ATTRIBUTES>
+                                    <ATT name="Name"></ATT>
+                                    <ATT name="status">1970354901745664</ATT>
+                                  </ATTRIBUTES>
+                                  <DEPENDENCIES></DEPENDENCIES>
+                                </OBJECT>
+                              </COMP>
+                              <LINK relation="Target">
+                                <REFOBJ>
+                                  <ID name="targetY" mc="Standard.Port" uid="ad20a9ee-e879-4dae-8f38-03f760b25d95"/>
+                                </REFOBJ>
+                              </LINK>
+                              <COMP relation="Opposite">
+                                <OBJECT>
+                                  <ID name="" mc="Standard.ConnectorEnd" uid="9eb84884-ed35-4e86-a090-944839fce4ce"/>
+                                  <ATTRIBUTES>
+                                    <ATT name="IsOrdered">false</ATT>
+                                    <ATT name="IsUnique">false</ATT>
+                                    <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                                    <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                                    <ATT name="Name"></ATT>
+                                    <ATT name="status">1970354901745664</ATT>
+                                  </ATTRIBUTES>
+                                  <DEPENDENCIES>
+                                    <COMP relation="Link">
+                                      <COMPID name="" mc="Standard.Connector" uid="d4d04fb6-37e9-4396-b60f-15539043c233"/>
+                                    </COMP>
+                                    <COMP relation="Opposite">
+                                      <COMPID name="" mc="Standard.ConnectorEnd" uid="b6624f67-87bd-45f6-96e7-10bd9a868556"/>
+                                    </COMP>
+                                  </DEPENDENCIES>
+                                </OBJECT>
+                              </COMP>
+                            </DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="uav1TargetZ" mc="Standard.Port" uid="d5a34c4f-b4c2-440a-b856-0136c3599c7c"/>
+                      <ATTRIBUTES>
+                        <ATT name="IsBehavior">false</ATT>
+                        <ATT name="IsService">true</ATT>
+                        <ATT name="IsConjugated">false</ATT>
+                        <ATT name="Direction">Out</ATT>
+                        <ATT name="IsConstant">false</ATT>
+                        <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                        <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                        <ATT name="Value"></ATT>
+                        <ATT name="Name"><![CDATA[uav1TargetZ]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="RepresentedFeature">
+                          <REFOBJ>
+                            <ID name="uav1TargetZ" mc="Standard.Port" uid="b6daeebc-de7e-42dc-bc1b-56f014296003"/>
+                          </REFOBJ>
+                        </LINK>
+                        <COMP relation="OwnedEnd">
+                          <OBJECT>
+                            <ID name="" mc="Standard.ConnectorEnd" uid="34080201-2a5b-4d5f-b373-f21adbe69c84"/>
+                            <ATTRIBUTES>
+                              <ATT name="IsOrdered">false</ATT>
+                              <ATT name="IsUnique">false</ATT>
+                              <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                              <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                              <ATT name="Name"></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES>
+                              <COMP relation="Link">
+                                <OBJECT>
+                                  <ID name="" mc="Standard.Connector" uid="455b095d-623c-468e-84e0-19033a6d846f"/>
+                                  <ATTRIBUTES>
+                                    <ATT name="Name"></ATT>
+                                    <ATT name="status">1970354901745664</ATT>
+                                  </ATTRIBUTES>
+                                  <DEPENDENCIES></DEPENDENCIES>
+                                </OBJECT>
+                              </COMP>
+                              <LINK relation="Target">
+                                <REFOBJ>
+                                  <ID name="targetZ" mc="Standard.Port" uid="8c947d6d-52a9-4843-ba90-c93597de1c26"/>
+                                </REFOBJ>
+                              </LINK>
+                              <COMP relation="Opposite">
+                                <OBJECT>
+                                  <ID name="" mc="Standard.ConnectorEnd" uid="72085556-1e2a-4b3f-8d1a-f3e778e8463a"/>
+                                  <ATTRIBUTES>
+                                    <ATT name="IsOrdered">false</ATT>
+                                    <ATT name="IsUnique">false</ATT>
+                                    <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                                    <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                                    <ATT name="Name"></ATT>
+                                    <ATT name="status">1970354901745664</ATT>
+                                  </ATTRIBUTES>
+                                  <DEPENDENCIES>
+                                    <COMP relation="Link">
+                                      <COMPID name="" mc="Standard.Connector" uid="455b095d-623c-468e-84e0-19033a6d846f"/>
+                                    </COMP>
+                                    <COMP relation="Opposite">
+                                      <COMPID name="" mc="Standard.ConnectorEnd" uid="34080201-2a5b-4d5f-b373-f21adbe69c84"/>
                                     </COMP>
                                   </DEPENDENCIES>
                                 </OBJECT>
