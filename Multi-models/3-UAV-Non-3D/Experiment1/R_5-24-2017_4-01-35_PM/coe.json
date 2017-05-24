@@ -1,0 +1,1 @@
+{"startTime":0,"endTime":10,"multimodel_path":"Multi-models/3-UAV-Non-3D/3-UAV-Non-3D.mm.json","livestream":{"{uav}.uav3":["posX"],"{uav}.uav2":["posX"],"{uav}.uav":["posX"]},"algorithm":{"type":"fixed-step","size":0.1}}
