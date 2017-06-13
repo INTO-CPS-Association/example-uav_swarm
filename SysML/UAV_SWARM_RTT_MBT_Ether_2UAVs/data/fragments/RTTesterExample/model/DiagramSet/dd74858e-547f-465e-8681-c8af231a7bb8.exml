@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="RTTesterToy" version="4">
+  <OBJECT>
+    <ID name="RTTesterToy" mc="Standard.DiagramSet" uid="dd74858e-547f-465e-8681-c8af231a7bb8"/>
+    <PID name="RTTesterExample" mc="Standard.DiagramSet" uid="d0f8aa8c-b46e-4dca-8fff-90da3801d276"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[RTTesterToy]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

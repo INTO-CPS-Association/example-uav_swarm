@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="signed int" version="4">
+  <OBJECT>
+    <ID name="signed int" mc="Standard.DataType" uid="b577f3ac-52f3-439e-89a6-f75f1de0de5b"/>
+    <PID name="Datatypes" mc="Standard.Package" uid="c8ad00d6-3162-4382-8429-bbb07a4b89f0"/>
+    <ATTRIBUTES>
+      <ATT name="IsElementary">true</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">true</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[signed int]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

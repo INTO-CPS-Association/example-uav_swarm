@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="TE2SUT" version="4">
+  <OBJECT>
+    <ID name="TE2SUT" mc="Standard.Stereotype" uid="f5ff8a2c-20b1-407d-b75b-77c0286f87dc"/>
+    <PID name="RTTMBTProfile" mc="Standard.Profile" uid="3745d6b6-7184-4c0d-ac0d-91e27748da99"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"></ATT>
+      <ATT name="IsHidden">false</ATT>
+      <ATT name="LabelKey"><![CDATA[TE2SUT]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Interface]]></ATT>
+      <ATT name="Name"><![CDATA[TE2SUT]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

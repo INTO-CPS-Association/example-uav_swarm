@@ -1,0 +1,1673 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:INTOCPS="http:///schemas/INTOCPS/_LcxREUaxEeerobMaL6iksg/0" xmlns:RTTMBTProfile="http:///schemas/RTTMBTProfile/_LcxREEaxEeerobMaL6iksg/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:sysml="http:///schemas/sysml/_Lc7CEEaxEeerobMaL6iksg/0" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/INTOCPS/_LcxREUaxEeerobMaL6iksg/0 INTOCPS.profile.xmi#_LdhfB0axEeerobMaL6iksg http:///schemas/RTTMBTProfile/_LcxREEaxEeerobMaL6iksg/0 RTTMBTProfile.profile.xmi#_Lc7CGEaxEeerobMaL6iksg http:///schemas/sysml/_Lc7CEEaxEeerobMaL6iksg/0 sysml.profile.xmi#_Ldqo90axEeerobMaL6iksg">
+  <uml:Model xmi:id="_LceWIEaxEeerobMaL6iksg" name="UAV_Swarm_RTT_MBT_2">
+    <eAnnotations xmi:id="_LceWIUaxEeerobMaL6iksg" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_LceWIkaxEeerobMaL6iksg" name="exporterVersion">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_LceWI0axEeerobMaL6iksg" value="3.0.0"/>
+      </contents>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Package" xmi:id="_LceWJEaxEeerobMaL6iksg" name="Datatypes">
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_LceWJUaxEeerobMaL6iksg" name="bool" isLeaf="true"/>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_LceWJkaxEeerobMaL6iksg" name="char" isLeaf="true"/>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_LceWJ0axEeerobMaL6iksg" name="float" isLeaf="true"/>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_LceWKEaxEeerobMaL6iksg" name="int" isLeaf="true"/>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_LceWKUaxEeerobMaL6iksg" name="signed char" isLeaf="true"/>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_LceWKkaxEeerobMaL6iksg" name="signed int" isLeaf="true"/>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_LceWK0axEeerobMaL6iksg" name="timer" isLeaf="true"/>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_LceWLEaxEeerobMaL6iksg" name="unsigned char" isLeaf="true"/>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_LceWLUaxEeerobMaL6iksg" name="unsigned int" isLeaf="true"/>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_LceWLkaxEeerobMaL6iksg" name="void" isLeaf="true"/>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_LceWL0axEeerobMaL6iksg" name="double" isLeaf="true"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_LceWMEaxEeerobMaL6iksg" name="System">
+      <ownedAttribute xmi:id="_LceWMUaxEeerobMaL6iksg" name="SystemUnderTest" visibility="public" type="_LceWR0axEeerobMaL6iksg" aggregation="composite" association="_LceWQUaxEeerobMaL6iksg"/>
+      <ownedAttribute xmi:id="_LceWMkaxEeerobMaL6iksg" name="TestEnvironment" visibility="public" type="_LceWhkaxEeerobMaL6iksg" aggregation="composite" association="_LceWREaxEeerobMaL6iksg"/>
+      <ownedConnector xmi:id="_LceWM0axEeerobMaL6iksg">
+        <end xmi:id="_LceWNEaxEeerobMaL6iksg" isUnique="false" role="_LceWSUaxEeerobMaL6iksg" partWithPort="_LceWMUaxEeerobMaL6iksg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LceWNUaxEeerobMaL6iksg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LceWNkaxEeerobMaL6iksg"/>
+        </end>
+        <end xmi:id="_LceWN0axEeerobMaL6iksg" isUnique="false" role="_LceWiEaxEeerobMaL6iksg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LceWOEaxEeerobMaL6iksg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LceWOUaxEeerobMaL6iksg"/>
+        </end>
+      </ownedConnector>
+      <ownedConnector xmi:id="_LceWOkaxEeerobMaL6iksg">
+        <end xmi:id="_LceWO0axEeerobMaL6iksg" isUnique="false" role="_LceWh0axEeerobMaL6iksg" partWithPort="_LceWMkaxEeerobMaL6iksg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LceWPEaxEeerobMaL6iksg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LceWPUaxEeerobMaL6iksg"/>
+        </end>
+        <end xmi:id="_LceWPkaxEeerobMaL6iksg" isUnique="false" role="_LceWSEaxEeerobMaL6iksg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LceWP0axEeerobMaL6iksg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LceWQEaxEeerobMaL6iksg"/>
+        </end>
+      </ownedConnector>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_LceWQUaxEeerobMaL6iksg" memberEnd="_LceWMUaxEeerobMaL6iksg _LceWQkaxEeerobMaL6iksg">
+      <ownedEnd xmi:id="_LceWQkaxEeerobMaL6iksg" visibility="public" type="_LceWMEaxEeerobMaL6iksg" association="_LceWQUaxEeerobMaL6iksg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LceWQ0axEeerobMaL6iksg"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_LceWREaxEeerobMaL6iksg" memberEnd="_LceWMkaxEeerobMaL6iksg _LceWRUaxEeerobMaL6iksg">
+      <ownedEnd xmi:id="_LceWRUaxEeerobMaL6iksg" visibility="public" type="_LceWMEaxEeerobMaL6iksg" association="_LceWREaxEeerobMaL6iksg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LceWRkaxEeerobMaL6iksg"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_LceWR0axEeerobMaL6iksg" name="SystemUnderTest">
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_LceWSEaxEeerobMaL6iksg" name="Stimulation" type="_LceXSEaxEeerobMaL6iksg"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_LceWSUaxEeerobMaL6iksg" name="Indication" clientDependency="_LceWhEaxEeerobMaL6iksg _LceWhUaxEeerobMaL6iksg" type="_LceXhUaxEeerobMaL6iksg"/>
+      <ownedAttribute xmi:id="_LceWSkaxEeerobMaL6iksg" name="UAV1_CTRLI" visibility="public" type="_LceWj0axEeerobMaL6iksg" aggregation="composite" association="_LceWeEaxEeerobMaL6iksg"/>
+      <ownedAttribute xmi:id="_LceWS0axEeerobMaL6iksg" name="GLOBAL_CTRLI" visibility="public" type="_LceXDkaxEeerobMaL6iksg" aggregation="composite" association="_LceWe0axEeerobMaL6iksg"/>
+      <ownedAttribute xmi:id="_LceWTEaxEeerobMaL6iksg" name="EtherI" visibility="public" type="_LceXq0axEeerobMaL6iksg" aggregation="composite" association="_LceWfkaxEeerobMaL6iksg"/>
+      <ownedAttribute xmi:id="_LceWTUaxEeerobMaL6iksg" name="UAV2_CTRLI" visibility="public" type="_LceYR0axEeerobMaL6iksg" aggregation="composite" association="_LceWgUaxEeerobMaL6iksg"/>
+      <ownedConnector xmi:id="_LceWTkaxEeerobMaL6iksg" name="U1InPort">
+        <end xmi:id="_LceWT0axEeerobMaL6iksg" isUnique="false" role="_LceWkEaxEeerobMaL6iksg" partWithPort="_LceWSkaxEeerobMaL6iksg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LceWUEaxEeerobMaL6iksg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LceWUUaxEeerobMaL6iksg"/>
+        </end>
+        <end xmi:id="_LceWUkaxEeerobMaL6iksg" isUnique="false" role="_LceXrkaxEeerobMaL6iksg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LceWU0axEeerobMaL6iksg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LceWVEaxEeerobMaL6iksg"/>
+        </end>
+      </ownedConnector>
+      <ownedConnector xmi:id="_LceWVUaxEeerobMaL6iksg" name="TarPosInPort">
+        <end xmi:id="_LceWVkaxEeerobMaL6iksg" isUnique="false" role="_LceXD0axEeerobMaL6iksg" partWithPort="_LceWS0axEeerobMaL6iksg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LceWV0axEeerobMaL6iksg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LceWWEaxEeerobMaL6iksg"/>
+        </end>
+        <end xmi:id="_LceWWUaxEeerobMaL6iksg" isUnique="false" role="_LceXrEaxEeerobMaL6iksg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LceWWkaxEeerobMaL6iksg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LceWW0axEeerobMaL6iksg"/>
+        </end>
+      </ownedConnector>
+      <ownedConnector xmi:id="_LceWXEaxEeerobMaL6iksg" name="CurPosOutPort">
+        <end xmi:id="_LceWXUaxEeerobMaL6iksg" isUnique="false" role="_LceXrUaxEeerobMaL6iksg" partWithPort="_LceWTEaxEeerobMaL6iksg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LceWXkaxEeerobMaL6iksg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LceWX0axEeerobMaL6iksg"/>
+        </end>
+        <end xmi:id="_LceWYEaxEeerobMaL6iksg" isUnique="false" role="_LceXEEaxEeerobMaL6iksg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LceWYUaxEeerobMaL6iksg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LceWYkaxEeerobMaL6iksg"/>
+        </end>
+      </ownedConnector>
+      <ownedConnector xmi:id="_LceWY0axEeerobMaL6iksg" name="U1OutPort">
+        <end xmi:id="_LceWZEaxEeerobMaL6iksg" isUnique="false" role="_LceXr0axEeerobMaL6iksg" partWithPort="_LceWTEaxEeerobMaL6iksg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LceWZUaxEeerobMaL6iksg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LceWZkaxEeerobMaL6iksg"/>
+        </end>
+        <end xmi:id="_LceWZ0axEeerobMaL6iksg" isUnique="false" role="_LceWkUaxEeerobMaL6iksg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LceWaEaxEeerobMaL6iksg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LceWaUaxEeerobMaL6iksg"/>
+        </end>
+      </ownedConnector>
+      <ownedConnector xmi:id="_LceWakaxEeerobMaL6iksg" name="U2OutPort">
+        <end xmi:id="_LceWa0axEeerobMaL6iksg" isUnique="false" role="_LceXsUaxEeerobMaL6iksg" partWithPort="_LceWTEaxEeerobMaL6iksg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LceWbEaxEeerobMaL6iksg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LceWbUaxEeerobMaL6iksg"/>
+        </end>
+        <end xmi:id="_LceWbkaxEeerobMaL6iksg" isUnique="false" role="_LceYSUaxEeerobMaL6iksg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LceWb0axEeerobMaL6iksg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LceWcEaxEeerobMaL6iksg"/>
+        </end>
+      </ownedConnector>
+      <ownedConnector xmi:id="_LceWcUaxEeerobMaL6iksg" name="U2InPort">
+        <end xmi:id="_LceWckaxEeerobMaL6iksg" isUnique="false" role="_LceYSEaxEeerobMaL6iksg" partWithPort="_LceWTUaxEeerobMaL6iksg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LceWc0axEeerobMaL6iksg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LceWdEaxEeerobMaL6iksg"/>
+        </end>
+        <end xmi:id="_LceWdUaxEeerobMaL6iksg" isUnique="false" role="_LceXsEaxEeerobMaL6iksg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LceWdkaxEeerobMaL6iksg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LceWd0axEeerobMaL6iksg"/>
+        </end>
+      </ownedConnector>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_LceWeEaxEeerobMaL6iksg" memberEnd="_LceWSkaxEeerobMaL6iksg _LceWeUaxEeerobMaL6iksg">
+      <ownedEnd xmi:id="_LceWeUaxEeerobMaL6iksg" visibility="public" type="_LceWR0axEeerobMaL6iksg" association="_LceWeEaxEeerobMaL6iksg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LceWekaxEeerobMaL6iksg"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_LceWe0axEeerobMaL6iksg" memberEnd="_LceWS0axEeerobMaL6iksg _LceWfEaxEeerobMaL6iksg">
+      <ownedEnd xmi:id="_LceWfEaxEeerobMaL6iksg" visibility="public" type="_LceWR0axEeerobMaL6iksg" association="_LceWe0axEeerobMaL6iksg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LceWfUaxEeerobMaL6iksg"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_LceWfkaxEeerobMaL6iksg" memberEnd="_LceWTEaxEeerobMaL6iksg _LceWf0axEeerobMaL6iksg">
+      <ownedEnd xmi:id="_LceWf0axEeerobMaL6iksg" visibility="public" type="_LceWR0axEeerobMaL6iksg" association="_LceWfkaxEeerobMaL6iksg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LceWgEaxEeerobMaL6iksg"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_LceWgUaxEeerobMaL6iksg" memberEnd="_LceWTUaxEeerobMaL6iksg _LceWgkaxEeerobMaL6iksg">
+      <ownedEnd xmi:id="_LceWgkaxEeerobMaL6iksg" visibility="public" type="_LceWR0axEeerobMaL6iksg" association="_LceWgUaxEeerobMaL6iksg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LceWg0axEeerobMaL6iksg"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_LceWhEaxEeerobMaL6iksg" name="" supplier="_LceWiEaxEeerobMaL6iksg" client="_LceWSUaxEeerobMaL6iksg"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_LceWhUaxEeerobMaL6iksg" name="" supplier="_LceWiEaxEeerobMaL6iksg" client="_LceWSUaxEeerobMaL6iksg"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_LceWhkaxEeerobMaL6iksg" name="TestEnvironment" isActive="true">
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_LceWh0axEeerobMaL6iksg" name="Stimulation" clientDependency="_LceWjUaxEeerobMaL6iksg _LceWjkaxEeerobMaL6iksg" type="_LceXSEaxEeerobMaL6iksg"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_LceWiEaxEeerobMaL6iksg" name="Indication" type="_LceXhUaxEeerobMaL6iksg"/>
+      <ownedAttribute xmi:id="_LceWiUaxEeerobMaL6iksg" name="tesim" visibility="public" type="_LceY7EaxEeerobMaL6iksg" aggregation="composite" association="_LceWi0axEeerobMaL6iksg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LceWikaxEeerobMaL6iksg"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_LceWi0axEeerobMaL6iksg" memberEnd="_LceWiUaxEeerobMaL6iksg _LceWjEaxEeerobMaL6iksg">
+      <ownedEnd xmi:id="_LceWjEaxEeerobMaL6iksg" visibility="public" type="_LceWhkaxEeerobMaL6iksg" association="_LceWi0axEeerobMaL6iksg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_LceWjUaxEeerobMaL6iksg" name="" supplier="_LceWSEaxEeerobMaL6iksg" client="_LceWh0axEeerobMaL6iksg"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_LceWjkaxEeerobMaL6iksg" name="" supplier="_LceWSEaxEeerobMaL6iksg" client="_LceWh0axEeerobMaL6iksg"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_LceWj0axEeerobMaL6iksg" name="UAV1_CTRL">
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_LceWkEaxEeerobMaL6iksg" name="U1InPort" type="_LceYIUaxEeerobMaL6iksg"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_LceWkUaxEeerobMaL6iksg" name="U1OutPort" type="_LceYLkaxEeerobMaL6iksg"/>
+      <ownedAttribute xmi:id="_LceWkkaxEeerobMaL6iksg" name="t" visibility="public" type="_LceWK0axEeerobMaL6iksg">
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceWk0axEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceWlEaxEeerobMaL6iksg" name="throttleIpart" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceWlUaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceWlkaxEeerobMaL6iksg" name="throttlePpart" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceWl0axEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceWmEaxEeerobMaL6iksg" name="throttleDpart" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceWmUaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceWmkaxEeerobMaL6iksg" name="xIpart" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceWm0axEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceWnEaxEeerobMaL6iksg" name="xPpart" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceWnUaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceWnkaxEeerobMaL6iksg" name="xDpart" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceWn0axEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceWoEaxEeerobMaL6iksg" name="desiredPitch" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceWoUaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceWokaxEeerobMaL6iksg" name="yDpart" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceWo0axEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceWpEaxEeerobMaL6iksg" name="yPpart" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceWpUaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceWpkaxEeerobMaL6iksg" name="yIpart" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceWp0axEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceWqEaxEeerobMaL6iksg" name="desiredRoll" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceWqUaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceWqkaxEeerobMaL6iksg" name="tarX" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceWq0axEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceWrEaxEeerobMaL6iksg" name="tarY" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceWrUaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceWrkaxEeerobMaL6iksg" name="tarZ" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceWr0axEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceWsEaxEeerobMaL6iksg" name="curPosX2" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceWsUaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceWskaxEeerobMaL6iksg" name="curPosY2" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceWs0axEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceWtEaxEeerobMaL6iksg" name="curPosZ2" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceWtUaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_LceWtkaxEeerobMaL6iksg" name="UAV1_CTRL">
+        <region xmi:id="_LceWt0axEeerobMaL6iksg" name="FLASH_CTRL">
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_LceWuEaxEeerobMaL6iksg" name="initial"/>
+          <subvertex xmi:type="uml:State" xmi:id="_LceWuUaxEeerobMaL6iksg" name="Waiting">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceWukaxEeerobMaL6iksg">
+              <body>t.reset();</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceWu0axEeerobMaL6iksg" name="PreThrottle">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceWvEaxEeerobMaL6iksg">
+              <body>throttleIpart=throttleIpart+((tarZ-posZ1)*0.03); throttlePpart=(tarZ-posZ1)*1.2;</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceWvUaxEeerobMaL6iksg" name="PostThrottle">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceWvkaxEeerobMaL6iksg">
+              <body>throttleOut1=throttleIpart + throttlePpart - throttleDpart;</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceWv0axEeerobMaL6iksg" name="PrePitch">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceWwEaxEeerobMaL6iksg">
+              <body>yIpart=yIpart+((posY1-tarY) * 0.00); yPpart=(posY1-tarY) * 0.28; yDpart=velY1*(-0.2);</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceWwUaxEeerobMaL6iksg" name="PostPitch">
+            <exit xmi:type="uml:OpaqueBehavior" xmi:id="_LceWwkaxEeerobMaL6iksg">
+              <body>pitchOut1=desiredPitch;</body>
+            </exit>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceWw0axEeerobMaL6iksg" name="PreRoll">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceWxEaxEeerobMaL6iksg">
+              <body>xIpart=xIpart+((tarX - posX1) * 0.00);  xPpart=(tarX-posX1)*0.28;  xDpart=velX1*0.2;</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceWxUaxEeerobMaL6iksg" name="PostRoll">
+            <exit xmi:type="uml:OpaqueBehavior" xmi:id="_LceWxkaxEeerobMaL6iksg">
+              <body>rollOut1=desiredRoll;</body>
+            </exit>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceWx0axEeerobMaL6iksg" name="Setup">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceWyEaxEeerobMaL6iksg">
+              <body>pitchOut1=0;yawOut1=0;rollOut1=0;throttleOut1=0;</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceWyUaxEeerobMaL6iksg" name="Throttle"/>
+          <subvertex xmi:type="uml:State" xmi:id="_LceWykaxEeerobMaL6iksg" name="Pitch">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceWy0axEeerobMaL6iksg">
+              <body>desiredPitch = yIpart + yPpart - yDpart;</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceWzEaxEeerobMaL6iksg" name="Roll">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceWzUaxEeerobMaL6iksg">
+              <body>desiredRoll = xIpart + xPpart - xDpart;</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceWzkaxEeerobMaL6iksg" name="PreUpdateTargetPos">
+            <ownedComment xmi:id="_LceWz0axEeerobMaL6iksg">
+              <body>There are up to two incoming packages. One from UAV2  through broadcast and one from Global Controller through unicast. So their address would be 0xF2 and 0x1E respectively.
+(Addresses for Global Controller, UAV1 Controller and UAV2 Controller are 0xE, 0x1, and 0x2 seperately.)
+
+We need to process four possible combinations. 
+- Incoming package from Global Controller always is placed in P1
+- Incoming package from UAV2 always is placed in P2
+------------------------------
+P2\P1 |  0x1E     |    0   |
+------------------------------
+0xF2    |   P1P2  |  P2   |  
+------------------------------
+   0       |   P1       |   X     |  
+------------------------------</body>
+            </ownedComment>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceW0EaxEeerobMaL6iksg" name="UpdateTargetCurPos">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceW0UaxEeerobMaL6iksg">
+              <body>tarX=U1Eout1p1;tarY=U1Eout1p2;tarZ=U1Eout1p3;curPosX2=U1Eout2p1;curPosY2=U1Eout2p2;curPosZ2=U1Eout2p3;</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceW0kaxEeerobMaL6iksg" name="UpdateTargetPos">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceW00axEeerobMaL6iksg">
+              <body>tarX=U1Eout1p1;tarY=U1Eout1p2;tarZ=U1Eout1p3;</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceW1EaxEeerobMaL6iksg" name="UpdateCurPos">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceW1UaxEeerobMaL6iksg">
+              <body>curPosX2=U1Eout2p1;curPosY2=U1Eout2p2;curPosZ2=U1Eout2p3;</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceW1kaxEeerobMaL6iksg" name="PostUpdateTarCurPos">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceW10axEeerobMaL6iksg">
+              <body>U1Ein1a=0xF1;U1Ein1p1=posX1;U1Ein1p2=posY1;U1Ein1p3=posZ1;</body>
+            </entry>
+          </subvertex>
+          <transition xmi:id="_LceW2EaxEeerobMaL6iksg" source="_LceWuEaxEeerobMaL6iksg" target="_LceWx0axEeerobMaL6iksg"/>
+          <transition xmi:id="_LceW2UaxEeerobMaL6iksg" source="_LceWuUaxEeerobMaL6iksg" target="_LceWzkaxEeerobMaL6iksg" guard="_LceW2kaxEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceW2kaxEeerobMaL6iksg" name="t.elapsed(40)" constrainedElement="_LceW2UaxEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceW20axEeerobMaL6iksg" value="t.elapsed(40)"/>
+            </ownedRule>
+          </transition>
+          <transition xmi:id="_LceW3EaxEeerobMaL6iksg" name="Transition" source="_LceWu0axEeerobMaL6iksg" target="_LceWyUaxEeerobMaL6iksg" guard="_LceW3UaxEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceW3UaxEeerobMaL6iksg" name="velZ1>0" constrainedElement="_LceW3EaxEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceW3kaxEeerobMaL6iksg" value="velZ1>0"/>
+            </ownedRule>
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_LceW30axEeerobMaL6iksg">
+              <body>throttleDpart=velZ1*0.5;</body>
+            </effect>
+          </transition>
+          <transition xmi:id="_LceW4EaxEeerobMaL6iksg" name="Transition1" source="_LceWu0axEeerobMaL6iksg" target="_LceWyUaxEeerobMaL6iksg" guard="_LceW4UaxEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceW4UaxEeerobMaL6iksg" name="velZ1&lt;=0" constrainedElement="_LceW4EaxEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceW4kaxEeerobMaL6iksg" value="velZ1&lt;=0"/>
+            </ownedRule>
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_LceW40axEeerobMaL6iksg">
+              <body>throttleDpart=velZ1*1.0;</body>
+            </effect>
+          </transition>
+          <transition xmi:id="_LceW5EaxEeerobMaL6iksg" name="Transition" source="_LceWvUaxEeerobMaL6iksg" target="_LceWv0axEeerobMaL6iksg"/>
+          <transition xmi:id="_LceW5UaxEeerobMaL6iksg" name="Transition" source="_LceWv0axEeerobMaL6iksg" target="_LceWykaxEeerobMaL6iksg"/>
+          <transition xmi:id="_LceW5kaxEeerobMaL6iksg" name="Transition" source="_LceWwUaxEeerobMaL6iksg" target="_LceWw0axEeerobMaL6iksg"/>
+          <transition xmi:id="_LceW50axEeerobMaL6iksg" name="Transition" source="_LceWw0axEeerobMaL6iksg" target="_LceWzEaxEeerobMaL6iksg"/>
+          <transition xmi:id="_LceW6EaxEeerobMaL6iksg" name="Transition" source="_LceWxUaxEeerobMaL6iksg" target="_LceWuUaxEeerobMaL6iksg"/>
+          <transition xmi:id="_LceW6UaxEeerobMaL6iksg" name="Transition" source="_LceWx0axEeerobMaL6iksg" target="_LceWuUaxEeerobMaL6iksg"/>
+          <transition xmi:id="_LceW6kaxEeerobMaL6iksg" name="Transition" source="_LceWyUaxEeerobMaL6iksg" target="_LceWvUaxEeerobMaL6iksg"/>
+          <transition xmi:id="_LceW60axEeerobMaL6iksg" name="Transition" source="_LceWykaxEeerobMaL6iksg" target="_LceWwUaxEeerobMaL6iksg" guard="_LceW7EaxEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceW7EaxEeerobMaL6iksg" name="desiredPitch > 0.35" constrainedElement="_LceW60axEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceW7UaxEeerobMaL6iksg" value="desiredPitch > 0.35"/>
+            </ownedRule>
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_LceW7kaxEeerobMaL6iksg">
+              <body>desiredPitch=0.35;</body>
+            </effect>
+          </transition>
+          <transition xmi:id="_LceW70axEeerobMaL6iksg" name="Transition1" source="_LceWykaxEeerobMaL6iksg" target="_LceWwUaxEeerobMaL6iksg" guard="_LceW8EaxEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceW8EaxEeerobMaL6iksg" name="desiredPitch &lt; -0.35" constrainedElement="_LceW70axEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceW8UaxEeerobMaL6iksg" value="desiredPitch &lt; -0.35"/>
+            </ownedRule>
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_LceW8kaxEeerobMaL6iksg">
+              <body>desiredPitch =-0.35;</body>
+            </effect>
+          </transition>
+          <transition xmi:id="_LceW80axEeerobMaL6iksg" name="Transition2" source="_LceWykaxEeerobMaL6iksg" target="_LceWwUaxEeerobMaL6iksg" guard="_LceW9EaxEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceW9EaxEeerobMaL6iksg" name="(desiredPitch&lt;=0.35)&amp;&amp;(desiredPitch>=-0.35)" constrainedElement="_LceW80axEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceW9UaxEeerobMaL6iksg" value="(desiredPitch&lt;=0.35)&amp;&amp;(desiredPitch>=-0.35)"/>
+            </ownedRule>
+          </transition>
+          <transition xmi:id="_LceW9kaxEeerobMaL6iksg" name="Transition1" source="_LceWzEaxEeerobMaL6iksg" target="_LceWxUaxEeerobMaL6iksg" guard="_LceW90axEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceW90axEeerobMaL6iksg" name="desiredRoll&lt;-0.35" constrainedElement="_LceW9kaxEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceW-EaxEeerobMaL6iksg" value="desiredRoll&lt;-0.35"/>
+            </ownedRule>
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_LceW-UaxEeerobMaL6iksg">
+              <body>desiredRoll=-0.35;</body>
+            </effect>
+          </transition>
+          <transition xmi:id="_LceW-kaxEeerobMaL6iksg" name="Transition2" source="_LceWzEaxEeerobMaL6iksg" target="_LceWxUaxEeerobMaL6iksg" guard="_LceW-0axEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceW-0axEeerobMaL6iksg" name="(desiredRoll>=-0.35)&amp;&amp;(desiredRoll&lt;=0.35)" constrainedElement="_LceW-kaxEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceW_EaxEeerobMaL6iksg" value="(desiredRoll>=-0.35)&amp;&amp;(desiredRoll&lt;=0.35)"/>
+            </ownedRule>
+          </transition>
+          <transition xmi:id="_LceW_UaxEeerobMaL6iksg" name="Transition" source="_LceWzEaxEeerobMaL6iksg" target="_LceWxUaxEeerobMaL6iksg" guard="_LceW_kaxEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceW_kaxEeerobMaL6iksg" name="desiredRoll>0.35" constrainedElement="_LceW_UaxEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceW_0axEeerobMaL6iksg" value="desiredRoll>0.35"/>
+            </ownedRule>
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_LceXAEaxEeerobMaL6iksg">
+              <body>desiredRoll=0.35;</body>
+            </effect>
+          </transition>
+          <transition xmi:id="_LceXAUaxEeerobMaL6iksg" name="Transition" source="_LceWzkaxEeerobMaL6iksg" target="_LceW0EaxEeerobMaL6iksg" guard="_LceXAkaxEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceXAkaxEeerobMaL6iksg" name="(U1Eout1a==0x1E) &amp;&amp; (U1Eout2a==0xF2)" constrainedElement="_LceXAUaxEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceXA0axEeerobMaL6iksg" value="(U1Eout1a==0x1E) &amp;&amp; (U1Eout2a==0xF2)"/>
+            </ownedRule>
+          </transition>
+          <transition xmi:id="_LceXBEaxEeerobMaL6iksg" name="Transition1" source="_LceWzkaxEeerobMaL6iksg" target="_LceW0kaxEeerobMaL6iksg" guard="_LceXBUaxEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceXBUaxEeerobMaL6iksg" name="(U1Eout1a==0x1E) &amp;&amp; (U1Eout2a==0)" constrainedElement="_LceXBEaxEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceXBkaxEeerobMaL6iksg" value="(U1Eout1a==0x1E) &amp;&amp; (U1Eout2a==0)"/>
+            </ownedRule>
+          </transition>
+          <transition xmi:id="_LceXB0axEeerobMaL6iksg" name="Transition2" source="_LceWzkaxEeerobMaL6iksg" target="_LceW1EaxEeerobMaL6iksg" guard="_LceXCEaxEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceXCEaxEeerobMaL6iksg" name="(U1Eout1a==0) &amp;&amp; (U1Eout2a==0xF2)" constrainedElement="_LceXB0axEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceXCUaxEeerobMaL6iksg" value="(U1Eout1a==0) &amp;&amp; (U1Eout2a==0xF2)"/>
+            </ownedRule>
+          </transition>
+          <transition xmi:id="_LceXCkaxEeerobMaL6iksg" name="Transition" source="_LceW0EaxEeerobMaL6iksg" target="_LceW1kaxEeerobMaL6iksg"/>
+          <transition xmi:id="_LceXC0axEeerobMaL6iksg" name="Transition" source="_LceW0kaxEeerobMaL6iksg" target="_LceW1kaxEeerobMaL6iksg"/>
+          <transition xmi:id="_LceXDEaxEeerobMaL6iksg" name="Transition" source="_LceW1EaxEeerobMaL6iksg" target="_LceW1kaxEeerobMaL6iksg"/>
+          <transition xmi:id="_LceXDUaxEeerobMaL6iksg" name="Transition" source="_LceW1kaxEeerobMaL6iksg" target="_LceWu0axEeerobMaL6iksg"/>
+        </region>
+      </ownedBehavior>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_LceXDkaxEeerobMaL6iksg" name="GLOBAL_CTRL">
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_LceXD0axEeerobMaL6iksg" name="TarPosInPort" type="_LceXnkaxEeerobMaL6iksg"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_LceXEEaxEeerobMaL6iksg" name="CurPosOutPort" type="_LceYCEaxEeerobMaL6iksg"/>
+      <ownedAttribute xmi:id="_LceXEUaxEeerobMaL6iksg" name="t" visibility="public" type="_LceWK0axEeerobMaL6iksg">
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceXEkaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceXE0axEeerobMaL6iksg" name="curPosX1" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceXFEaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceXFUaxEeerobMaL6iksg" name="curPosY1" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceXFkaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceXF0axEeerobMaL6iksg" name="curPosZ1" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceXGEaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceXGUaxEeerobMaL6iksg" name="curPosY2" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceXGkaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceXG0axEeerobMaL6iksg" name="curPosX2" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceXHEaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceXHUaxEeerobMaL6iksg" name="curPosZ2" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceXHkaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_LceXH0axEeerobMaL6iksg" name="GLOBAL_CTRL">
+        <region xmi:id="_LceXIEaxEeerobMaL6iksg" name="OUTPUT_CTRL">
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_LceXIUaxEeerobMaL6iksg" name="initial"/>
+          <subvertex xmi:type="uml:State" xmi:id="_LceXIkaxEeerobMaL6iksg" name="IDLE">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceXI0axEeerobMaL6iksg">
+              <body>t.reset();</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceXJEaxEeerobMaL6iksg" name="SendUAV1TarPos">
+            <ownedComment xmi:id="_LceXJUaxEeerobMaL6iksg">
+              <body></body>
+            </ownedComment>
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceXJkaxEeerobMaL6iksg">
+              <body>GEin1a=0x1E;GEin1p1=targetX1;GEin1p2=targetY1;GEin1p3=targetZ1;</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceXJ0axEeerobMaL6iksg" name="SendUAV2TarPos">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceXKEaxEeerobMaL6iksg">
+              <body>GEin1a=0x2E;GEin1p1=targetX2;GEin1p2=targetY2;GEin1p3=targetZ2;</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceXKUaxEeerobMaL6iksg" name="UAV1CurPos">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceXKkaxEeerobMaL6iksg">
+              <body>curPosX1=GEout1p1;curPosY1=GEout1p2;curPosZ1=GEout1p3;</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceXK0axEeerobMaL6iksg" name="UAV12CurPos">
+            <ownedComment xmi:id="_LceXLEaxEeerobMaL6iksg">
+              <ownedComment xmi:id="_LceXLUaxEeerobMaL6iksg">
+                <body>There are up to two incoming packages. </body>
+              </ownedComment>
+              <body>There are up to two incoming packages. One from UAV1 and one from UAV2 through broadcast. So their address would be 0xF1 and 0xF2.
+(Addresses for Global Controller, UAV1 Controller and UAV2 Controller are 0xE, 0x1, and 0x2 seperately.)
+
+We need to process four possible combinations. 
+- Incoming package from UAV1 always is placed in P1, not P2. 
+- Incoming package from UAV2 could be placed in P1 or P2, depends on if there is a package from UAV1
+------------------------------------
+P2\P1 |  0xF1 | 0xF2 |   0  |
+------------------------------------
+0xF1    |    X    |    X   |   X  |  
+------------------------------------
+0xF2    |   Y     |    X   |   X  |  
+------------------------------------
+   0       |   Y     |    Y   |   Y  | 
+------------------------------------</body>
+            </ownedComment>
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceXLkaxEeerobMaL6iksg">
+              <body>curPosX1=GEout1p1;curPosY1=GEout1p2;curPosZ1=GEout1p3; curPosX2=GEout2p1;curPosY2=GEout2p2;curPosZ2=GEout2p3;</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceXL0axEeerobMaL6iksg" name="UAV2CurPos">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceXMEaxEeerobMaL6iksg">
+              <body>curPosX2=GEout2p1;curPosY2=GEout2p2;curPosZ2=GEout2p3;</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceXMUaxEeerobMaL6iksg" name="PreUpdateCurPos"/>
+          <transition xmi:id="_LceXMkaxEeerobMaL6iksg" source="_LceXIUaxEeerobMaL6iksg" target="_LceXIkaxEeerobMaL6iksg"/>
+          <transition xmi:id="_LceXM0axEeerobMaL6iksg" source="_LceXIkaxEeerobMaL6iksg" target="_LceXJEaxEeerobMaL6iksg" guard="_LceXNEaxEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceXNEaxEeerobMaL6iksg" name="t.elapsed(15)" constrainedElement="_LceXM0axEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceXNUaxEeerobMaL6iksg" value="t.elapsed(15)"/>
+            </ownedRule>
+          </transition>
+          <transition xmi:id="_LceXNkaxEeerobMaL6iksg" name="Transition" source="_LceXJEaxEeerobMaL6iksg" target="_LceXJ0axEeerobMaL6iksg" guard="_LceXN0axEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceXN0axEeerobMaL6iksg" name="t.elapsed(30)" constrainedElement="_LceXNkaxEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceXOEaxEeerobMaL6iksg" value="t.elapsed(30)"/>
+            </ownedRule>
+          </transition>
+          <transition xmi:id="_LceXOUaxEeerobMaL6iksg" name="Transition" source="_LceXJ0axEeerobMaL6iksg" target="_LceXMUaxEeerobMaL6iksg" guard="_LceXOkaxEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceXOkaxEeerobMaL6iksg" name="t.elapsed(40)" constrainedElement="_LceXOUaxEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceXO0axEeerobMaL6iksg" value="t.elapsed(40)"/>
+            </ownedRule>
+          </transition>
+          <transition xmi:id="_LceXPEaxEeerobMaL6iksg" name="Transition" source="_LceXKUaxEeerobMaL6iksg" target="_LceXIkaxEeerobMaL6iksg"/>
+          <transition xmi:id="_LceXPUaxEeerobMaL6iksg" name="Transition" source="_LceXK0axEeerobMaL6iksg" target="_LceXIkaxEeerobMaL6iksg"/>
+          <transition xmi:id="_LceXPkaxEeerobMaL6iksg" name="Transition" source="_LceXL0axEeerobMaL6iksg" target="_LceXIkaxEeerobMaL6iksg"/>
+          <transition xmi:id="_LceXP0axEeerobMaL6iksg" name="Transition2" source="_LceXMUaxEeerobMaL6iksg" target="_LceXL0axEeerobMaL6iksg" guard="_LceXQEaxEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceXQEaxEeerobMaL6iksg" name="(GEout1a==0) &amp;&amp; (GEout2a==0xF2)" constrainedElement="_LceXP0axEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceXQUaxEeerobMaL6iksg" value="(GEout1a==0) &amp;&amp; (GEout2a==0xF2)"/>
+            </ownedRule>
+          </transition>
+          <transition xmi:id="_LceXQkaxEeerobMaL6iksg" name="Transition1" source="_LceXMUaxEeerobMaL6iksg" target="_LceXKUaxEeerobMaL6iksg" guard="_LceXQ0axEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceXQ0axEeerobMaL6iksg" name="(GEout1a==0xF1) &amp;&amp; (GEout2a==0)" constrainedElement="_LceXQkaxEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceXREaxEeerobMaL6iksg" value="(GEout1a==0xF1) &amp;&amp; (GEout2a==0)"/>
+            </ownedRule>
+          </transition>
+          <transition xmi:id="_LceXRUaxEeerobMaL6iksg" name="Transition" source="_LceXMUaxEeerobMaL6iksg" target="_LceXK0axEeerobMaL6iksg" guard="_LceXRkaxEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceXRkaxEeerobMaL6iksg" name="(GEout1a==0xF1) &amp;&amp; (GEout2a==0xF2)" constrainedElement="_LceXRUaxEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceXR0axEeerobMaL6iksg" value="(GEout1a==0xF1) &amp;&amp; (GEout2a==0xF2)"/>
+            </ownedRule>
+          </transition>
+        </region>
+      </ownedBehavior>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_LceXSEaxEeerobMaL6iksg" name="Stimuli" isAbstract="true">
+      <ownedAttribute xmi:id="_LceXSUaxEeerobMaL6iksg" name="targetX1" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <ownedComment xmi:id="_LceXSkaxEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceXS0axEeerobMaL6iksg" symbol="0.0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceXTEaxEeerobMaL6iksg" name="targetY1" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <ownedComment xmi:id="_LceXTUaxEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceXTkaxEeerobMaL6iksg" symbol="0.0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceXT0axEeerobMaL6iksg" name="targetZ1" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <ownedComment xmi:id="_LceXUEaxEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceXUUaxEeerobMaL6iksg" symbol="0.0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceXUkaxEeerobMaL6iksg" name="velX1" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <ownedComment xmi:id="_LceXU0axEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceXVEaxEeerobMaL6iksg" symbol="0.0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceXVUaxEeerobMaL6iksg" name="velY1" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <ownedComment xmi:id="_LceXVkaxEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceXV0axEeerobMaL6iksg" symbol="0.0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceXWEaxEeerobMaL6iksg" name="velZ1" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <ownedComment xmi:id="_LceXWUaxEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceXWkaxEeerobMaL6iksg" symbol="0.0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceXW0axEeerobMaL6iksg" name="posX1" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <ownedComment xmi:id="_LceXXEaxEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceXXUaxEeerobMaL6iksg" symbol="0.0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceXXkaxEeerobMaL6iksg" name="posY1" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <ownedComment xmi:id="_LceXX0axEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceXYEaxEeerobMaL6iksg" symbol="0.0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceXYUaxEeerobMaL6iksg" name="posZ1" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <ownedComment xmi:id="_LceXYkaxEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceXY0axEeerobMaL6iksg" symbol="0.0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceXZEaxEeerobMaL6iksg" name="batteryCharge1" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <ownedComment xmi:id="_LceXZUaxEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceXZkaxEeerobMaL6iksg" symbol="0.0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceXZ0axEeerobMaL6iksg" name="targetX2" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <ownedComment xmi:id="_LceXaEaxEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceXaUaxEeerobMaL6iksg" symbol="0.0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceXakaxEeerobMaL6iksg" name="velY2" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <ownedComment xmi:id="_LceXa0axEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceXbEaxEeerobMaL6iksg" symbol="0.0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceXbUaxEeerobMaL6iksg" name="posX2" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <ownedComment xmi:id="_LceXbkaxEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceXb0axEeerobMaL6iksg" symbol="0.0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceXcEaxEeerobMaL6iksg" name="targetY2" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <ownedComment xmi:id="_LceXcUaxEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceXckaxEeerobMaL6iksg" symbol="0.0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceXc0axEeerobMaL6iksg" name="velX2" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <ownedComment xmi:id="_LceXdEaxEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceXdUaxEeerobMaL6iksg" symbol="0.0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceXdkaxEeerobMaL6iksg" name="posY2" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <ownedComment xmi:id="_LceXd0axEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceXeEaxEeerobMaL6iksg" symbol="0.0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceXeUaxEeerobMaL6iksg" name="batteryCharge2" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <ownedComment xmi:id="_LceXekaxEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceXe0axEeerobMaL6iksg" symbol="0.0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceXfEaxEeerobMaL6iksg" name="targetZ2" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <ownedComment xmi:id="_LceXfUaxEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceXfkaxEeerobMaL6iksg" symbol="0.0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceXf0axEeerobMaL6iksg" name="velZ2" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <ownedComment xmi:id="_LceXgEaxEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceXgUaxEeerobMaL6iksg" symbol="0.0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceXgkaxEeerobMaL6iksg" name="posZ2" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <ownedComment xmi:id="_LceXg0axEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceXhEaxEeerobMaL6iksg" symbol="0.0"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_LceXhUaxEeerobMaL6iksg" name="Observables" isAbstract="true">
+      <ownedAttribute xmi:id="_LceXhkaxEeerobMaL6iksg" name="pitchOut1" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <ownedComment xmi:id="_LceXh0axEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceXiEaxEeerobMaL6iksg" symbol="0.0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceXiUaxEeerobMaL6iksg" name="yawOut1" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <ownedComment xmi:id="_LceXikaxEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceXi0axEeerobMaL6iksg" symbol="0.0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceXjEaxEeerobMaL6iksg" name="rollOut1" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <ownedComment xmi:id="_LceXjUaxEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceXjkaxEeerobMaL6iksg" symbol="0.0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceXj0axEeerobMaL6iksg" name="throttleOut1" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <ownedComment xmi:id="_LceXkEaxEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceXkUaxEeerobMaL6iksg" symbol="0.0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceXkkaxEeerobMaL6iksg" name="throttleOut2" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <ownedComment xmi:id="_LceXk0axEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceXlEaxEeerobMaL6iksg" symbol="0.0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceXlUaxEeerobMaL6iksg" name="yawOut2" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <ownedComment xmi:id="_LceXlkaxEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceXl0axEeerobMaL6iksg" symbol="0.0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceXmEaxEeerobMaL6iksg" name="pitchOut2" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <ownedComment xmi:id="_LceXmUaxEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceXmkaxEeerobMaL6iksg" symbol="0.0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceXm0axEeerobMaL6iksg" name="rollOut2" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <ownedComment xmi:id="_LceXnEaxEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceXnUaxEeerobMaL6iksg" symbol="0.0"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_LceXnkaxEeerobMaL6iksg" name="GlobalEtherInIF" isAbstract="true">
+      <ownedAttribute xmi:id="_LceXn0axEeerobMaL6iksg" name="GEin1p1" visibility="public" type="_LceWL0axEeerobMaL6iksg" isUnique="false">
+        <ownedComment xmi:id="_LceXoEaxEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceXoUaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceXokaxEeerobMaL6iksg" name="GEin1p2" visibility="public" type="_LceWL0axEeerobMaL6iksg" isUnique="false">
+        <ownedComment xmi:id="_LceXo0axEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceXpEaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceXpUaxEeerobMaL6iksg" name="GEin1p3" visibility="public" type="_LceWL0axEeerobMaL6iksg" isUnique="false">
+        <ownedComment xmi:id="_LceXpkaxEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceXp0axEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceXqEaxEeerobMaL6iksg" name="GEin1a" visibility="public" type="_LceWKEaxEeerobMaL6iksg" isUnique="false">
+        <ownedComment xmi:id="_LceXqUaxEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceXqkaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_LceXq0axEeerobMaL6iksg" name="Ether">
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_LceXrEaxEeerobMaL6iksg" name="TarPosInPort" type="_LceXnkaxEeerobMaL6iksg"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_LceXrUaxEeerobMaL6iksg" name="CurPosOutPort" type="_LceYCEaxEeerobMaL6iksg"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_LceXrkaxEeerobMaL6iksg" name="U1InPort" type="_LceYIUaxEeerobMaL6iksg"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_LceXr0axEeerobMaL6iksg" name="U1OutPort" type="_LceYLkaxEeerobMaL6iksg"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_LceXsEaxEeerobMaL6iksg" name="U2InPort" type="_LceY30axEeerobMaL6iksg"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_LceXsUaxEeerobMaL6iksg" name="U2OutPort" type="_LceYxkaxEeerobMaL6iksg"/>
+      <ownedAttribute xmi:id="_LceXskaxEeerobMaL6iksg" name="t" visibility="public" type="_LceWK0axEeerobMaL6iksg">
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceXs0axEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_LceXtEaxEeerobMaL6iksg" name="Ether_CTRL">
+        <region xmi:id="_LceXtUaxEeerobMaL6iksg" name="OUTPUT_CTRL">
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_LceXtkaxEeerobMaL6iksg" name="initial"/>
+          <subvertex xmi:type="uml:State" xmi:id="_LceXt0axEeerobMaL6iksg" name="IDLE">
+            <ownedComment xmi:id="_LceXuEaxEeerobMaL6iksg">
+              <body>
+For GC:
+P1 - U1
+P2 - U2
+----------------------------
+U2\U1 |   0xF1   |   0    |
+----------------------------
+0xF2    |   P1P2  |    P2 |
+----------------------------
+   0       |   P1      |    X   |
+----------------------------
+
+For UAV1:
+P1 - GC
+P2 - U2
+----------------------------
+U2\GC |   0x1E   |   0    |
+----------------------------
+0xF2    |   P1P2  |    P2 |
+----------------------------
+   0       |   P1      |    X   |
+----------------------------
+
+For UAV2:
+P1 - GC
+P2 - U1
+----------------------------
+U1\GC |   0x2E   |   0    |
+----------------------------
+0xF1    |   P1P2  |    P2 |
+----------------------------
+   0       |   P1      |    X   |
+----------------------------</body>
+            </ownedComment>
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceXuUaxEeerobMaL6iksg">
+              <body>t.reset();</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceXukaxEeerobMaL6iksg" name="PreUpdate"/>
+          <subvertex xmi:type="uml:State" xmi:id="_LceXu0axEeerobMaL6iksg" name="U1U2GC_1">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceXvEaxEeerobMaL6iksg">
+              <body>GEout1a =U1Ein1a; GEout1p1=U1Ein1p1; GEout1p2=U1Ein1p2; GEout1p3=U1Ein1p3; GEout2a =U2Ein1a; GEout2p1=U2Ein1p1; GEout2p2=U2Ein1p2; GEout2p3=U2Ein1p3; U1Eout1a =GEin1a; U1Eout1p1=GEin1p1; U1Eout1p2=GEin1p2; U1Eout1p3=GEin1p3; U1Eout2a =U2Ein1a; U1Eout2p1=U2Ein1p1; U1Eout2p2=U2Ein1p2; U1Eout2p3=U2Ein1p3; U2Eout2a =U1Ein1a; U2Eout2p1=U1Ein1p1; U2Eout2p2=U1Ein1p2; U2Eout2p3=U1Ein1p3;</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceXvUaxEeerobMaL6iksg" name="U1U2GC_2">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceXvkaxEeerobMaL6iksg">
+              <body>GEout1a =U1Ein1a; GEout1p1=U1Ein1p1; GEout1p2=U1Ein1p2; GEout1p3=U1Ein1p3; GEout2a =U2Ein1a; GEout2p1=U2Ein1p1; GEout2p2=U2Ein1p2; GEout2p3=U2Ein1p3; U1Eout2a =U2Ein1a; U1Eout2p1=U2Ein1p1; U1Eout2p2=U2Ein1p2; U1Eout2p3=U2Ein1p3; U2Eout1a =GEin1a; U2Eout1p1=GEin1p1; U2Eout1p2=GEin1p2; U2Eout1p3=GEin1p3; U2Eout2a =U1Ein1a; U2Eout2p1=U1Ein1p1; U2Eout2p2=U1Ein1p2; U2Eout2p3=U1Ein1p3;</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceXv0axEeerobMaL6iksg" name="U1U2">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceXwEaxEeerobMaL6iksg">
+              <body>GEout1a =U1Ein1a; GEout1p1=U1Ein1p1; GEout1p2=U1Ein1p2; GEout1p3=U1Ein1p3; GEout2a =U2Ein1a; GEout2p1=U2Ein1p1; GEout2p2=U2Ein1p2; GEout2p3=U2Ein1p3; U1Eout2a =U2Ein1a; U1Eout2p1=U2Ein1p1; U1Eout2p2=U2Ein1p2; U1Eout2p3=U2Ein1p3; U2Eout2a =U1Ein1a; U2Eout2p1=U1Ein1p1; U2Eout2p2=U1Ein1p2; U2Eout2p3=U1Ein1p3;</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceXwUaxEeerobMaL6iksg" name="U1_GC">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceXwkaxEeerobMaL6iksg">
+              <body>GEout1a =U1Ein1a; GEout1p1=U1Ein1p1; GEout1p2=U1Ein1p2; GEout1p3=U1Ein1p3; GEout2a =0; GEout2p1=0; GEout2p2=0; GEout2p3=0; U1Eout1a =GEin1a; U1Eout1p1=GEin1p1; U1Eout1p2=GEin1p2; U1Eout1p3=GEin1p3;U2Eout2a =U1Ein1a; U2Eout2p1=U1Ein1p1; U2Eout2p2=U1Ein1p2; U2Eout2p3=U1Ein1p3;</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceXw0axEeerobMaL6iksg" name="U1_GC_2">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceXxEaxEeerobMaL6iksg">
+              <body>GEout1a =U1Ein1a; GEout1p1=U1Ein1p1; GEout1p2=U1Ein1p2; GEout1p3=U1Ein1p3; U2Eout1a =GEin1a; U2Eout1p1=GEin1p1; U2Eout1p2=GEin1p2; U2Eout1p3=GEin1p3; U2Eout2a =U1Ein1a; U2Eout2p1=U1Ein1p1; U2Eout2p2=U1Ein1p2; U2Eout2p3=U1Ein1p3;</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceXxUaxEeerobMaL6iksg" name="GC_2">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceXxkaxEeerobMaL6iksg">
+              <body>U2Eout1a =GEin1a; U2Eout1p1=GEin1p1; U2Eout1p2=GEin1p2; U2Eout1p3=GEin1p3;</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceXx0axEeerobMaL6iksg" name="U1">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceXyEaxEeerobMaL6iksg">
+              <body>GEout1a =U1Ein1a; GEout1p1=U1Ein1p1; GEout1p2=U1Ein1p2; GEout1p3=U1Ein1p3; U2Eout2a =U1Ein1a; U2Eout2p1=U1Ein1p1; U2Eout2p2=U1Ein1p2; U2Eout2p3=U1Ein1p3;</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceXyUaxEeerobMaL6iksg" name="U2_GC_1">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceXykaxEeerobMaL6iksg">
+              <body>GEout2a =U2Ein1a; GEout2p1=U2Ein1p1; GEout2p2=U2Ein1p2; GEout2p3=U2Ein1p3; U1Eout1a =GEin1a; U1Eout1p1=GEin1p1; U1Eout1p2=GEin1p2; U1Eout1p3=GEin1p3; U1Eout2a =U2Ein1a; U1Eout2p1=U2Ein1p1; U1Eout2p2=U2Ein1p2; U1Eout2p3=U2Ein1p3;</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceXy0axEeerobMaL6iksg" name="U2_GC_2">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceXzEaxEeerobMaL6iksg">
+              <body>GEout2a =U2Ein1a; GEout2p1=U2Ein1p1; GEout2p2=U2Ein1p2; GEout2p3=U2Ein1p3; U1Eout2a =U2Ein1a; U1Eout2p1=U2Ein1p1; U1Eout2p2=U2Ein1p2; U1Eout2p3=U2Ein1p3; U2Eout1a =GEin1a; U2Eout1p1=GEin1p1; U2Eout1p2=GEin1p2; U2Eout1p3=GEin1p3;</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceXzUaxEeerobMaL6iksg" name="U2">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceXzkaxEeerobMaL6iksg">
+              <body>GEout2a =U2Ein1a; GEout2p1=U2Ein1p1; GEout2p2=U2Ein1p2; GEout2p3=U2Ein1p3;U1Eout2a =U2Ein1a; U1Eout2p1=U2Ein1p1; U1Eout2p2=U2Ein1p2; U1Eout2p3=U2Ein1p3; </body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceXz0axEeerobMaL6iksg" name="GC_1">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceX0EaxEeerobMaL6iksg">
+              <body>U1Eout1a =GEin1a; U1Eout1p1=GEin1p1; U1Eout1p2=GEin1p2; U1Eout1p3=GEin1p3;</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceX0UaxEeerobMaL6iksg" name="None"/>
+          <subvertex xmi:type="uml:State" xmi:id="_LceX0kaxEeerobMaL6iksg" name="PostUpdate"/>
+          <transition xmi:id="_LceX00axEeerobMaL6iksg" source="_LceXtkaxEeerobMaL6iksg" target="_LceXt0axEeerobMaL6iksg"/>
+          <transition xmi:id="_LceX1EaxEeerobMaL6iksg" source="_LceXt0axEeerobMaL6iksg" target="_LceXukaxEeerobMaL6iksg" guard="_LceX1UaxEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceX1UaxEeerobMaL6iksg" name="t.elapsed(10)" constrainedElement="_LceX1EaxEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceX1kaxEeerobMaL6iksg" value="t.elapsed(10)"/>
+            </ownedRule>
+          </transition>
+          <transition xmi:id="_LceX10axEeerobMaL6iksg" name="Transition" source="_LceXukaxEeerobMaL6iksg" target="_LceXu0axEeerobMaL6iksg" guard="_LceX2EaxEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceX2EaxEeerobMaL6iksg" name="(U1Ein1a == 0xF1) &amp;&amp; (U2Ein1a==0xF2) &amp;&amp; (GEin1a==0x1E)" constrainedElement="_LceX10axEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceX2UaxEeerobMaL6iksg" value="(U1Ein1a == 0xF1) &amp;&amp; (U2Ein1a==0xF2) &amp;&amp; (GEin1a==0x1E)"/>
+            </ownedRule>
+          </transition>
+          <transition xmi:id="_LceX2kaxEeerobMaL6iksg" name="Transition1" source="_LceXukaxEeerobMaL6iksg" target="_LceXvUaxEeerobMaL6iksg" guard="_LceX20axEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceX20axEeerobMaL6iksg" name="(U1Ein1a == 0xF1) &amp;&amp; (U2Ein1a==0xF2) &amp;&amp; (GEin1a==0x2E)" constrainedElement="_LceX2kaxEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceX3EaxEeerobMaL6iksg" value="(U1Ein1a == 0xF1) &amp;&amp; (U2Ein1a==0xF2) &amp;&amp; (GEin1a==0x2E)"/>
+            </ownedRule>
+          </transition>
+          <transition xmi:id="_LceX3UaxEeerobMaL6iksg" name="Transition2" source="_LceXukaxEeerobMaL6iksg" target="_LceXv0axEeerobMaL6iksg" guard="_LceX3kaxEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceX3kaxEeerobMaL6iksg" name="(U1Ein1a == 0xF1) &amp;&amp; (U2Ein1a==0xF2) &amp;&amp; (GEin1a==0)" constrainedElement="_LceX3UaxEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceX30axEeerobMaL6iksg" value="(U1Ein1a == 0xF1) &amp;&amp; (U2Ein1a==0xF2) &amp;&amp; (GEin1a==0)"/>
+            </ownedRule>
+          </transition>
+          <transition xmi:id="_LceX4EaxEeerobMaL6iksg" name="Transition3" source="_LceXukaxEeerobMaL6iksg" target="_LceXwUaxEeerobMaL6iksg" guard="_LceX4UaxEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceX4UaxEeerobMaL6iksg" name="(U1Ein1a == 0xF1) &amp;&amp; (U2Ein1a==0) &amp;&amp; (GEin1a==0x1E)" constrainedElement="_LceX4EaxEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceX4kaxEeerobMaL6iksg" value="(U1Ein1a == 0xF1) &amp;&amp; (U2Ein1a==0) &amp;&amp; (GEin1a==0x1E)"/>
+            </ownedRule>
+          </transition>
+          <transition xmi:id="_LceX40axEeerobMaL6iksg" name="Transition4" source="_LceXukaxEeerobMaL6iksg" target="_LceXw0axEeerobMaL6iksg" guard="_LceX5EaxEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceX5EaxEeerobMaL6iksg" name="(U1Ein1a == 0xF1) &amp;&amp; (U2Ein1a==0) &amp;&amp; (GEin1a==0x2E)" constrainedElement="_LceX40axEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceX5UaxEeerobMaL6iksg" value="(U1Ein1a == 0xF1) &amp;&amp; (U2Ein1a==0) &amp;&amp; (GEin1a==0x2E)"/>
+            </ownedRule>
+          </transition>
+          <transition xmi:id="_LceX5kaxEeerobMaL6iksg" name="Transition5" source="_LceXukaxEeerobMaL6iksg" target="_LceXx0axEeerobMaL6iksg" guard="_LceX50axEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceX50axEeerobMaL6iksg" name="(U1Ein1a == 0xF1) &amp;&amp; (U2Ein1a==0) &amp;&amp; (GEin1a==0)" constrainedElement="_LceX5kaxEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceX6EaxEeerobMaL6iksg" value="(U1Ein1a == 0xF1) &amp;&amp; (U2Ein1a==0) &amp;&amp; (GEin1a==0)"/>
+            </ownedRule>
+          </transition>
+          <transition xmi:id="_LceX6UaxEeerobMaL6iksg" name="Transition6" source="_LceXukaxEeerobMaL6iksg" target="_LceXyUaxEeerobMaL6iksg" guard="_LceX6kaxEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceX6kaxEeerobMaL6iksg" name="(U1Ein1a == 0) &amp;&amp; (U2Ein1a==0xF2) &amp;&amp; (GEin1a==0x1E)" constrainedElement="_LceX6UaxEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceX60axEeerobMaL6iksg" value="(U1Ein1a == 0) &amp;&amp; (U2Ein1a==0xF2) &amp;&amp; (GEin1a==0x1E)"/>
+            </ownedRule>
+          </transition>
+          <transition xmi:id="_LceX7EaxEeerobMaL6iksg" name="Transition7" source="_LceXukaxEeerobMaL6iksg" target="_LceXy0axEeerobMaL6iksg" guard="_LceX7UaxEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceX7UaxEeerobMaL6iksg" name="(U1Ein1a == 0) &amp;&amp; (U2Ein1a==0xF2) &amp;&amp; (GEin1a==0x2E)" constrainedElement="_LceX7EaxEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceX7kaxEeerobMaL6iksg" value="(U1Ein1a == 0) &amp;&amp; (U2Ein1a==0xF2) &amp;&amp; (GEin1a==0x2E)"/>
+            </ownedRule>
+          </transition>
+          <transition xmi:id="_LceX70axEeerobMaL6iksg" name="Transition8" source="_LceXukaxEeerobMaL6iksg" target="_LceXzUaxEeerobMaL6iksg" guard="_LceX8EaxEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceX8EaxEeerobMaL6iksg" name="(U1Ein1a == 0) &amp;&amp; (U2Ein1a==0xF2) &amp;&amp; (GEin1a==0)" constrainedElement="_LceX70axEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceX8UaxEeerobMaL6iksg" value="(U1Ein1a == 0) &amp;&amp; (U2Ein1a==0xF2) &amp;&amp; (GEin1a==0)"/>
+            </ownedRule>
+          </transition>
+          <transition xmi:id="_LceX8kaxEeerobMaL6iksg" name="Transition9" source="_LceXukaxEeerobMaL6iksg" target="_LceXz0axEeerobMaL6iksg" guard="_LceX80axEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceX80axEeerobMaL6iksg" name="(U1Ein1a == 0) &amp;&amp; (U2Ein1a==0) &amp;&amp; (GEin1a==0x1E)" constrainedElement="_LceX8kaxEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceX9EaxEeerobMaL6iksg" value="(U1Ein1a == 0) &amp;&amp; (U2Ein1a==0) &amp;&amp; (GEin1a==0x1E)"/>
+            </ownedRule>
+          </transition>
+          <transition xmi:id="_LceX9UaxEeerobMaL6iksg" name="Transition10" source="_LceXukaxEeerobMaL6iksg" target="_LceXxUaxEeerobMaL6iksg" guard="_LceX9kaxEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceX9kaxEeerobMaL6iksg" name="(U1Ein1a == 0) &amp;&amp; (U2Ein1a==0) &amp;&amp; (GEin1a==0x2E)" constrainedElement="_LceX9UaxEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceX90axEeerobMaL6iksg" value="(U1Ein1a == 0) &amp;&amp; (U2Ein1a==0) &amp;&amp; (GEin1a==0x2E)"/>
+            </ownedRule>
+          </transition>
+          <transition xmi:id="_LceX-EaxEeerobMaL6iksg" name="Transition11" source="_LceXukaxEeerobMaL6iksg" target="_LceX0UaxEeerobMaL6iksg" guard="_LceX-UaxEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceX-UaxEeerobMaL6iksg" name="(U1Ein1a == 0) &amp;&amp; (U2Ein1a==0) &amp;&amp; (GEin1a==0)" constrainedElement="_LceX-EaxEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceX-kaxEeerobMaL6iksg" value="(U1Ein1a == 0) &amp;&amp; (U2Ein1a==0) &amp;&amp; (GEin1a==0)"/>
+            </ownedRule>
+          </transition>
+          <transition xmi:id="_LceX-0axEeerobMaL6iksg" name="Transition" source="_LceXu0axEeerobMaL6iksg" target="_LceX0kaxEeerobMaL6iksg"/>
+          <transition xmi:id="_LceX_EaxEeerobMaL6iksg" name="Transition" source="_LceXvUaxEeerobMaL6iksg" target="_LceX0kaxEeerobMaL6iksg"/>
+          <transition xmi:id="_LceX_UaxEeerobMaL6iksg" name="Transition" source="_LceXv0axEeerobMaL6iksg" target="_LceX0kaxEeerobMaL6iksg"/>
+          <transition xmi:id="_LceX_kaxEeerobMaL6iksg" name="Transition" source="_LceXwUaxEeerobMaL6iksg" target="_LceX0kaxEeerobMaL6iksg"/>
+          <transition xmi:id="_LceX_0axEeerobMaL6iksg" name="Transition" source="_LceXw0axEeerobMaL6iksg" target="_LceX0kaxEeerobMaL6iksg"/>
+          <transition xmi:id="_LceYAEaxEeerobMaL6iksg" name="Transition" source="_LceXxUaxEeerobMaL6iksg" target="_LceX0kaxEeerobMaL6iksg"/>
+          <transition xmi:id="_LceYAUaxEeerobMaL6iksg" name="Transition" source="_LceXx0axEeerobMaL6iksg" target="_LceX0kaxEeerobMaL6iksg"/>
+          <transition xmi:id="_LceYAkaxEeerobMaL6iksg" name="Transition" source="_LceXyUaxEeerobMaL6iksg" target="_LceX0kaxEeerobMaL6iksg"/>
+          <transition xmi:id="_LceYA0axEeerobMaL6iksg" name="Transition" source="_LceXy0axEeerobMaL6iksg" target="_LceX0kaxEeerobMaL6iksg"/>
+          <transition xmi:id="_LceYBEaxEeerobMaL6iksg" name="Transition" source="_LceXzUaxEeerobMaL6iksg" target="_LceX0kaxEeerobMaL6iksg"/>
+          <transition xmi:id="_LceYBUaxEeerobMaL6iksg" name="Transition" source="_LceXz0axEeerobMaL6iksg" target="_LceX0kaxEeerobMaL6iksg"/>
+          <transition xmi:id="_LceYBkaxEeerobMaL6iksg" name="Transition" source="_LceX0UaxEeerobMaL6iksg" target="_LceX0kaxEeerobMaL6iksg"/>
+          <transition xmi:id="_LceYB0axEeerobMaL6iksg" name="Transition" source="_LceX0kaxEeerobMaL6iksg" target="_LceXt0axEeerobMaL6iksg"/>
+        </region>
+      </ownedBehavior>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_LceYCEaxEeerobMaL6iksg" name="GlobalEtherOutIF" isAbstract="true">
+      <ownedAttribute xmi:id="_LceYCUaxEeerobMaL6iksg" name="GEout1p1" visibility="public" type="_LceWL0axEeerobMaL6iksg" isUnique="false">
+        <ownedComment xmi:id="_LceYCkaxEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceYC0axEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceYDEaxEeerobMaL6iksg" name="GEout1p2" visibility="public" type="_LceWL0axEeerobMaL6iksg" isUnique="false">
+        <ownedComment xmi:id="_LceYDUaxEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceYDkaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceYD0axEeerobMaL6iksg" name="GEout1p3" visibility="public" type="_LceWL0axEeerobMaL6iksg" isUnique="false">
+        <ownedComment xmi:id="_LceYEEaxEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceYEUaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceYEkaxEeerobMaL6iksg" name="GEout1a" visibility="public" type="_LceWKEaxEeerobMaL6iksg" isUnique="false">
+        <ownedComment xmi:id="_LceYE0axEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceYFEaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceYFUaxEeerobMaL6iksg" name="GEout2p2" visibility="public" type="_LceWL0axEeerobMaL6iksg" isUnique="false">
+        <ownedComment xmi:id="_LceYFkaxEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceYF0axEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceYGEaxEeerobMaL6iksg" name="GEout2a" visibility="public" type="_LceWKEaxEeerobMaL6iksg" isUnique="false">
+        <ownedComment xmi:id="_LceYGUaxEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceYGkaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceYG0axEeerobMaL6iksg" name="GEout2p1" visibility="public" type="_LceWL0axEeerobMaL6iksg" isUnique="false">
+        <ownedComment xmi:id="_LceYHEaxEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceYHUaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceYHkaxEeerobMaL6iksg" name="GEout2p3" visibility="public" type="_LceWL0axEeerobMaL6iksg" isUnique="false">
+        <ownedComment xmi:id="_LceYH0axEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceYIEaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_LceYIUaxEeerobMaL6iksg" name="UAV1EtherInIF" isAbstract="true">
+      <ownedAttribute xmi:id="_LceYIkaxEeerobMaL6iksg" name="U1Ein1p1" visibility="public" type="_LceWL0axEeerobMaL6iksg" isUnique="false">
+        <ownedComment xmi:id="_LceYI0axEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceYJEaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceYJUaxEeerobMaL6iksg" name="U1Ein1p2" visibility="public" type="_LceWL0axEeerobMaL6iksg" isUnique="false">
+        <ownedComment xmi:id="_LceYJkaxEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceYJ0axEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceYKEaxEeerobMaL6iksg" name="U1Ein1p3" visibility="public" type="_LceWL0axEeerobMaL6iksg" isUnique="false">
+        <ownedComment xmi:id="_LceYKUaxEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceYKkaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceYK0axEeerobMaL6iksg" name="U1Ein1a" visibility="public" type="_LceWKEaxEeerobMaL6iksg" isUnique="false">
+        <ownedComment xmi:id="_LceYLEaxEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceYLUaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_LceYLkaxEeerobMaL6iksg" name="UAV1EtherOutIF" isAbstract="true">
+      <ownedAttribute xmi:id="_LceYL0axEeerobMaL6iksg" name="U1Eout1p1" visibility="public" type="_LceWL0axEeerobMaL6iksg" isUnique="false">
+        <ownedComment xmi:id="_LceYMEaxEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceYMUaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceYMkaxEeerobMaL6iksg" name="U1Eout1p2" visibility="public" type="_LceWL0axEeerobMaL6iksg" isUnique="false">
+        <ownedComment xmi:id="_LceYM0axEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceYNEaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceYNUaxEeerobMaL6iksg" name="U1Eout1p3" visibility="public" type="_LceWL0axEeerobMaL6iksg" isUnique="false">
+        <ownedComment xmi:id="_LceYNkaxEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceYN0axEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceYOEaxEeerobMaL6iksg" name="U1Eout1a" visibility="public" type="_LceWKEaxEeerobMaL6iksg" isUnique="false">
+        <ownedComment xmi:id="_LceYOUaxEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceYOkaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceYO0axEeerobMaL6iksg" name="U1Eout2p2" visibility="public" type="_LceWL0axEeerobMaL6iksg" isUnique="false">
+        <ownedComment xmi:id="_LceYPEaxEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceYPUaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceYPkaxEeerobMaL6iksg" name="U1Eout2a" visibility="public" type="_LceWKEaxEeerobMaL6iksg" isUnique="false">
+        <ownedComment xmi:id="_LceYP0axEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceYQEaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceYQUaxEeerobMaL6iksg" name="U1Eout2p1" visibility="public" type="_LceWL0axEeerobMaL6iksg" isUnique="false">
+        <ownedComment xmi:id="_LceYQkaxEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceYQ0axEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceYREaxEeerobMaL6iksg" name="U1Eout2p3" visibility="public" type="_LceWL0axEeerobMaL6iksg" isUnique="false">
+        <ownedComment xmi:id="_LceYRUaxEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceYRkaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_LceYR0axEeerobMaL6iksg" name="UAV2_CTRL">
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_LceYSEaxEeerobMaL6iksg" name="U2InPort" type="_LceY30axEeerobMaL6iksg"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_LceYSUaxEeerobMaL6iksg" name="U2OutPort" type="_LceYxkaxEeerobMaL6iksg"/>
+      <ownedAttribute xmi:id="_LceYSkaxEeerobMaL6iksg" name="t" visibility="public" type="_LceWK0axEeerobMaL6iksg">
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceYS0axEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceYTEaxEeerobMaL6iksg" name="throttleIpart" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceYTUaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceYTkaxEeerobMaL6iksg" name="throttlePpart" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceYT0axEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceYUEaxEeerobMaL6iksg" name="throttleDpart" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceYUUaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceYUkaxEeerobMaL6iksg" name="xIpart" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceYU0axEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceYVEaxEeerobMaL6iksg" name="xPpart" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceYVUaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceYVkaxEeerobMaL6iksg" name="xDpart" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceYV0axEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceYWEaxEeerobMaL6iksg" name="desiredPitch" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceYWUaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceYWkaxEeerobMaL6iksg" name="yDpart" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceYW0axEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceYXEaxEeerobMaL6iksg" name="yPpart" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceYXUaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceYXkaxEeerobMaL6iksg" name="yIpart" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceYX0axEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceYYEaxEeerobMaL6iksg" name="desiredRoll" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceYYUaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceYYkaxEeerobMaL6iksg" name="tarX" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceYY0axEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceYZEaxEeerobMaL6iksg" name="tarY" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceYZUaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceYZkaxEeerobMaL6iksg" name="tarZ" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceYZ0axEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceYaEaxEeerobMaL6iksg" name="curPosX1" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceYaUaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceYakaxEeerobMaL6iksg" name="curPosY1" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceYa0axEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceYbEaxEeerobMaL6iksg" name="curPosZ1" visibility="public" type="_LceWL0axEeerobMaL6iksg">
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceYbUaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_LceYbkaxEeerobMaL6iksg" name="UAV2_CTRL">
+        <region xmi:id="_LceYb0axEeerobMaL6iksg" name="FLASH_CTRL">
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_LceYcEaxEeerobMaL6iksg" name="initial"/>
+          <subvertex xmi:type="uml:State" xmi:id="_LceYcUaxEeerobMaL6iksg" name="Waiting">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceYckaxEeerobMaL6iksg">
+              <body>t.reset();</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceYc0axEeerobMaL6iksg" name="PreThrottle">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceYdEaxEeerobMaL6iksg">
+              <body>throttleIpart=throttleIpart+((tarZ-posZ2)*0.03); throttlePpart=(tarZ-posZ2)*1.2;</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceYdUaxEeerobMaL6iksg" name="PostThrottle">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceYdkaxEeerobMaL6iksg">
+              <body>throttleOut2=throttleIpart + throttlePpart - throttleDpart;</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceYd0axEeerobMaL6iksg" name="PrePitch">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceYeEaxEeerobMaL6iksg">
+              <body>yIpart=yIpart+((posY2-tarY) * 0.00); yPpart=(posY2-tarY) * 0.28; yDpart=velY2*(-0.2);</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceYeUaxEeerobMaL6iksg" name="PostPitch">
+            <exit xmi:type="uml:OpaqueBehavior" xmi:id="_LceYekaxEeerobMaL6iksg">
+              <body>pitchOut2=desiredPitch;</body>
+            </exit>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceYe0axEeerobMaL6iksg" name="PreRoll">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceYfEaxEeerobMaL6iksg">
+              <body>xIpart=xIpart+((tarX - posX2) * 0.00);  xPpart=(tarX-posX2)*0.28;  xDpart=velX2*0.2;</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceYfUaxEeerobMaL6iksg" name="PostRoll">
+            <exit xmi:type="uml:OpaqueBehavior" xmi:id="_LceYfkaxEeerobMaL6iksg">
+              <body>rollOut2=desiredRoll;</body>
+            </exit>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceYf0axEeerobMaL6iksg" name="Setup">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceYgEaxEeerobMaL6iksg">
+              <body>pitchOut2=0;yawOut2=0;rollOut2=0;throttleOut2=0;</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceYgUaxEeerobMaL6iksg" name="Throttle"/>
+          <subvertex xmi:type="uml:State" xmi:id="_LceYgkaxEeerobMaL6iksg" name="Pitch">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceYg0axEeerobMaL6iksg">
+              <body>desiredPitch = yIpart + yPpart - yDpart;</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceYhEaxEeerobMaL6iksg" name="Roll">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceYhUaxEeerobMaL6iksg">
+              <body>desiredRoll = xIpart + xPpart - xDpart;</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceYhkaxEeerobMaL6iksg" name="PreUpdateTargetPos">
+            <ownedComment xmi:id="_LceYh0axEeerobMaL6iksg">
+              <body>There are up to two incoming packages. One from UAV1  through broadcast and one from Global Controller through unicast. So their address would be 0xF1 and 0x2E respectively.
+(Addresses for Global Controller, UAV1 Controller and UAV2 Controller are 0xE, 0x1, and 0x2 seperately.)
+
+We need to process four possible combinations. 
+We need to process four possible combinations. 
+- Incoming package from Global Controller always is placed in P1
+- Incoming package from UAV1 always is placed in P2
+------------------------------
+P2\P1 |  0x2E     |    0   |
+------------------------------
+0xF1    |   P1P2  |  P2   |  
+------------------------------
+   0       |   P1       |   X     |  
+------------------------------</body>
+            </ownedComment>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceYiEaxEeerobMaL6iksg" name="UpdateTargetCurPos">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceYiUaxEeerobMaL6iksg">
+              <body>tarX=U2Eout1p1;tarY=U2Eout1p2;tarZ=U2Eout1p3;curPosX1=U2Eout2p1;curPosY1=U2Eout2p2;curPosZ1=U2Eout2p3;</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceYikaxEeerobMaL6iksg" name="UpdateTargetPos">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceYi0axEeerobMaL6iksg">
+              <body>tarX=U2Eout1p1;tarY=U2Eout1p2;tarZ=U2Eout1p3;</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceYjEaxEeerobMaL6iksg" name="UpdateCurPos">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceYjUaxEeerobMaL6iksg">
+              <body>curPosX1=U2Eout2p1;curPosY1=U2Eout2p2;curPosZ1=U2Eout2p3;</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceYjkaxEeerobMaL6iksg" name="PostUpdateTarCurPos">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceYj0axEeerobMaL6iksg">
+              <body>U2Ein1a=0xF2;U2Ein1p1=posX2;U2Ein1p2=posY2;U2Ein1p3=posZ2;</body>
+            </entry>
+          </subvertex>
+          <transition xmi:id="_LceYkEaxEeerobMaL6iksg" source="_LceYcEaxEeerobMaL6iksg" target="_LceYf0axEeerobMaL6iksg"/>
+          <transition xmi:id="_LceYkUaxEeerobMaL6iksg" source="_LceYcUaxEeerobMaL6iksg" target="_LceYhkaxEeerobMaL6iksg" guard="_LceYkkaxEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceYkkaxEeerobMaL6iksg" name="t.elapsed(40)" constrainedElement="_LceYkUaxEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceYk0axEeerobMaL6iksg" value="t.elapsed(40)"/>
+            </ownedRule>
+          </transition>
+          <transition xmi:id="_LceYlEaxEeerobMaL6iksg" name="Transition" source="_LceYc0axEeerobMaL6iksg" target="_LceYgUaxEeerobMaL6iksg" guard="_LceYlUaxEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceYlUaxEeerobMaL6iksg" name="velZ2>0" constrainedElement="_LceYlEaxEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceYlkaxEeerobMaL6iksg" value="velZ2>0"/>
+            </ownedRule>
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_LceYl0axEeerobMaL6iksg">
+              <body>throttleDpart=velZ2*0.5;</body>
+            </effect>
+          </transition>
+          <transition xmi:id="_LceYmEaxEeerobMaL6iksg" name="Transition1" source="_LceYc0axEeerobMaL6iksg" target="_LceYgUaxEeerobMaL6iksg" guard="_LceYmUaxEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceYmUaxEeerobMaL6iksg" name="velZ2&lt;=0" constrainedElement="_LceYmEaxEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceYmkaxEeerobMaL6iksg" value="velZ2&lt;=0"/>
+            </ownedRule>
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_LceYm0axEeerobMaL6iksg">
+              <body>throttleDpart=velZ2*1.0;</body>
+            </effect>
+          </transition>
+          <transition xmi:id="_LceYnEaxEeerobMaL6iksg" name="Transition" source="_LceYdUaxEeerobMaL6iksg" target="_LceYd0axEeerobMaL6iksg"/>
+          <transition xmi:id="_LceYnUaxEeerobMaL6iksg" name="Transition" source="_LceYd0axEeerobMaL6iksg" target="_LceYgkaxEeerobMaL6iksg"/>
+          <transition xmi:id="_LceYnkaxEeerobMaL6iksg" name="Transition" source="_LceYeUaxEeerobMaL6iksg" target="_LceYe0axEeerobMaL6iksg"/>
+          <transition xmi:id="_LceYn0axEeerobMaL6iksg" name="Transition" source="_LceYe0axEeerobMaL6iksg" target="_LceYhEaxEeerobMaL6iksg"/>
+          <transition xmi:id="_LceYoEaxEeerobMaL6iksg" name="Transition" source="_LceYfUaxEeerobMaL6iksg" target="_LceYcUaxEeerobMaL6iksg"/>
+          <transition xmi:id="_LceYoUaxEeerobMaL6iksg" name="Transition" source="_LceYf0axEeerobMaL6iksg" target="_LceYcUaxEeerobMaL6iksg"/>
+          <transition xmi:id="_LceYokaxEeerobMaL6iksg" name="Transition" source="_LceYgUaxEeerobMaL6iksg" target="_LceYdUaxEeerobMaL6iksg"/>
+          <transition xmi:id="_LceYo0axEeerobMaL6iksg" name="Transition" source="_LceYgkaxEeerobMaL6iksg" target="_LceYeUaxEeerobMaL6iksg" guard="_LceYpEaxEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceYpEaxEeerobMaL6iksg" name="desiredPitch > 0.35" constrainedElement="_LceYo0axEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceYpUaxEeerobMaL6iksg" value="desiredPitch > 0.35"/>
+            </ownedRule>
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_LceYpkaxEeerobMaL6iksg">
+              <body>desiredPitch=0.35;</body>
+            </effect>
+          </transition>
+          <transition xmi:id="_LceYp0axEeerobMaL6iksg" name="Transition1" source="_LceYgkaxEeerobMaL6iksg" target="_LceYeUaxEeerobMaL6iksg" guard="_LceYqEaxEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceYqEaxEeerobMaL6iksg" name="desiredPitch &lt; -0.35" constrainedElement="_LceYp0axEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceYqUaxEeerobMaL6iksg" value="desiredPitch &lt; -0.35"/>
+            </ownedRule>
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_LceYqkaxEeerobMaL6iksg">
+              <body>desiredPitch =-0.35;</body>
+            </effect>
+          </transition>
+          <transition xmi:id="_LceYq0axEeerobMaL6iksg" name="Transition2" source="_LceYgkaxEeerobMaL6iksg" target="_LceYeUaxEeerobMaL6iksg" guard="_LceYrEaxEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceYrEaxEeerobMaL6iksg" name="(desiredPitch&lt;=0.35)&amp;&amp;(desiredPitch>=-0.35)" constrainedElement="_LceYq0axEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceYrUaxEeerobMaL6iksg" value="(desiredPitch&lt;=0.35)&amp;&amp;(desiredPitch>=-0.35)"/>
+            </ownedRule>
+          </transition>
+          <transition xmi:id="_LceYrkaxEeerobMaL6iksg" name="Transition1" source="_LceYhEaxEeerobMaL6iksg" target="_LceYfUaxEeerobMaL6iksg" guard="_LceYr0axEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceYr0axEeerobMaL6iksg" name="desiredRoll&lt;-0.35" constrainedElement="_LceYrkaxEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceYsEaxEeerobMaL6iksg" value="desiredRoll&lt;-0.35"/>
+            </ownedRule>
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_LceYsUaxEeerobMaL6iksg">
+              <body>desiredRoll=-0.35;</body>
+            </effect>
+          </transition>
+          <transition xmi:id="_LceYskaxEeerobMaL6iksg" name="Transition2" source="_LceYhEaxEeerobMaL6iksg" target="_LceYfUaxEeerobMaL6iksg" guard="_LceYs0axEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceYs0axEeerobMaL6iksg" name="(desiredRoll>=-0.35)&amp;&amp;(desiredRoll&lt;=0.35)" constrainedElement="_LceYskaxEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceYtEaxEeerobMaL6iksg" value="(desiredRoll>=-0.35)&amp;&amp;(desiredRoll&lt;=0.35)"/>
+            </ownedRule>
+          </transition>
+          <transition xmi:id="_LceYtUaxEeerobMaL6iksg" name="Transition" source="_LceYhEaxEeerobMaL6iksg" target="_LceYfUaxEeerobMaL6iksg" guard="_LceYtkaxEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceYtkaxEeerobMaL6iksg" name="desiredRoll>0.35" constrainedElement="_LceYtUaxEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceYt0axEeerobMaL6iksg" value="desiredRoll>0.35"/>
+            </ownedRule>
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_LceYuEaxEeerobMaL6iksg">
+              <body>desiredRoll=0.35;</body>
+            </effect>
+          </transition>
+          <transition xmi:id="_LceYuUaxEeerobMaL6iksg" name="Transition" source="_LceYhkaxEeerobMaL6iksg" target="_LceYiEaxEeerobMaL6iksg" guard="_LceYukaxEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceYukaxEeerobMaL6iksg" name="(U2Eout1a==0x2E) &amp;&amp; (U2Eout2a==0xF1)" constrainedElement="_LceYuUaxEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceYu0axEeerobMaL6iksg" value="(U2Eout1a==0x2E) &amp;&amp; (U2Eout2a==0xF1)"/>
+            </ownedRule>
+          </transition>
+          <transition xmi:id="_LceYvEaxEeerobMaL6iksg" name="Transition1" source="_LceYhkaxEeerobMaL6iksg" target="_LceYikaxEeerobMaL6iksg" guard="_LceYvUaxEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceYvUaxEeerobMaL6iksg" name="(U2Eout1a==0x2E) &amp;&amp; (U2Eout2a==0)" constrainedElement="_LceYvEaxEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceYvkaxEeerobMaL6iksg" value="(U2Eout1a==0x2E) &amp;&amp; (U2Eout2a==0)"/>
+            </ownedRule>
+          </transition>
+          <transition xmi:id="_LceYv0axEeerobMaL6iksg" name="Transition2" source="_LceYhkaxEeerobMaL6iksg" target="_LceYjEaxEeerobMaL6iksg" guard="_LceYwEaxEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceYwEaxEeerobMaL6iksg" name="(U2Eout1a==0) &amp;&amp; (U2Eout2a==0xF1)" constrainedElement="_LceYv0axEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceYwUaxEeerobMaL6iksg" value="(U2Eout1a==0) &amp;&amp; (U2Eout2a==0xF1)"/>
+            </ownedRule>
+          </transition>
+          <transition xmi:id="_LceYwkaxEeerobMaL6iksg" name="Transition" source="_LceYiEaxEeerobMaL6iksg" target="_LceYjkaxEeerobMaL6iksg"/>
+          <transition xmi:id="_LceYw0axEeerobMaL6iksg" name="Transition" source="_LceYikaxEeerobMaL6iksg" target="_LceYjkaxEeerobMaL6iksg"/>
+          <transition xmi:id="_LceYxEaxEeerobMaL6iksg" name="Transition" source="_LceYjEaxEeerobMaL6iksg" target="_LceYjkaxEeerobMaL6iksg"/>
+          <transition xmi:id="_LceYxUaxEeerobMaL6iksg" name="Transition" source="_LceYjkaxEeerobMaL6iksg" target="_LceYc0axEeerobMaL6iksg"/>
+        </region>
+      </ownedBehavior>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_LceYxkaxEeerobMaL6iksg" name="UAV2EtherOutIF" isAbstract="true">
+      <ownedAttribute xmi:id="_LceYx0axEeerobMaL6iksg" name="U2Eout1p1" visibility="public" type="_LceWL0axEeerobMaL6iksg" isUnique="false">
+        <ownedComment xmi:id="_LceYyEaxEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceYyUaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceYykaxEeerobMaL6iksg" name="U2Eout1p2" visibility="public" type="_LceWL0axEeerobMaL6iksg" isUnique="false">
+        <ownedComment xmi:id="_LceYy0axEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceYzEaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceYzUaxEeerobMaL6iksg" name="U2Eout1p3" visibility="public" type="_LceWL0axEeerobMaL6iksg" isUnique="false">
+        <ownedComment xmi:id="_LceYzkaxEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceYz0axEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceY0EaxEeerobMaL6iksg" name="U2Eout1a" visibility="public" type="_LceWKEaxEeerobMaL6iksg" isUnique="false">
+        <ownedComment xmi:id="_LceY0UaxEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceY0kaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceY00axEeerobMaL6iksg" name="U2Eout2p2" visibility="public" type="_LceWL0axEeerobMaL6iksg" isUnique="false">
+        <ownedComment xmi:id="_LceY1EaxEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceY1UaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceY1kaxEeerobMaL6iksg" name="U2Eout2a" visibility="public" type="_LceWKEaxEeerobMaL6iksg" isUnique="false">
+        <ownedComment xmi:id="_LceY10axEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceY2EaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceY2UaxEeerobMaL6iksg" name="U2Eout2p1" visibility="public" type="_LceWL0axEeerobMaL6iksg" isUnique="false">
+        <ownedComment xmi:id="_LceY2kaxEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceY20axEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceY3EaxEeerobMaL6iksg" name="U2Eout2p3" visibility="public" type="_LceWL0axEeerobMaL6iksg" isUnique="false">
+        <ownedComment xmi:id="_LceY3UaxEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceY3kaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_LceY30axEeerobMaL6iksg" name="UAV2EtherInIF" isAbstract="true">
+      <ownedAttribute xmi:id="_LceY4EaxEeerobMaL6iksg" name="U2Ein1p1" visibility="public" type="_LceWL0axEeerobMaL6iksg" isUnique="false">
+        <ownedComment xmi:id="_LceY4UaxEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceY4kaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceY40axEeerobMaL6iksg" name="U2Ein1p2" visibility="public" type="_LceWL0axEeerobMaL6iksg" isUnique="false">
+        <ownedComment xmi:id="_LceY5EaxEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceY5UaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceY5kaxEeerobMaL6iksg" name="U2Ein1p3" visibility="public" type="_LceWL0axEeerobMaL6iksg" isUnique="false">
+        <ownedComment xmi:id="_LceY50axEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceY6EaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceY6UaxEeerobMaL6iksg" name="U2Ein1a" visibility="public" type="_LceWKEaxEeerobMaL6iksg" isUnique="false">
+        <ownedComment xmi:id="_LceY6kaxEeerobMaL6iksg">
+          <body></body>
+        </ownedComment>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceY60axEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_LceY7EaxEeerobMaL6iksg" name="TESim">
+      <ownedAttribute xmi:id="_LceY7UaxEeerobMaL6iksg" name="t" visibility="public" type="_LceWK0axEeerobMaL6iksg">
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceY7kaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LceY70axEeerobMaL6iksg" name="local" visibility="public" type="_LceWKEaxEeerobMaL6iksg" isUnique="false">
+        <defaultValue xmi:type="uml:Expression" xmi:id="_LceY8EaxEeerobMaL6iksg" symbol="0"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_LceY8UaxEeerobMaL6iksg" name="TESim ">
+        <region xmi:id="_LceY8kaxEeerobMaL6iksg">
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_LceY80axEeerobMaL6iksg" name="Initial State"/>
+          <subvertex xmi:type="uml:State" xmi:id="_LceY9EaxEeerobMaL6iksg" name="Idle">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceY9UaxEeerobMaL6iksg">
+              <body>t.reset();</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceY9kaxEeerobMaL6iksg" name="UpdateUAV1Target">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceY90axEeerobMaL6iksg">
+              <body>t.reset();targetX1=10;targetY1=10;targetZ1=4;targetX2=0;targetY2=0;targetZ2=0;</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceY-EaxEeerobMaL6iksg" name="UpdateUAV2Target">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceY-UaxEeerobMaL6iksg">
+              <body>t.reset();targetX1=10;targetY1=10;targetZ1=4;targetX2=8;targetY2=8;targetZ2=3.7;</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceY-kaxEeerobMaL6iksg" name="UpdateUAV1Target_1">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceY-0axEeerobMaL6iksg">
+              <body>t.reset();targetX1=-10;targetY1=-10;targetZ1=4;targetX2=8;targetY2=8;targetZ2=3.7;</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceY_EaxEeerobMaL6iksg" name="UpdateUAV2Target_1">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceY_UaxEeerobMaL6iksg">
+              <body>t.reset();targetX1=-10;targetY1=-10;targetZ1=4;targetX2=-8;targetY2=-8;targetZ2=3.7;</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceY_kaxEeerobMaL6iksg" name="UpdateUAV1Target_2">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceY_0axEeerobMaL6iksg">
+              <body>t.reset();targetX1=-10;targetY1=-10;targetZ1=-4;targetX2=-8;targetY2=-8;targetZ2=3.7;</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_LceZAEaxEeerobMaL6iksg" name="UpdateUAV2Target_2">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_LceZAUaxEeerobMaL6iksg">
+              <body>t.reset();targetX1=-10;targetY1=-10;targetZ1=-4;targetX2=-8;targetY2=-8;targetZ2=-3.7;</body>
+            </entry>
+          </subvertex>
+          <transition xmi:id="_LceZAkaxEeerobMaL6iksg" name="Transition" source="_LceY80axEeerobMaL6iksg" target="_LceY9EaxEeerobMaL6iksg"/>
+          <transition xmi:id="_LceZA0axEeerobMaL6iksg" name="Transition" source="_LceY9EaxEeerobMaL6iksg" target="_LceY9kaxEeerobMaL6iksg" guard="_LceZBEaxEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceZBEaxEeerobMaL6iksg" name="t.elapsed(2000)" constrainedElement="_LceZA0axEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceZBUaxEeerobMaL6iksg" value="t.elapsed(2000)"/>
+            </ownedRule>
+          </transition>
+          <transition xmi:id="_LceZBkaxEeerobMaL6iksg" name="Transition1" source="_LceY9kaxEeerobMaL6iksg" target="_LceY-EaxEeerobMaL6iksg" guard="_LceZB0axEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceZB0axEeerobMaL6iksg" name="t.elapsed(2000)" constrainedElement="_LceZBkaxEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceZCEaxEeerobMaL6iksg" value="t.elapsed(2000)"/>
+            </ownedRule>
+          </transition>
+          <transition xmi:id="_LceZCUaxEeerobMaL6iksg" name="Transition" source="_LceY-EaxEeerobMaL6iksg" target="_LceY-kaxEeerobMaL6iksg" guard="_LceZCkaxEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceZCkaxEeerobMaL6iksg" name="t.elapsed(2000)" constrainedElement="_LceZCUaxEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceZC0axEeerobMaL6iksg" value="t.elapsed(2000)"/>
+            </ownedRule>
+          </transition>
+          <transition xmi:id="_LceZDEaxEeerobMaL6iksg" name="Transition" source="_LceY-kaxEeerobMaL6iksg" target="_LceY_EaxEeerobMaL6iksg" guard="_LceZDUaxEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceZDUaxEeerobMaL6iksg" name="t.elapsed(2000)" constrainedElement="_LceZDEaxEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceZDkaxEeerobMaL6iksg" value="t.elapsed(2000)"/>
+            </ownedRule>
+          </transition>
+          <transition xmi:id="_LceZD0axEeerobMaL6iksg" name="Transition" source="_LceY_EaxEeerobMaL6iksg" target="_LceY_kaxEeerobMaL6iksg" guard="_LceZEEaxEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceZEEaxEeerobMaL6iksg" name="t.elapsed(2000)" constrainedElement="_LceZD0axEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceZEUaxEeerobMaL6iksg" value="t.elapsed(2000)"/>
+            </ownedRule>
+          </transition>
+          <transition xmi:id="_LceZEkaxEeerobMaL6iksg" name="Transition" source="_LceY_kaxEeerobMaL6iksg" target="_LceZAEaxEeerobMaL6iksg" guard="_LceZE0axEeerobMaL6iksg">
+            <ownedRule xmi:id="_LceZE0axEeerobMaL6iksg" name="t.elapsed(2000)" constrainedElement="_LceZEkaxEeerobMaL6iksg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_LceZFEaxEeerobMaL6iksg" value="t.elapsed(2000)"/>
+            </ownedRule>
+          </transition>
+          <transition xmi:id="_LceZFUaxEeerobMaL6iksg" name="Transition" source="_LceZAEaxEeerobMaL6iksg" target="_LceY9EaxEeerobMaL6iksg"/>
+        </region>
+      </ownedBehavior>
+    </packagedElement>
+    <profileApplication xmi:id="_LeRs8EaxEeerobMaL6iksg">
+      <eAnnotations xmi:id="_LeRs8UaxEeerobMaL6iksg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="RTTMBTProfile.profile.xmi#_Lc7CGEaxEeerobMaL6iksg"/>
+      </eAnnotations>
+      <appliedProfile href="RTTMBTProfile.profile.xmi#_Lc7CEUaxEeerobMaL6iksg"/>
+    </profileApplication>
+    <profileApplication xmi:id="_LeRs8kaxEeerobMaL6iksg">
+      <eAnnotations xmi:id="_LeRs80axEeerobMaL6iksg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="INTOCPS.profile.xmi#_LdhfB0axEeerobMaL6iksg"/>
+      </eAnnotations>
+      <appliedProfile href="INTOCPS.profile.xmi#_LdhfAEaxEeerobMaL6iksg"/>
+    </profileApplication>
+    <profileApplication xmi:id="_Lea24EaxEeerobMaL6iksg">
+      <eAnnotations xmi:id="_Lea24UaxEeerobMaL6iksg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="sysml.profile.xmi#_Ldqo90axEeerobMaL6iksg"/>
+      </eAnnotations>
+      <appliedProfile href="sysml.profile.xmi#_Ldqo8EaxEeerobMaL6iksg"/>
+    </profileApplication>
+  </uml:Model>
+  <RTTMBTProfile:DATATYPES xmi:id="_Lea24kaxEeerobMaL6iksg" base_Package="_LceWJEaxEeerobMaL6iksg"/>
+  <sysml:Block xmi:id="_Lea240axEeerobMaL6iksg" base_Class="_LceWMEaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:SYSTEM xmi:id="_Lea25EaxEeerobMaL6iksg" base_Class="_LceWMEaxEeerobMaL6iksg"/>
+  <INTOCPS:BlockInstance xmi:id="_Lea25UaxEeerobMaL6iksg" base_Property="_LceWMUaxEeerobMaL6iksg"/>
+  <INTOCPS:BlockInstance xmi:id="_Lea25kaxEeerobMaL6iksg" base_Property="_LceWMkaxEeerobMaL6iksg"/>
+  <sysml:Block xmi:id="_Lekn4EaxEeerobMaL6iksg" base_Class="_LceWR0axEeerobMaL6iksg"/>
+  <RTTMBTProfile:SUT xmi:id="_Lekn4UaxEeerobMaL6iksg" base_Class="_LceWR0axEeerobMaL6iksg"/>
+  <INTOCPS:FlowPort xmi:id="_Lekn4kaxEeerobMaL6iksg" base_Port="_LceWSEaxEeerobMaL6iksg"/>
+  <INTOCPS:FlowPort xmi:id="_Lekn40axEeerobMaL6iksg" base_Port="_LceWSUaxEeerobMaL6iksg"/>
+  <INTOCPS:BlockInstance xmi:id="_Lekn5EaxEeerobMaL6iksg" base_Property="_LceWSkaxEeerobMaL6iksg"/>
+  <INTOCPS:BlockInstance xmi:id="_Lekn5UaxEeerobMaL6iksg" base_Property="_LceWS0axEeerobMaL6iksg"/>
+  <INTOCPS:BlockInstance xmi:id="_Lekn5kaxEeerobMaL6iksg" base_Property="_LceWTEaxEeerobMaL6iksg"/>
+  <INTOCPS:BlockInstance xmi:id="_Lekn50axEeerobMaL6iksg" base_Property="_LceWTUaxEeerobMaL6iksg"/>
+  <sysml:Block xmi:id="_Lekn6EaxEeerobMaL6iksg" base_Class="_LceWhkaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:TE xmi:id="_Lekn6UaxEeerobMaL6iksg" base_Class="_LceWhkaxEeerobMaL6iksg"/>
+  <INTOCPS:FlowPort xmi:id="_Lekn6kaxEeerobMaL6iksg" base_Port="_LceWh0axEeerobMaL6iksg"/>
+  <INTOCPS:FlowPort xmi:id="_Lekn60axEeerobMaL6iksg" base_Port="_LceWiEaxEeerobMaL6iksg"/>
+  <sysml:Block xmi:id="_Lekn7EaxEeerobMaL6iksg" base_Class="_LceWj0axEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_Lekn7UaxEeerobMaL6iksg" base_Property="_LceWkkaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_Lekn7kaxEeerobMaL6iksg" base_Property="_LceWlEaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_Lekn70axEeerobMaL6iksg" base_Property="_LceWlEaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_Lekn8EaxEeerobMaL6iksg" base_Property="_LceWlkaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_Lekn8UaxEeerobMaL6iksg" base_Property="_LceWlkaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_Lekn8kaxEeerobMaL6iksg" base_Property="_LceWmEaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_Lekn80axEeerobMaL6iksg" base_Property="_LceWmEaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_Lekn9EaxEeerobMaL6iksg" base_Property="_LceWmkaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_Lekn9UaxEeerobMaL6iksg" base_Property="_LceWmkaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_Lekn9kaxEeerobMaL6iksg" base_Property="_LceWnEaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_Lekn90axEeerobMaL6iksg" base_Property="_LceWnEaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_Lekn-EaxEeerobMaL6iksg" base_Property="_LceWnkaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_Lekn-UaxEeerobMaL6iksg" base_Property="_LceWnkaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_Lekn-kaxEeerobMaL6iksg" base_Property="_LceWoEaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_Lekn-0axEeerobMaL6iksg" base_Property="_LceWoEaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_Lekn_EaxEeerobMaL6iksg" base_Property="_LceWokaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_Lekn_UaxEeerobMaL6iksg" base_Property="_LceWokaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_Lekn_kaxEeerobMaL6iksg" base_Property="_LceWpEaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_Lekn_0axEeerobMaL6iksg" base_Property="_LceWpEaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LekoAEaxEeerobMaL6iksg" base_Property="_LceWpkaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_LekoAUaxEeerobMaL6iksg" base_Property="_LceWpkaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LekoAkaxEeerobMaL6iksg" base_Property="_LceWqEaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_LekoA0axEeerobMaL6iksg" base_Property="_LceWqEaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LekoBEaxEeerobMaL6iksg" base_Property="_LceWqkaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_LekoBUaxEeerobMaL6iksg" base_Property="_LceWqkaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LekoBkaxEeerobMaL6iksg" base_Property="_LceWrEaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_LekoB0axEeerobMaL6iksg" base_Property="_LceWrEaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LekoCEaxEeerobMaL6iksg" base_Property="_LceWrkaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_LekoCUaxEeerobMaL6iksg" base_Property="_LceWrkaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LekoCkaxEeerobMaL6iksg" base_Property="_LceWsEaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_LekoC0axEeerobMaL6iksg" base_Property="_LceWsEaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LekoDEaxEeerobMaL6iksg" base_Property="_LceWskaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_LekoDUaxEeerobMaL6iksg" base_Property="_LceWskaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LekoDkaxEeerobMaL6iksg" base_Property="_LceWtEaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_LekoD0axEeerobMaL6iksg" base_Property="_LceWtEaxEeerobMaL6iksg"/>
+  <INTOCPS:FlowPort xmi:id="_LekoEEaxEeerobMaL6iksg" base_Port="_LceWkUaxEeerobMaL6iksg"/>
+  <INTOCPS:FlowPort xmi:id="_LekoEUaxEeerobMaL6iksg" base_Port="_LceWkEaxEeerobMaL6iksg"/>
+  <sysml:Block xmi:id="_LekoEkaxEeerobMaL6iksg" base_Class="_LceXDkaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LekoE0axEeerobMaL6iksg" base_Property="_LceXEUaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LekoFEaxEeerobMaL6iksg" base_Property="_LceXE0axEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_LekoFUaxEeerobMaL6iksg" base_Property="_LceXE0axEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LekoFkaxEeerobMaL6iksg" base_Property="_LceXFUaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_LekoF0axEeerobMaL6iksg" base_Property="_LceXFUaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LekoGEaxEeerobMaL6iksg" base_Property="_LceXF0axEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_LekoGUaxEeerobMaL6iksg" base_Property="_LceXF0axEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LekoGkaxEeerobMaL6iksg" base_Property="_LceXGUaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_LekoG0axEeerobMaL6iksg" base_Property="_LceXGUaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LekoHEaxEeerobMaL6iksg" base_Property="_LceXG0axEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_LekoHUaxEeerobMaL6iksg" base_Property="_LceXG0axEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LekoHkaxEeerobMaL6iksg" base_Property="_LceXHUaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_LekoH0axEeerobMaL6iksg" base_Property="_LceXHUaxEeerobMaL6iksg"/>
+  <INTOCPS:FlowPort xmi:id="_LekoIEaxEeerobMaL6iksg" base_Port="_LceXD0axEeerobMaL6iksg"/>
+  <INTOCPS:FlowPort xmi:id="_LekoIUaxEeerobMaL6iksg" base_Port="_LceXEEaxEeerobMaL6iksg"/>
+  <INTOCPS:StrtType xmi:id="_LekoIkaxEeerobMaL6iksg" base_Interface="_LceXSEaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:TE2SUT xmi:id="_LekoI0axEeerobMaL6iksg" base_Interface="_LceXSEaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_LekoJEaxEeerobMaL6iksg" base_Property="_LceXSUaxEeerobMaL6iksg" MinimumValue="-1000000000" MaximumValue="1000000000"/>
+  <INTOCPS:Variable xmi:id="_LekoJUaxEeerobMaL6iksg" base_Property="_LceXSUaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LekoJkaxEeerobMaL6iksg" base_Property="_LceXTEaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_LekoJ0axEeerobMaL6iksg" base_Property="_LceXTEaxEeerobMaL6iksg" MinimumValue="-1000000000" MaximumValue="1000000000"/>
+  <INTOCPS:Variable xmi:id="_LekoKEaxEeerobMaL6iksg" base_Property="_LceXT0axEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_LekoKUaxEeerobMaL6iksg" base_Property="_LceXT0axEeerobMaL6iksg" MinimumValue="-1000000000" MaximumValue="1000000000"/>
+  <INTOCPS:Variable xmi:id="_LekoKkaxEeerobMaL6iksg" base_Property="_LceXUkaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_LekoK0axEeerobMaL6iksg" base_Property="_LceXUkaxEeerobMaL6iksg" MinimumValue="-1000000000" MaximumValue="1000000000"/>
+  <INTOCPS:Variable xmi:id="_LekoLEaxEeerobMaL6iksg" base_Property="_LceXVUaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_LekoLUaxEeerobMaL6iksg" base_Property="_LceXVUaxEeerobMaL6iksg" MinimumValue="-1000000000" MaximumValue="1000000000"/>
+  <INTOCPS:Variable xmi:id="_LekoLkaxEeerobMaL6iksg" base_Property="_LceXWEaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_LekoL0axEeerobMaL6iksg" base_Property="_LceXWEaxEeerobMaL6iksg" MinimumValue="-1000000000" MaximumValue="1000000000"/>
+  <INTOCPS:Variable xmi:id="_LeuY4EaxEeerobMaL6iksg" base_Property="_LceXW0axEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_LeuY4UaxEeerobMaL6iksg" base_Property="_LceXW0axEeerobMaL6iksg" MinimumValue="-1000000000" MaximumValue="1000000000"/>
+  <INTOCPS:Variable xmi:id="_LeuY4kaxEeerobMaL6iksg" base_Property="_LceXXkaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_LeuY40axEeerobMaL6iksg" base_Property="_LceXXkaxEeerobMaL6iksg" MinimumValue="-1000000000" MaximumValue="1000000000"/>
+  <INTOCPS:Variable xmi:id="_LeuY5EaxEeerobMaL6iksg" base_Property="_LceXYUaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_LeuY5UaxEeerobMaL6iksg" base_Property="_LceXYUaxEeerobMaL6iksg" MinimumValue="-1000000000" MaximumValue="1000000000"/>
+  <INTOCPS:Variable xmi:id="_LeuY5kaxEeerobMaL6iksg" base_Property="_LceXZEaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_LeuY50axEeerobMaL6iksg" base_Property="_LceXZEaxEeerobMaL6iksg" MinimumValue="0" MaximumValue="1000000000"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_LeuY6EaxEeerobMaL6iksg" base_Property="_LceXZ0axEeerobMaL6iksg" MinimumValue="-1000000000" MaximumValue="1000000000"/>
+  <INTOCPS:Variable xmi:id="_LeuY6UaxEeerobMaL6iksg" base_Property="_LceXZ0axEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LeuY6kaxEeerobMaL6iksg" base_Property="_LceXakaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_LeuY60axEeerobMaL6iksg" base_Property="_LceXakaxEeerobMaL6iksg" MinimumValue="-1000000000" MaximumValue="1000000000"/>
+  <INTOCPS:Variable xmi:id="_LeuY7EaxEeerobMaL6iksg" base_Property="_LceXbUaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_LeuY7UaxEeerobMaL6iksg" base_Property="_LceXbUaxEeerobMaL6iksg" MinimumValue="-1000000000" MaximumValue="1000000000"/>
+  <INTOCPS:Variable xmi:id="_LeuY7kaxEeerobMaL6iksg" base_Property="_LceXcEaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_LeuY70axEeerobMaL6iksg" base_Property="_LceXcEaxEeerobMaL6iksg" MinimumValue="-1000000000" MaximumValue="1000000000"/>
+  <INTOCPS:Variable xmi:id="_LeuY8EaxEeerobMaL6iksg" base_Property="_LceXc0axEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_LeuY8UaxEeerobMaL6iksg" base_Property="_LceXc0axEeerobMaL6iksg" MinimumValue="-1000000000" MaximumValue="1000000000"/>
+  <INTOCPS:Variable xmi:id="_LeuY8kaxEeerobMaL6iksg" base_Property="_LceXdkaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_LeuY80axEeerobMaL6iksg" base_Property="_LceXdkaxEeerobMaL6iksg" MinimumValue="-1000000000" MaximumValue="1000000000"/>
+  <INTOCPS:Variable xmi:id="_LeuY9EaxEeerobMaL6iksg" base_Property="_LceXeUaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_LeuY9UaxEeerobMaL6iksg" base_Property="_LceXeUaxEeerobMaL6iksg" MinimumValue="0" MaximumValue="1000000000"/>
+  <INTOCPS:Variable xmi:id="_LeuY9kaxEeerobMaL6iksg" base_Property="_LceXfEaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_LeuY90axEeerobMaL6iksg" base_Property="_LceXfEaxEeerobMaL6iksg" MinimumValue="-1000000000" MaximumValue="1000000000"/>
+  <INTOCPS:Variable xmi:id="_LeuY-EaxEeerobMaL6iksg" base_Property="_LceXf0axEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_LeuY-UaxEeerobMaL6iksg" base_Property="_LceXf0axEeerobMaL6iksg" MinimumValue="-1000000000" MaximumValue="1000000000"/>
+  <INTOCPS:Variable xmi:id="_LeuY-kaxEeerobMaL6iksg" base_Property="_LceXgkaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_LeuY-0axEeerobMaL6iksg" base_Property="_LceXgkaxEeerobMaL6iksg" MinimumValue="-1000000000" MaximumValue="1000000000"/>
+  <INTOCPS:StrtType xmi:id="_LeuY_EaxEeerobMaL6iksg" base_Interface="_LceXhUaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:SUT2TE xmi:id="_LeuY_UaxEeerobMaL6iksg" base_Interface="_LceXhUaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LeuY_kaxEeerobMaL6iksg" base_Property="_LceXhkaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_LeuY_0axEeerobMaL6iksg" base_Property="_LceXhkaxEeerobMaL6iksg" MinimumValue="-100000000000000000000000000000000000000" MaximumValue="100000000000000000000000000000000000000"/>
+  <INTOCPS:Variable xmi:id="_LeuZAEaxEeerobMaL6iksg" base_Property="_LceXiUaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_LeuZAUaxEeerobMaL6iksg" base_Property="_LceXiUaxEeerobMaL6iksg" MinimumValue="-100000000000000000000000000000000000000" MaximumValue="100000000000000000000000000000000000000"/>
+  <INTOCPS:Variable xmi:id="_LeuZAkaxEeerobMaL6iksg" base_Property="_LceXjEaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_LeuZA0axEeerobMaL6iksg" base_Property="_LceXjEaxEeerobMaL6iksg" MinimumValue="-100000000000000000000000000000000000000" MaximumValue="100000000000000000000000000000000000000"/>
+  <INTOCPS:Variable xmi:id="_LeuZBEaxEeerobMaL6iksg" base_Property="_LceXj0axEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_LeuZBUaxEeerobMaL6iksg" base_Property="_LceXj0axEeerobMaL6iksg" MinimumValue="-100000000000000000000000000000000000000" MaximumValue="100000000000000000000000000000000000000"/>
+  <INTOCPS:Variable xmi:id="_LeuZBkaxEeerobMaL6iksg" base_Property="_LceXkkaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_LeuZB0axEeerobMaL6iksg" base_Property="_LceXkkaxEeerobMaL6iksg" MinimumValue="-100000000000000000000000000000000000000" MaximumValue="100000000000000000000000000000000000000"/>
+  <INTOCPS:Variable xmi:id="_LeuZCEaxEeerobMaL6iksg" base_Property="_LceXlUaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_LeuZCUaxEeerobMaL6iksg" base_Property="_LceXlUaxEeerobMaL6iksg" MinimumValue="-100000000000000000000000000000000000000" MaximumValue="100000000000000000000000000000000000000"/>
+  <INTOCPS:Variable xmi:id="_LeuZCkaxEeerobMaL6iksg" base_Property="_LceXmEaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_LeuZC0axEeerobMaL6iksg" base_Property="_LceXmEaxEeerobMaL6iksg" MinimumValue="-100000000000000000000000000000000000000" MaximumValue="100000000000000000000000000000000000000"/>
+  <INTOCPS:Variable xmi:id="_LeuZDEaxEeerobMaL6iksg" base_Property="_LceXm0axEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_LeuZDUaxEeerobMaL6iksg" base_Property="_LceXm0axEeerobMaL6iksg" MinimumValue="-100000000000000000000000000000000000000" MaximumValue="100000000000000000000000000000000000000"/>
+  <INTOCPS:StrtType xmi:id="_LeuZDkaxEeerobMaL6iksg" base_Interface="_LceXnkaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LeuZD0axEeerobMaL6iksg" base_Property="_LceXn0axEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LeuZEEaxEeerobMaL6iksg" base_Property="_LceXokaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LeuZEUaxEeerobMaL6iksg" base_Property="_LceXpUaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LeuZEkaxEeerobMaL6iksg" base_Property="_LceXqEaxEeerobMaL6iksg"/>
+  <sysml:Block xmi:id="_LeuZE0axEeerobMaL6iksg" base_Class="_LceXq0axEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LeuZFEaxEeerobMaL6iksg" base_Property="_LceXskaxEeerobMaL6iksg"/>
+  <INTOCPS:FlowPort xmi:id="_LeuZFUaxEeerobMaL6iksg" base_Port="_LceXrkaxEeerobMaL6iksg"/>
+  <INTOCPS:FlowPort xmi:id="_LeuZFkaxEeerobMaL6iksg" base_Port="_LceXr0axEeerobMaL6iksg"/>
+  <INTOCPS:FlowPort xmi:id="_LeuZF0axEeerobMaL6iksg" base_Port="_LceXrUaxEeerobMaL6iksg"/>
+  <INTOCPS:FlowPort xmi:id="_LeuZGEaxEeerobMaL6iksg" base_Port="_LceXrEaxEeerobMaL6iksg"/>
+  <INTOCPS:FlowPort xmi:id="_LeuZGUaxEeerobMaL6iksg" base_Port="_LceXsUaxEeerobMaL6iksg"/>
+  <INTOCPS:FlowPort xmi:id="_LeuZGkaxEeerobMaL6iksg" base_Port="_LceXsEaxEeerobMaL6iksg"/>
+  <INTOCPS:StrtType xmi:id="_LeuZG0axEeerobMaL6iksg" base_Interface="_LceYCEaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LeuZHEaxEeerobMaL6iksg" base_Property="_LceYCUaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LeuZHUaxEeerobMaL6iksg" base_Property="_LceYDEaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LeuZHkaxEeerobMaL6iksg" base_Property="_LceYD0axEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LeuZH0axEeerobMaL6iksg" base_Property="_LceYEkaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LeuZIEaxEeerobMaL6iksg" base_Property="_LceYFUaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LeuZIUaxEeerobMaL6iksg" base_Property="_LceYGEaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LeuZIkaxEeerobMaL6iksg" base_Property="_LceYG0axEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LeuZI0axEeerobMaL6iksg" base_Property="_LceYHkaxEeerobMaL6iksg"/>
+  <INTOCPS:StrtType xmi:id="_LeuZJEaxEeerobMaL6iksg" base_Interface="_LceYIUaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LeuZJUaxEeerobMaL6iksg" base_Property="_LceYIkaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LeuZJkaxEeerobMaL6iksg" base_Property="_LceYJUaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LeuZJ0axEeerobMaL6iksg" base_Property="_LceYKEaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LeuZKEaxEeerobMaL6iksg" base_Property="_LceYK0axEeerobMaL6iksg"/>
+  <INTOCPS:StrtType xmi:id="_LeuZKUaxEeerobMaL6iksg" base_Interface="_LceYLkaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LeuZKkaxEeerobMaL6iksg" base_Property="_LceYL0axEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LeuZK0axEeerobMaL6iksg" base_Property="_LceYMkaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LeuZLEaxEeerobMaL6iksg" base_Property="_LceYNUaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LeuZLUaxEeerobMaL6iksg" base_Property="_LceYOEaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LeuZLkaxEeerobMaL6iksg" base_Property="_LceYO0axEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LeuZL0axEeerobMaL6iksg" base_Property="_LceYPkaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LeuZMEaxEeerobMaL6iksg" base_Property="_LceYQUaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LeuZMUaxEeerobMaL6iksg" base_Property="_LceYREaxEeerobMaL6iksg"/>
+  <sysml:Block xmi:id="_LeuZMkaxEeerobMaL6iksg" base_Class="_LceYR0axEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LeuZM0axEeerobMaL6iksg" base_Property="_LceYSkaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LeuZNEaxEeerobMaL6iksg" base_Property="_LceYTEaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_LeuZNUaxEeerobMaL6iksg" base_Property="_LceYTEaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LeuZNkaxEeerobMaL6iksg" base_Property="_LceYTkaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_LeuZN0axEeerobMaL6iksg" base_Property="_LceYTkaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LeuZOEaxEeerobMaL6iksg" base_Property="_LceYUEaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_LeuZOUaxEeerobMaL6iksg" base_Property="_LceYUEaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LeuZOkaxEeerobMaL6iksg" base_Property="_LceYUkaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_LeuZO0axEeerobMaL6iksg" base_Property="_LceYUkaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LeuZPEaxEeerobMaL6iksg" base_Property="_LceYVEaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_LeuZPUaxEeerobMaL6iksg" base_Property="_LceYVEaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_LeuZPkaxEeerobMaL6iksg" base_Property="_LceYVkaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_Le3i0EaxEeerobMaL6iksg" base_Property="_LceYVkaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_Le3i0UaxEeerobMaL6iksg" base_Property="_LceYWEaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_Le3i0kaxEeerobMaL6iksg" base_Property="_LceYWEaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_Le3i00axEeerobMaL6iksg" base_Property="_LceYWkaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_Le3i1EaxEeerobMaL6iksg" base_Property="_LceYWkaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_Le3i1UaxEeerobMaL6iksg" base_Property="_LceYXEaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_Le3i1kaxEeerobMaL6iksg" base_Property="_LceYXEaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_Le3i10axEeerobMaL6iksg" base_Property="_LceYXkaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_Le3i2EaxEeerobMaL6iksg" base_Property="_LceYXkaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_Le3i2UaxEeerobMaL6iksg" base_Property="_LceYYEaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_Le3i2kaxEeerobMaL6iksg" base_Property="_LceYYEaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_Le3i20axEeerobMaL6iksg" base_Property="_LceYYkaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_Le3i3EaxEeerobMaL6iksg" base_Property="_LceYYkaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_Le3i3UaxEeerobMaL6iksg" base_Property="_LceYZEaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_Le3i3kaxEeerobMaL6iksg" base_Property="_LceYZEaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_Le3i30axEeerobMaL6iksg" base_Property="_LceYZkaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_Le3i4EaxEeerobMaL6iksg" base_Property="_LceYZkaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_Le3i4UaxEeerobMaL6iksg" base_Property="_LceYaEaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_Le3i4kaxEeerobMaL6iksg" base_Property="_LceYaEaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_Le3i40axEeerobMaL6iksg" base_Property="_LceYakaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_Le3i5EaxEeerobMaL6iksg" base_Property="_LceYakaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_Le3i5UaxEeerobMaL6iksg" base_Property="_LceYbEaxEeerobMaL6iksg"/>
+  <RTTMBTProfile:RESTRICTED xmi:id="_Le3i5kaxEeerobMaL6iksg" base_Property="_LceYbEaxEeerobMaL6iksg"/>
+  <INTOCPS:FlowPort xmi:id="_Le3i50axEeerobMaL6iksg" base_Port="_LceYSUaxEeerobMaL6iksg"/>
+  <INTOCPS:FlowPort xmi:id="_Le3i6EaxEeerobMaL6iksg" base_Port="_LceYSEaxEeerobMaL6iksg"/>
+  <INTOCPS:StrtType xmi:id="_Le3i6UaxEeerobMaL6iksg" base_Interface="_LceYxkaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_Le3i6kaxEeerobMaL6iksg" base_Property="_LceYx0axEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_Le3i60axEeerobMaL6iksg" base_Property="_LceYykaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_Le3i7EaxEeerobMaL6iksg" base_Property="_LceYzUaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_Le3i7UaxEeerobMaL6iksg" base_Property="_LceY0EaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_Le3i7kaxEeerobMaL6iksg" base_Property="_LceY00axEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_Le3i70axEeerobMaL6iksg" base_Property="_LceY1kaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_Le3i8EaxEeerobMaL6iksg" base_Property="_LceY2UaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_Le3i8UaxEeerobMaL6iksg" base_Property="_LceY3EaxEeerobMaL6iksg"/>
+  <INTOCPS:StrtType xmi:id="_Le3i8kaxEeerobMaL6iksg" base_Interface="_LceY30axEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_Le3i80axEeerobMaL6iksg" base_Property="_LceY4EaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_Le3i9EaxEeerobMaL6iksg" base_Property="_LceY40axEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_Le3i9UaxEeerobMaL6iksg" base_Property="_LceY5kaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_Le3i9kaxEeerobMaL6iksg" base_Property="_LceY6UaxEeerobMaL6iksg"/>
+  <sysml:Block xmi:id="_Le3i90axEeerobMaL6iksg" base_Class="_LceY7EaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_Le3i-EaxEeerobMaL6iksg" base_Property="_LceY7UaxEeerobMaL6iksg"/>
+  <INTOCPS:Variable xmi:id="_Le3i-UaxEeerobMaL6iksg" base_Property="_LceY70axEeerobMaL6iksg"/>
+</xmi:XMI>

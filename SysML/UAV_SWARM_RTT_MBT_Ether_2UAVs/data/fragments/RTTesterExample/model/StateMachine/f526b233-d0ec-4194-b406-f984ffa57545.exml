@@ -1,0 +1,461 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="GLOBAL_CTRL" version="4">
+  <OBJECT>
+    <ID name="GLOBAL_CTRL" mc="Standard.StateMachine" uid="f526b233-d0ec-4194-b406-f984ffa57545"/>
+    <PID name="GLOBAL_CTRL" mc="Standard.Class" uid="13a0f2b6-443a-4815-8735-8d8d23ccc2ad"/>
+    <ATTRIBUTES>
+      <ATT name="Kind">Dynamic</ATT>
+      <ATT name="IsReentrant">false</ATT>
+      <ATT name="Name"><![CDATA[GLOBAL_CTRL]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Top">
+        <OBJECT>
+          <ID name="OUTPUT_CTRL" mc="Standard.Region" uid="f55db730-32b7-4369-8df3-e98e1e01d3a9"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[OUTPUT_CTRL]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Sub">
+              <OBJECT>
+                <ID name="initial" mc="Standard.InitialPseudoState" uid="8f84c629-7425-4114-8ff7-158d834cc5b7"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[initial]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="OutGoing">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Transition" uid="e45eb12b-7c99-497f-97cd-37acd090f65f"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="IDLE" mc="Standard.State" uid="cf224fa0-4555-4948-8711-b49e9efc4a0d"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="IDLE" mc="Standard.State" uid="cf224fa0-4555-4948-8711-b49e9efc4a0d"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[IDLE]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Internal">
+                    <OBJECT>
+                      <ID name="" mc="Standard.InternalTransition" uid="d8901677-7561-4bf7-8913-860356805c08"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"><![CDATA[t.reset();]]></ATT>
+                        <ATT name="ReceivedEvents"><![CDATA[Entry]]></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <COMP relation="OutGoing">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Transition" uid="f057a332-5b11-48b6-9a42-7da403612157"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"><![CDATA[t.elapsed(15)]]></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="SendUAV1TarPos" mc="Standard.State" uid="714a409d-7c2d-4fff-88a2-fc84be443766"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="SendUAV1TarPos" mc="Standard.State" uid="714a409d-7c2d-4fff-88a2-fc84be443766"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[SendUAV1TarPos]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Internal">
+                    <OBJECT>
+                      <ID name="Do" mc="Standard.InternalTransition" uid="191cc11b-d9f2-444f-98cf-d423ac6ed241"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"><![CDATA[GEin1a=0x1E;GEin1p1=targetX1;GEin1p2=targetY1;GEin1p3=targetZ1;]]></ATT>
+                        <ATT name="ReceivedEvents"><![CDATA[Entry]]></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Do]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <COMP relation="OutGoing">
+                    <OBJECT>
+                      <ID name="Transition" mc="Standard.Transition" uid="c4aade15-4804-43e2-bded-beac57bc7791"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"><![CDATA[t.elapsed(30)]]></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Transition]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="SendUAV2TarPos" mc="Standard.State" uid="98092e08-153b-472e-9934-e3f02bd39541"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Note" uid="5f4b7a66-f6ae-40ea-943c-04467fa0748a"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"></ATT>
+                        <ATT name="MimeType"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="SendUAV2TarPos" mc="Standard.State" uid="98092e08-153b-472e-9934-e3f02bd39541"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[SendUAV2TarPos]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Internal">
+                    <OBJECT>
+                      <ID name="Do" mc="Standard.InternalTransition" uid="2928240d-3e18-4060-b2a8-2220b33977ec"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"><![CDATA[GEin1a=0x2E;GEin1p1=targetX2;GEin1p2=targetY2;GEin1p3=targetZ2;]]></ATT>
+                        <ATT name="ReceivedEvents"><![CDATA[Entry]]></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Do]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <COMP relation="OutGoing">
+                    <OBJECT>
+                      <ID name="Transition" mc="Standard.Transition" uid="eeaa2a86-0d08-4eac-a521-e62cf9950bf1"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"><![CDATA[t.elapsed(40)]]></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Transition]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="PreUpdateCurPos" mc="Standard.State" uid="6adcb0ac-c6ad-49c1-b700-feeb17b70ffa"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="UAV1CurPos" mc="Standard.State" uid="125df0d0-11ce-4c99-9afb-835f451a7ff9"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[UAV1CurPos]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Internal">
+                    <OBJECT>
+                      <ID name="Do" mc="Standard.InternalTransition" uid="49ae3eca-8523-4dc1-b924-14db3f60efde"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"><![CDATA[curPosX1=GEout1p1;curPosY1=GEout1p2;curPosZ1=GEout1p3;]]></ATT>
+                        <ATT name="ReceivedEvents"><![CDATA[Entry]]></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Do]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <COMP relation="OutGoing">
+                    <OBJECT>
+                      <ID name="Transition" mc="Standard.Transition" uid="a17fbbe4-eb3b-42f9-855d-1a03f6c5c4c7"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Transition]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="IDLE" mc="Standard.State" uid="cf224fa0-4555-4948-8711-b49e9efc4a0d"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="UAV12CurPos" mc="Standard.State" uid="47528816-1cf9-419c-a3ac-7390597aaa9e"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[UAV12CurPos]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Internal">
+                    <OBJECT>
+                      <ID name="Do" mc="Standard.InternalTransition" uid="396bd3fd-628a-45dc-a637-2417818b0b7d"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"><![CDATA[curPosX1=GEout1p1;curPosY1=GEout1p2;curPosZ1=GEout1p3; curPosX2=GEout2p1;curPosY2=GEout2p2;curPosZ2=GEout2p3;]]></ATT>
+                        <ATT name="ReceivedEvents"><![CDATA[Entry]]></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Do]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <COMP relation="OutGoing">
+                    <OBJECT>
+                      <ID name="Transition" mc="Standard.Transition" uid="ba961be9-65e2-43b9-8219-8f6a781e641f"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Transition]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="IDLE" mc="Standard.State" uid="cf224fa0-4555-4948-8711-b49e9efc4a0d"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="Note" mc="Standard.Note" uid="615587ea-57c1-4dc6-8473-af33216e2a6d"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[There are up to two incoming packages. One from UAV1 and one from UAV2 through broadcast. So their address would be 0xF1 and 0xF2.
+(Addresses for Global Controller, UAV1 Controller and UAV2 Controller are 0xE, 0x1, and 0x2 seperately.)
+
+We need to process four possible combinations. 
+- Incoming package from UAV1 always is placed in P1, not P2. 
+- Incoming package from UAV2 could be placed in P1 or P2, depends on if there is a package from UAV1
+------------------------------------
+P2\P1 |  0xF1 | 0xF2 |   0  |
+------------------------------------
+0xF1    |    X    |    X   |   X  |  
+------------------------------------
+0xF2    |   Y     |    X   |   X  |  
+------------------------------------
+   0       |   Y     |    Y   |   Y  | 
+------------------------------------]]></ATT>
+                        <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                        <ATT name="Name"><![CDATA[Note]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                        <COMP relation="Descriptor">
+                          <OBJECT>
+                            <ID name="" mc="Standard.Note" uid="682c40bd-1f5b-4a61-8a23-56b946921442"/>
+                            <ATTRIBUTES>
+                              <ATT name="Content"><![CDATA[There are up to two incoming packages. ]]></ATT>
+                              <ATT name="MimeType"></ATT>
+                              <ATT name="Name"></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES>
+                              <LINK relation="Model">
+                                <FOREIGNID name="comment" mc="Standard.NoteType" uid="00000000-0000-3e80-0000-000000000000"/>
+                              </LINK>
+                            </DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="UAV2CurPos" mc="Standard.State" uid="f57b2084-4b30-452d-a293-2a6e719fecbb"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[UAV2CurPos]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Internal">
+                    <OBJECT>
+                      <ID name="Do" mc="Standard.InternalTransition" uid="ce3796e5-54a5-40e4-8c46-e590543656ab"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"><![CDATA[curPosX2=GEout2p1;curPosY2=GEout2p2;curPosZ2=GEout2p3;]]></ATT>
+                        <ATT name="ReceivedEvents"><![CDATA[Entry]]></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Do]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <COMP relation="OutGoing">
+                    <OBJECT>
+                      <ID name="Transition" mc="Standard.Transition" uid="5fcd7d6a-d24d-49a9-9ca8-53ebf74ccb3f"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Transition]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="IDLE" mc="Standard.State" uid="cf224fa0-4555-4948-8711-b49e9efc4a0d"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="PreUpdateCurPos" mc="Standard.State" uid="6adcb0ac-c6ad-49c1-b700-feeb17b70ffa"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[PreUpdateCurPos]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="OutGoing">
+                    <OBJECT>
+                      <ID name="Transition2" mc="Standard.Transition" uid="f2faa7ce-dbd8-42cc-93e1-7406cabab6d1"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"><![CDATA[(GEout1a==0) && (GEout2a==0xF2)]]></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Transition2]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="UAV2CurPos" mc="Standard.State" uid="f57b2084-4b30-452d-a293-2a6e719fecbb"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="Transition1" mc="Standard.Transition" uid="e49f8334-58e5-4709-babd-a424f232e7ed"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"><![CDATA[(GEout1a==0xF1) && (GEout2a==0)]]></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Transition1]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="UAV1CurPos" mc="Standard.State" uid="125df0d0-11ce-4c99-9afb-835f451a7ff9"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="Transition" mc="Standard.Transition" uid="47ec16c1-375a-4571-8c62-a3eaaf17b543"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"><![CDATA[(GEout1a==0xF1) && (GEout2a==0xF2)]]></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Transition]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="UAV12CurPos" mc="Standard.State" uid="47528816-1cf9-419c-a3ac-7390597aaa9e"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="GLOBAL_CTRL State Machine diagram" mc="Standard.StateMachineDiagram" uid="87c6bb04-dd9b-4ccd-9033-fa01be69734b"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

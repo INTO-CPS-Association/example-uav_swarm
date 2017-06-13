@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Requirements" version="4">
+  <OBJECT>
+    <ID name="Requirements" mc="Standard.RequirementContainer" uid="06c006b2-2327-4de7-96bb-8ee72e4c3254"/>
+    <PID name="RTTesterExample" mc="Standard.AnalystProject" uid="1210fa71-2f69-41b0-b1bb-cfcc1dd7288a"/>
+    <ATTRIBUTES>
+      <ATT name="Definition"></ATT>
+      <ATT name="Name"><![CDATA[Requirements]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedRequirement">
+        <COMPID name="REQ-001" mc="Standard.Requirement" uid="ee0699aa-3974-4a13-a817-4492127ec057"/>
+        <COMPID name="REQ-002" mc="Standard.Requirement" uid="3fa5874f-c73b-4427-b18c-76d69f97e9ca"/>
+        <COMPID name="REQ-003" mc="Standard.Requirement" uid="7e6a353f-c3e9-49ce-a04d-8ec04bcfc2bc"/>
+        <COMPID name="REQ-004" mc="Standard.Requirement" uid="fc50764a-c9fb-4359-9482-c3eb9aacf332"/>
+        <COMPID name="REQ-005" mc="Standard.Requirement" uid="823b7681-1a66-4617-9d51-ec6f7e6508cd"/>
+        <COMPID name="REQ-006" mc="Standard.Requirement" uid="996cd185-7e7b-4f5a-96b7-a61cac2787fe"/>
+        <COMPID name="REQ-007" mc="Standard.Requirement" uid="d7ddfef1-0444-4238-9034-daef92f0ad53"/>
+        <COMPID name="REQ-008" mc="Standard.Requirement" uid="c4e5b8c2-865f-4d75-93dc-d4262dc06e19"/>
+        <COMPID name="REQ-009" mc="Standard.Requirement" uid="3d756112-0ed2-4123-afb5-81612bed637d"/>
+      </COMP>
+      <COMP relation="AnalystProperties">
+        <OBJECT>
+          <ID name="" mc="Standard.AnalystPropertyTable" uid="2930e19c-1cb0-48af-848c-71c0cf500913"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="Content"><![CDATA[#Thu Feb 12 14:36:05 CET 2015
+]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="No Properties" mc="Standard.PropertyTableDefinition" uid="7649b5c8-8733-4a02-959c-a269422402b8"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <ID name="REQUIREMENTS" mc="Standard.Stereotype" uid="dbaabf04-b277-4c66-b59a-66c739827e90"/>
+      </LINK>
+      <COMP relation="Properties">
+        <OBJECT>
+          <ID name="Scope.Editor.SavedState" mc="Standard.PropertyTable" uid="f08524ae-2804-44e7-856c-b098c9b912a9"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Scope.Editor.SavedState]]></ATT>
+            <ATT name="Content"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

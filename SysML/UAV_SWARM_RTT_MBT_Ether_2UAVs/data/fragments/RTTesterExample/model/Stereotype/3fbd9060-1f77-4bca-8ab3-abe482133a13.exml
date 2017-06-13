@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ENUMERATIONS" version="4">
+  <OBJECT>
+    <ID name="ENUMERATIONS" mc="Standard.Stereotype" uid="3fbd9060-1f77-4bca-8ab3-abe482133a13"/>
+    <PID name="RTTMBTProfile" mc="Standard.Profile" uid="3745d6b6-7184-4c0d-ac0d-91e27748da99"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"></ATT>
+      <ATT name="IsHidden">false</ATT>
+      <ATT name="LabelKey"><![CDATA[ENUMERATIONS]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Package]]></ATT>
+      <ATT name="Name"><![CDATA[ENUMERATIONS]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

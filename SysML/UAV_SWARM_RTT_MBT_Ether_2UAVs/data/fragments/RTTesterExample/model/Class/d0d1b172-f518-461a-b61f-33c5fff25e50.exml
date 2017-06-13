@@ -1,0 +1,504 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="System" version="4">
+  <OBJECT>
+    <ID name="System" mc="Standard.Class" uid="d0d1b172-f518-461a-b61f-33c5fff25e50"/>
+    <PID name="rttesterexample" mc="Standard.Package" uid="64536edf-b5f8-47c3-9b04-3ba9c95784b2"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[System]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedEnd">
+        <OBJECT>
+          <ID name="SystemUnderTest" mc="Standard.AssociationEnd" uid="29513be1-ea62-459b-9f8c-856c14b4bc33"/>
+          <ATTRIBUTES>
+            <ATT name="Aggregation">KindIsComposition</ATT>
+            <ATT name="IsChangeable">true</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[SystemUnderTest]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Target">
+              <ID name="SystemUnderTest" mc="Standard.Class" uid="90e0f28d-4b8a-485a-975f-741e1db5aedf"/>
+            </LINK>
+            <COMP relation="Opposite">
+              <OBJECT>
+                <ID name="" mc="Standard.AssociationEnd" uid="155b1806-e119-4a63-9f27-d23d65cc6046"/>
+                <ATTRIBUTES>
+                  <ATT name="Aggregation">KindIsAssociation</ATT>
+                  <ATT name="IsChangeable">true</ATT>
+                  <ATT name="Changeable">ReadWrite</ATT>
+                  <ATT name="IsDerived">false</ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Visibility">Public</ATT>
+                  <ATT name="IsClass">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Opposite">
+                    <COMPID name="SystemUnderTest" mc="Standard.AssociationEnd" uid="29513be1-ea62-459b-9f8c-856c14b4bc33"/>
+                  </COMP>
+                  <COMP relation="Association">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Association" uid="3209b0f3-a7c9-46eb-9f18-e1da679cec97"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Association">
+              <COMPID name="" mc="Standard.Association" uid="3209b0f3-a7c9-46eb-9f18-e1da679cec97"/>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="TestEnvironment" mc="Standard.AssociationEnd" uid="6c66fa35-4845-4b21-a8fd-f68cf919c728"/>
+          <ATTRIBUTES>
+            <ATT name="Aggregation">KindIsComposition</ATT>
+            <ATT name="IsChangeable">true</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[TestEnvironment]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Target">
+              <ID name="TestEnvironment" mc="Standard.Class" uid="aa6e0cd6-dcf1-4011-b726-5f78e27e3c44"/>
+            </LINK>
+            <COMP relation="Opposite">
+              <OBJECT>
+                <ID name="" mc="Standard.AssociationEnd" uid="438613fc-9edd-4445-87ea-a2b53040ca25"/>
+                <ATTRIBUTES>
+                  <ATT name="Aggregation">KindIsAssociation</ATT>
+                  <ATT name="IsChangeable">true</ATT>
+                  <ATT name="Changeable">ReadWrite</ATT>
+                  <ATT name="IsDerived">false</ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Visibility">Public</ATT>
+                  <ATT name="IsClass">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Opposite">
+                    <COMPID name="TestEnvironment" mc="Standard.AssociationEnd" uid="6c66fa35-4845-4b21-a8fd-f68cf919c728"/>
+                  </COMP>
+                  <COMP relation="Association">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Association" uid="657736f0-3435-434b-aeac-2810e965d159"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Association">
+              <COMPID name="" mc="Standard.Association" uid="657736f0-3435-434b-aeac-2810e965d159"/>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="InternalStructure">
+        <OBJECT>
+          <ID name="SystemUnderTest" mc="Standard.BindableInstance" uid="dfa7e4df-c453-45bc-97c2-77526473fa35"/>
+          <ATTRIBUTES>
+            <ATT name="IsConstant">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="Name"><![CDATA[SystemUnderTest]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="RepresentedFeature">
+              <REFOBJ>
+                <ID name="SystemUnderTest" mc="Standard.AssociationEnd" uid="29513be1-ea62-459b-9f8c-856c14b4bc33"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Base">
+              <ID name="SystemUnderTest" mc="Standard.Class" uid="90e0f28d-4b8a-485a-975f-741e1db5aedf"/>
+            </LINK>
+            <COMP relation="Part">
+              <OBJECT>
+                <ID name="Stimulation" mc="Standard.Port" uid="234234f4-7815-4c27-9f71-44ca6929b094"/>
+                <ATTRIBUTES>
+                  <ATT name="IsBehavior">false</ATT>
+                  <ATT name="IsService">true</ATT>
+                  <ATT name="IsConjugated">false</ATT>
+                  <ATT name="Direction">In</ATT>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[Stimulation]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="RepresentedFeature">
+                    <REFOBJ>
+                      <ID name="Stimulation" mc="Standard.Port" uid="5e7e9998-2858-4780-b3e0-05491572a19e"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Base">
+                    <ID name="Stimuli" mc="Standard.Interface" uid="3f6bb003-a5c5-4579-ab90-61839735eb8d"/>
+                  </LINK>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="Standard.TaggedValue" uid="fbb0708c-93a6-4746-9cd9-ad7f04d10104"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="Standard.TagParameter" uid="a4d8a554-d47e-4947-b08f-4a5e1f4c07d5"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[in]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="FlowPort_direction" mc="Standard.TagType" uid="00bc42a4-0000-1a5f-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Indication" mc="Standard.Port" uid="4f60a104-354d-40d0-94e5-b89c76f233dc"/>
+                <ATTRIBUTES>
+                  <ATT name="IsBehavior">false</ATT>
+                  <ATT name="IsService">true</ATT>
+                  <ATT name="IsConjugated">false</ATT>
+                  <ATT name="Direction">Out</ATT>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[Indication]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="RepresentedFeature">
+                    <REFOBJ>
+                      <ID name="Indication" mc="Standard.Port" uid="2563e41b-03dd-4e7c-8d6a-6f65557a97a0"/>
+                    </REFOBJ>
+                  </LINK>
+                  <COMP relation="OwnedEnd">
+                    <OBJECT>
+                      <ID name="indication" mc="Standard.ConnectorEnd" uid="9cc9183b-3191-474b-9526-674a25924e39"/>
+                      <ATTRIBUTES>
+                        <ATT name="IsOrdered">false</ATT>
+                        <ATT name="IsUnique">false</ATT>
+                        <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                        <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                        <ATT name="Name"><![CDATA[indication]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Link">
+                          <OBJECT>
+                            <ID name="" mc="Standard.Connector" uid="73d097a7-1a0d-4045-8d4d-68763f41be49"/>
+                            <ATTRIBUTES>
+                              <ATT name="Name"></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Indication" mc="Standard.Port" uid="cb46676d-2aa7-408d-982f-428383645ec0"/>
+                          </REFOBJ>
+                        </LINK>
+                        <COMP relation="Opposite">
+                          <OBJECT>
+                            <ID name="" mc="Standard.ConnectorEnd" uid="e6aac901-8b7b-4a26-b694-133f4a0ff9fa"/>
+                            <ATTRIBUTES>
+                              <ATT name="IsOrdered">false</ATT>
+                              <ATT name="IsUnique">false</ATT>
+                              <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                              <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                              <ATT name="Name"></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES>
+                              <COMP relation="Link">
+                                <COMPID name="" mc="Standard.Connector" uid="73d097a7-1a0d-4045-8d4d-68763f41be49"/>
+                              </COMP>
+                              <COMP relation="Opposite">
+                                <COMPID name="indication" mc="Standard.ConnectorEnd" uid="9cc9183b-3191-474b-9526-674a25924e39"/>
+                              </COMP>
+                            </DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Base">
+                    <ID name="Observables" mc="Standard.Interface" uid="54bf9d84-1c0c-438b-a88a-eb4a032269ff"/>
+                  </LINK>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="Standard.TaggedValue" uid="8f988593-fe21-40e3-8f6d-2fd8e75ee7e4"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="Standard.TagParameter" uid="77c25224-b370-4313-ae3f-29844996da96"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[out]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="FlowPort_direction" mc="Standard.TagType" uid="00bc42a4-0000-1a5f-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Extension">
+              <FOREIGNID name="BlockInstance" mc="Standard.Stereotype" uid="281c6cee-4f91-476d-bbed-ac66449f0897"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="TestEnvironment" mc="Standard.BindableInstance" uid="0745103e-1fd0-4f00-9ab4-56139ec7345d"/>
+          <ATTRIBUTES>
+            <ATT name="IsConstant">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="Name"><![CDATA[TestEnvironment]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="RepresentedFeature">
+              <REFOBJ>
+                <ID name="TestEnvironment" mc="Standard.AssociationEnd" uid="6c66fa35-4845-4b21-a8fd-f68cf919c728"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Base">
+              <ID name="TestEnvironment" mc="Standard.Class" uid="aa6e0cd6-dcf1-4011-b726-5f78e27e3c44"/>
+            </LINK>
+            <COMP relation="Part">
+              <OBJECT>
+                <ID name="Stimulation" mc="Standard.Port" uid="b66b9418-59a3-40dc-a598-7e07229db053"/>
+                <ATTRIBUTES>
+                  <ATT name="IsBehavior">false</ATT>
+                  <ATT name="IsService">true</ATT>
+                  <ATT name="IsConjugated">false</ATT>
+                  <ATT name="Direction">Out</ATT>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[Stimulation]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="RepresentedFeature">
+                    <REFOBJ>
+                      <ID name="Stimulation" mc="Standard.Port" uid="2bb89ce2-8644-405f-a193-0ea976cc0193"/>
+                    </REFOBJ>
+                  </LINK>
+                  <COMP relation="OwnedEnd">
+                    <OBJECT>
+                      <ID name="stimulation" mc="Standard.ConnectorEnd" uid="003ba8b6-f915-4c31-914f-47e009e03364"/>
+                      <ATTRIBUTES>
+                        <ATT name="IsOrdered">false</ATT>
+                        <ATT name="IsUnique">false</ATT>
+                        <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                        <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                        <ATT name="Name"><![CDATA[stimulation]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Link">
+                          <OBJECT>
+                            <ID name="" mc="Standard.Connector" uid="c532e3b4-15fa-44b4-b12e-814e0cc3fd6d"/>
+                            <ATTRIBUTES>
+                              <ATT name="Name"></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Stimulation" mc="Standard.Port" uid="234234f4-7815-4c27-9f71-44ca6929b094"/>
+                          </REFOBJ>
+                        </LINK>
+                        <COMP relation="Opposite">
+                          <OBJECT>
+                            <ID name="" mc="Standard.ConnectorEnd" uid="0bd94e2d-9780-4161-9e83-19a6d06240ae"/>
+                            <ATTRIBUTES>
+                              <ATT name="IsOrdered">false</ATT>
+                              <ATT name="IsUnique">false</ATT>
+                              <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                              <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                              <ATT name="Name"></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES>
+                              <COMP relation="Link">
+                                <COMPID name="" mc="Standard.Connector" uid="c532e3b4-15fa-44b4-b12e-814e0cc3fd6d"/>
+                              </COMP>
+                              <COMP relation="Opposite">
+                                <COMPID name="stimulation" mc="Standard.ConnectorEnd" uid="003ba8b6-f915-4c31-914f-47e009e03364"/>
+                              </COMP>
+                            </DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Base">
+                    <ID name="Stimuli" mc="Standard.Interface" uid="3f6bb003-a5c5-4579-ab90-61839735eb8d"/>
+                  </LINK>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="Standard.TaggedValue" uid="2487cc54-88a0-4d66-90c0-6d2b65b84699"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="Standard.TagParameter" uid="04bb5b15-bdb8-4746-b24a-15b00fa1279a"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[out]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="FlowPort_direction" mc="Standard.TagType" uid="00bc42a4-0000-1a5f-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Indication" mc="Standard.Port" uid="cb46676d-2aa7-408d-982f-428383645ec0"/>
+                <ATTRIBUTES>
+                  <ATT name="IsBehavior">false</ATT>
+                  <ATT name="IsService">true</ATT>
+                  <ATT name="IsConjugated">false</ATT>
+                  <ATT name="Direction">In</ATT>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[Indication]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="RepresentedFeature">
+                    <REFOBJ>
+                      <ID name="Indication" mc="Standard.Port" uid="8c032d4e-12c3-4dd4-9209-b3e6e506c1c6"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Base">
+                    <ID name="Observables" mc="Standard.Interface" uid="54bf9d84-1c0c-438b-a88a-eb4a032269ff"/>
+                  </LINK>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="Standard.TaggedValue" uid="6761ba5e-3784-4623-ae2e-8bcacaebedfb"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="Standard.TagParameter" uid="01142d8c-02aa-432b-99f1-6bbd198728ac"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[in]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="FlowPort_direction" mc="Standard.TagType" uid="00bc42a4-0000-1a5f-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Extension">
+              <FOREIGNID name="BlockInstance" mc="Standard.Stereotype" uid="281c6cee-4f91-476d-bbed-ac66449f0897"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="Block" mc="Standard.Stereotype" uid="00bc42a4-0000-19c9-0000-000000000000"/>
+        <ID name="SYSTEM" mc="Standard.Stereotype" uid="060d486c-cb9d-480d-b808-1f68beafb44d"/>
+      </LINK>
+      <COMP relation="Product">
+        <COMPID name="System Connection diagram" mc="Standard.ObjectDiagram" uid="e8ffd1ce-3552-4121-afe2-d6bcbd6510e6"/>
+        <COMPID name="System Architecture diagram" mc="Standard.ClassDiagram" uid="73f18b6a-c61c-4945-b294-236347bf1702"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

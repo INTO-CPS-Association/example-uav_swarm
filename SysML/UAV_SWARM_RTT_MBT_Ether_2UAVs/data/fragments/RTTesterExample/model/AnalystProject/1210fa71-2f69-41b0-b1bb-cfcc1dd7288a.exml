@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="RTTesterExample" version="4">
+  <OBJECT>
+    <ID name="RTTesterExample" mc="Standard.AnalystProject" uid="1210fa71-2f69-41b0-b1bb-cfcc1dd7288a"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[RTTesterExample]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="PropertyRoot">
+        <COMPID name="RTTesterExample" mc="Standard.PropertyContainer" uid="c2552708-b998-43ec-a510-3a6bb4afcb17"/>
+      </COMP>
+      <COMP relation="RequirementRoot">
+        <COMPID name="Requirements" mc="Standard.RequirementContainer" uid="06c006b2-2327-4de7-96bb-8ee72e4c3254"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

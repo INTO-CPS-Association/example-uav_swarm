@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="interface" version="4">
+  <OBJECT>
+    <ID name="interface" mc="Standard.Stereotype" uid="5d056ac6-22a6-4518-a225-55da4b2a4a37"/>
+    <PID name="RTTMBTProfile" mc="Standard.Profile" uid="3745d6b6-7184-4c0d-ac0d-91e27748da99"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"></ATT>
+      <ATT name="IsHidden">false</ATT>
+      <ATT name="LabelKey"><![CDATA[interface]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Class]]></ATT>
+      <ATT name="Name"><![CDATA[interface]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Parent">
+        <FOREIGNID name="Block" mc="Standard.Stereotype" uid="00bc42a4-0000-19c9-0000-000000000000"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

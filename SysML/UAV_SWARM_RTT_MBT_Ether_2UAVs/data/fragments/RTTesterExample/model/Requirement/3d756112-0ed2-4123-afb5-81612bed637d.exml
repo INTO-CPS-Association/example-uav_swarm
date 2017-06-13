@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="REQ-009" version="4">
+  <OBJECT>
+    <ID name="REQ-009" mc="Standard.Requirement" uid="3d756112-0ed2-4123-afb5-81612bed637d"/>
+    <PID name="Requirements" mc="Standard.RequirementContainer" uid="06c006b2-2327-4de7-96bb-8ee72e4c3254"/>
+    <ATTRIBUTES>
+      <ATT name="Version">0</ATT>
+      <ATT name="Definition"><![CDATA[If turn indication left or right is switched off before three flashing periods have elapsed, the turn indication will continue until three on-off periods have been performed.]]></ATT>
+      <ATT name="Name"><![CDATA[REQ-009]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="AnalystProperties">
+        <OBJECT>
+          <ID name="" mc="Standard.AnalystPropertyTable" uid="7fc63061-7aa2-448e-94cb-4f6430feaadf"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="Content"><![CDATA[#Thu Feb 12 14:43:56 CET 2015
+]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="No Properties" mc="Standard.PropertyTableDefinition" uid="7649b5c8-8733-4a02-959c-a269422402b8"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

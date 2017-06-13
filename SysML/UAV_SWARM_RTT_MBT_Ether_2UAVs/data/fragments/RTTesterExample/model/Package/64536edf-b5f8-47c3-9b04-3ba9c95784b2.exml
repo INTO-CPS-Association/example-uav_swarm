@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="UAV_Swarm_RTT_MBT_2" version="4">
+  <OBJECT>
+    <ID name="UAV_Swarm_RTT_MBT_2" mc="Standard.Package" uid="64536edf-b5f8-47c3-9b04-3ba9c95784b2"/>
+    <PID name="RTTesterExample" mc="Standard.Project" uid="0f592074-58bb-4bf6-a1eb-fd7d78ae8848"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[UAV_Swarm_RTT_MBT_2]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Datatypes" mc="Standard.Package" uid="c8ad00d6-3162-4382-8429-bbb07a4b89f0"/>
+        <COMPID name="System" mc="Standard.Class" uid="d0d1b172-f518-461a-b61f-33c5fff25e50"/>
+        <COMPID name="SystemUnderTest" mc="Standard.Class" uid="90e0f28d-4b8a-485a-975f-741e1db5aedf"/>
+        <COMPID name="TestEnvironment" mc="Standard.Class" uid="aa6e0cd6-dcf1-4011-b726-5f78e27e3c44"/>
+        <COMPID name="UAV1_CTRL" mc="Standard.Class" uid="a504f8e1-844a-42ee-85e2-a0a967f9f3f9"/>
+        <COMPID name="GLOBAL_CTRL" mc="Standard.Class" uid="13a0f2b6-443a-4815-8735-8d8d23ccc2ad"/>
+        <COMPID name="Stimuli" mc="Standard.Interface" uid="3f6bb003-a5c5-4579-ab90-61839735eb8d"/>
+        <COMPID name="Observables" mc="Standard.Interface" uid="54bf9d84-1c0c-438b-a88a-eb4a032269ff"/>
+        <COMPID name="GlobalEtherInIF" mc="Standard.Interface" uid="d2017ca2-6bd7-4081-911d-ab5878ceded2"/>
+        <COMPID name="Ether" mc="Standard.Class" uid="25e9073d-2d86-4d5b-b897-1f459897c4ea"/>
+        <COMPID name="GlobalEtherOutIF" mc="Standard.Interface" uid="aaee9d49-4be6-4b29-baf6-6b4c55a1ffb2"/>
+        <COMPID name="UAV1EtherInIF" mc="Standard.Interface" uid="daa91b00-b10f-487b-b47b-7c5a7034ca81"/>
+        <COMPID name="UAV1EtherOutIF" mc="Standard.Interface" uid="4d933eaf-350b-4ec8-b476-d1b14e64f288"/>
+        <COMPID name="UAV2_CTRL" mc="Standard.Class" uid="a48aa3c7-4f5c-48e8-af96-a471cf716393"/>
+        <COMPID name="UAV2EtherOutIF" mc="Standard.Interface" uid="d5ed3cb1-55a7-4bc7-a658-cb61d82f8c3c"/>
+        <COMPID name="UAV2EtherInIF" mc="Standard.Interface" uid="d36afff0-25d6-4481-bab1-6e8bd6e490f8"/>
+        <COMPID name="TESim" mc="Standard.Class" uid="91a4117f-9860-4bff-b5cc-e50ef3f81961"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

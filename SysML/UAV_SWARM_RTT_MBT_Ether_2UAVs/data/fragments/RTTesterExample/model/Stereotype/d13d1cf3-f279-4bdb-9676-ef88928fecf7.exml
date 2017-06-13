@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="EVENTS" version="4">
+  <OBJECT>
+    <ID name="EVENTS" mc="Standard.Stereotype" uid="d13d1cf3-f279-4bdb-9676-ef88928fecf7"/>
+    <PID name="RTTMBTProfile" mc="Standard.Profile" uid="3745d6b6-7184-4c0d-ac0d-91e27748da99"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"></ATT>
+      <ATT name="IsHidden">false</ATT>
+      <ATT name="LabelKey"><![CDATA[EVENTS]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Package]]></ATT>
+      <ATT name="Name"><![CDATA[EVENTS]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

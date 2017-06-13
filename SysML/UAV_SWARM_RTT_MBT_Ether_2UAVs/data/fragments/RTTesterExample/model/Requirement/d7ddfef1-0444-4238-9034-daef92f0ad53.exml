@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="REQ-007" version="4">
+  <OBJECT>
+    <ID name="REQ-007" mc="Standard.Requirement" uid="d7ddfef1-0444-4238-9034-daef92f0ad53"/>
+    <PID name="Requirements" mc="Standard.RequirementContainer" uid="06c006b2-2327-4de7-96bb-8ee72e4c3254"/>
+    <ATTRIBUTES>
+      <ATT name="Version">0</ATT>
+      <ATT name="Definition"><![CDATA[If turn indication left or right is switched off and emergency flashing is still active, emergency flashing is continued or resumed, respectively.]]></ATT>
+      <ATT name="Name"><![CDATA[REQ-007]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="AnalystProperties">
+        <OBJECT>
+          <ID name="" mc="Standard.AnalystPropertyTable" uid="fb598980-78a2-4242-90b2-6521aba8069b"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="Content"><![CDATA[#Thu Feb 12 14:43:55 CET 2015
+]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="No Properties" mc="Standard.PropertyTableDefinition" uid="7649b5c8-8733-4a02-959c-a269422402b8"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="CONSTRAINTS" version="4">
+  <OBJECT>
+    <ID name="CONSTRAINTS" mc="Standard.Stereotype" uid="675ec89a-5c5e-4ade-a005-7bf01d252fc9"/>
+    <PID name="RTTMBTProfile" mc="Standard.Profile" uid="3745d6b6-7184-4c0d-ac0d-91e27748da99"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"></ATT>
+      <ATT name="IsHidden">false</ATT>
+      <ATT name="LabelKey"><![CDATA[CONSTRAINTS]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Package]]></ATT>
+      <ATT name="Name"><![CDATA[CONSTRAINTS]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

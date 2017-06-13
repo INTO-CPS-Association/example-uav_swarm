@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="REQ-003" version="4">
+  <OBJECT>
+    <ID name="REQ-003" mc="Standard.Requirement" uid="7e6a353f-c3e9-49ce-a04d-8ec04bcfc2bc"/>
+    <PID name="Requirements" mc="Standard.RequirementContainer" uid="06c006b2-2327-4de7-96bb-8ee72e4c3254"/>
+    <ATTRIBUTES>
+      <ATT name="Version">0</ATT>
+      <ATT name="Definition"><![CDATA[An input change from TurnIndLvr = 0 or 2 to TurnIndLvr = 1 switches indication lights left (output FlashLeft)  into flashing mode and switches indication lights right (output FlashRight) off.]]></ATT>
+      <ATT name="Name"><![CDATA[REQ-003]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="AnalystProperties">
+        <OBJECT>
+          <ID name="" mc="Standard.AnalystPropertyTable" uid="092113cf-fdf0-4af7-b83a-2e02a188c0c9"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="Content"><![CDATA[#Thu Feb 19 13:08:21 CET 2015
+]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="No Properties" mc="Standard.PropertyTableDefinition" uid="7649b5c8-8733-4a02-959c-a269422402b8"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
