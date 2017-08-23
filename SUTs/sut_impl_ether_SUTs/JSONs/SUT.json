@@ -1,0 +1,123 @@
+{
+	"parameters":{
+		"{6cc2b481-6ad4-11e7-975c-080027489296}.fmu3.interval":40,
+		"{75a7c630-6ad4-11e7-a3e9-080027489296}.fmu4.interval":40
+	},
+    "algorithm": {
+        "type": "fixed-step", 
+        "size": 0.001
+    }, 
+    "fmus": {
+	   "{b6ba2291-46bb-11e7-9932-080027489296}":"file:/INTO-CPS/INTO_CPS_Pilot_Studies/case-study_uav_swarm/Test-Data-Generation/UAV_SWARM_RTT_MBT_2uavs/RTT_TestProcedures/TP-00/INTO-CPS-Demo.fmu",
+	   "{5a5aca80-6ad4-11e7-b683-080027489296}":"file:/INTO-CPS/INTO_CPS_Pilot_Studies/case-study_uav_swarm/Test-Data-Generation/UAV_SWARM_RTT_MBT_2uavs/RTT_TestProcedures/Ether/INTO-CPS-Demo_sut.fmu",
+	   "{638d38e2-6ad4-11e7-9ab7-080027489296}":"file:/INTO-CPS/INTO_CPS_Pilot_Studies/case-study_uav_swarm/Test-Data-Generation/UAV_SWARM_RTT_MBT_2uavs/RTT_TestProcedures/GlobalCtrl/INTO-CPS-Demo_sut.fmu",
+	   "{6cc2b481-6ad4-11e7-975c-080027489296}":"file:/INTO-CPS/INTO_CPS_Pilot_Studies/case-study_uav_swarm/Test-Data-Generation/UAV_SWARM_RTT_MBT_2uavs/RTT_TestProcedures/UAVCtrl1/INTO-CPS-Demo_sut.fmu",
+	   "{75a7c630-6ad4-11e7-a3e9-080027489296}":"file:/INTO-CPS/INTO_CPS_Pilot_Studies/case-study_uav_swarm/Test-Data-Generation/UAV_SWARM_RTT_MBT_2uavs/RTT_TestProcedures/UAVCtrl2/INTO-CPS-Demo_sut.fmu",
+	   "{93209562-2d19-4f77-a8eb-738600cc8186}":"file:/INTO-CPS/INTO_CPS_Pilot_Studies/case-study_uav_swarm/Test-Data-Generation/UAV_SWARM_RTT_MBT_2uavs/RTT_TestProcedures/UAV1/UAV.fmu",
+	   "{93209562-2d19-4f77-a8eb-738600cc8186}":"file:/INTO-CPS/INTO_CPS_Pilot_Studies/case-study_uav_swarm/Test-Data-Generation/UAV_SWARM_RTT_MBT_2uavs/RTT_TestProcedures/UAV2/UAV.fmu"
+	}, 
+	"connections":{
+		"{b6ba2291-46bb-11e7-9932-080027489296}.fmu0.IMR.targetX1":["{638d38e2-6ad4-11e7-9ab7-080027489296}.fmu2.IMR.targetX1"],
+		"{b6ba2291-46bb-11e7-9932-080027489296}.fmu0.IMR.targetX2":["{638d38e2-6ad4-11e7-9ab7-080027489296}.fmu2.IMR.targetX2"],
+		"{b6ba2291-46bb-11e7-9932-080027489296}.fmu0.IMR.targetY1":["{638d38e2-6ad4-11e7-9ab7-080027489296}.fmu2.IMR.targetY1"],
+		"{b6ba2291-46bb-11e7-9932-080027489296}.fmu0.IMR.targetY2":["{638d38e2-6ad4-11e7-9ab7-080027489296}.fmu2.IMR.targetY2"],
+		"{b6ba2291-46bb-11e7-9932-080027489296}.fmu0.IMR.targetZ1":["{638d38e2-6ad4-11e7-9ab7-080027489296}.fmu2.IMR.targetZ1"],
+		"{b6ba2291-46bb-11e7-9932-080027489296}.fmu0.IMR.targetZ2":["{638d38e2-6ad4-11e7-9ab7-080027489296}.fmu2.IMR.targetZ2"],
+		"{638d38e2-6ad4-11e7-9ab7-080027489296}.fmu2.IMR.GEin1a":["{5a5aca80-6ad4-11e7-b683-080027489296}.fmu1.IMR.GEin1a"],
+		"{638d38e2-6ad4-11e7-9ab7-080027489296}.fmu2.IMR.GEin1p1":["{5a5aca80-6ad4-11e7-b683-080027489296}.fmu1.IMR.GEin1p1"],
+		"{638d38e2-6ad4-11e7-9ab7-080027489296}.fmu2.IMR.GEin1p2":["{5a5aca80-6ad4-11e7-b683-080027489296}.fmu1.IMR.GEin1p2"],
+		"{638d38e2-6ad4-11e7-9ab7-080027489296}.fmu2.IMR.GEin1p3":["{5a5aca80-6ad4-11e7-b683-080027489296}.fmu1.IMR.GEin1p3"],
+		"{5a5aca80-6ad4-11e7-b683-080027489296}.fmu1.IMR.GEout1a":["{638d38e2-6ad4-11e7-9ab7-080027489296}.fmu2.IMR.GEout1a"],
+		"{5a5aca80-6ad4-11e7-b683-080027489296}.fmu1.IMR.GEout1p1":["{638d38e2-6ad4-11e7-9ab7-080027489296}.fmu2.IMR.GEout1p1"],
+		"{5a5aca80-6ad4-11e7-b683-080027489296}.fmu1.IMR.GEout1p2":["{638d38e2-6ad4-11e7-9ab7-080027489296}.fmu2.IMR.GEout1p2"],
+		"{5a5aca80-6ad4-11e7-b683-080027489296}.fmu1.IMR.GEout1p3":["{638d38e2-6ad4-11e7-9ab7-080027489296}.fmu2.IMR.GEout1p3"],
+		"{5a5aca80-6ad4-11e7-b683-080027489296}.fmu1.IMR.GEout2a":["{638d38e2-6ad4-11e7-9ab7-080027489296}.fmu2.IMR.GEout2a"],
+		"{5a5aca80-6ad4-11e7-b683-080027489296}.fmu1.IMR.GEout2p1":["{638d38e2-6ad4-11e7-9ab7-080027489296}.fmu2.IMR.GEout2p1"],
+		"{5a5aca80-6ad4-11e7-b683-080027489296}.fmu1.IMR.GEout2p2":["{638d38e2-6ad4-11e7-9ab7-080027489296}.fmu2.IMR.GEout2p2"],
+		"{5a5aca80-6ad4-11e7-b683-080027489296}.fmu1.IMR.GEout2p3":["{638d38e2-6ad4-11e7-9ab7-080027489296}.fmu2.IMR.GEout2p3"],
+		"{5a5aca80-6ad4-11e7-b683-080027489296}.fmu1.IMR.U1Eout1a":["{6cc2b481-6ad4-11e7-975c-080027489296}.fmu3.IMR.UAVout1a"],
+		"{5a5aca80-6ad4-11e7-b683-080027489296}.fmu1.IMR.U1Eout1p1":["{6cc2b481-6ad4-11e7-975c-080027489296}.fmu3.IMR.UAVout1p1"],
+		"{5a5aca80-6ad4-11e7-b683-080027489296}.fmu1.IMR.U1Eout1p2":["{6cc2b481-6ad4-11e7-975c-080027489296}.fmu3.IMR.UAVout1p2"],
+		"{5a5aca80-6ad4-11e7-b683-080027489296}.fmu1.IMR.U1Eout1p3":["{6cc2b481-6ad4-11e7-975c-080027489296}.fmu3.IMR.UAVout1p3"],
+		"{5a5aca80-6ad4-11e7-b683-080027489296}.fmu1.IMR.U1Eout2a":["{6cc2b481-6ad4-11e7-975c-080027489296}.fmu3.IMR.UAVout2a"],
+		"{5a5aca80-6ad4-11e7-b683-080027489296}.fmu1.IMR.U1Eout2p1":["{6cc2b481-6ad4-11e7-975c-080027489296}.fmu3.IMR.UAVout2p1"],
+		"{5a5aca80-6ad4-11e7-b683-080027489296}.fmu1.IMR.U1Eout2p2":["{6cc2b481-6ad4-11e7-975c-080027489296}.fmu3.IMR.UAVout2p2"],
+		"{5a5aca80-6ad4-11e7-b683-080027489296}.fmu1.IMR.U1Eout2p3":["{6cc2b481-6ad4-11e7-975c-080027489296}.fmu3.IMR.UAVout2p3"],
+		"{5a5aca80-6ad4-11e7-b683-080027489296}.fmu1.IMR.U2Eout1a":["{75a7c630-6ad4-11e7-a3e9-080027489296}.fmu4.IMR.UAVout1a"],
+		"{5a5aca80-6ad4-11e7-b683-080027489296}.fmu1.IMR.U2Eout1p1":["{75a7c630-6ad4-11e7-a3e9-080027489296}.fmu4.IMR.UAVout1p1"],
+		"{5a5aca80-6ad4-11e7-b683-080027489296}.fmu1.IMR.U2Eout1p2":["{75a7c630-6ad4-11e7-a3e9-080027489296}.fmu4.IMR.UAVout1p2"],
+		"{5a5aca80-6ad4-11e7-b683-080027489296}.fmu1.IMR.U2Eout1p3":["{75a7c630-6ad4-11e7-a3e9-080027489296}.fmu4.IMR.UAVout1p3"],
+		"{5a5aca80-6ad4-11e7-b683-080027489296}.fmu1.IMR.U2Eout2a":["{75a7c630-6ad4-11e7-a3e9-080027489296}.fmu4.IMR.UAVout2a"],
+		"{5a5aca80-6ad4-11e7-b683-080027489296}.fmu1.IMR.U2Eout2p1":["{75a7c630-6ad4-11e7-a3e9-080027489296}.fmu4.IMR.UAVout2p1"],
+		"{5a5aca80-6ad4-11e7-b683-080027489296}.fmu1.IMR.U2Eout2p2":["{75a7c630-6ad4-11e7-a3e9-080027489296}.fmu4.IMR.UAVout2p2"],
+		"{5a5aca80-6ad4-11e7-b683-080027489296}.fmu1.IMR.U2Eout2p3":["{75a7c630-6ad4-11e7-a3e9-080027489296}.fmu4.IMR.UAVout2p3"],
+		"{6cc2b481-6ad4-11e7-975c-080027489296}.fmu3.IMR.UAVin1a":["{5a5aca80-6ad4-11e7-b683-080027489296}.fmu1.IMR.U1Ein1a"],
+		"{6cc2b481-6ad4-11e7-975c-080027489296}.fmu3.IMR.UAVin1p1":["{5a5aca80-6ad4-11e7-b683-080027489296}.fmu1.IMR.U1Ein1p1"],
+		"{6cc2b481-6ad4-11e7-975c-080027489296}.fmu3.IMR.UAVin1p2":["{5a5aca80-6ad4-11e7-b683-080027489296}.fmu1.IMR.U1Ein1p2"],
+		"{6cc2b481-6ad4-11e7-975c-080027489296}.fmu3.IMR.UAVin1p3":["{5a5aca80-6ad4-11e7-b683-080027489296}.fmu1.IMR.U1Ein1p3"],
+		"{6cc2b481-6ad4-11e7-975c-080027489296}.fmu3.IMR.throttleOut":["{93209562-2d19-4f77-a8eb-738600cc8186}.fmu5.throttle", "{b6ba2291-46bb-11e7-9932-080027489296}.fmu0.IMR.throttleOut1"],
+		"{6cc2b481-6ad4-11e7-975c-080027489296}.fmu3.IMR.pitchOut":["{93209562-2d19-4f77-a8eb-738600cc8186}.fmu5.pitch", "{b6ba2291-46bb-11e7-9932-080027489296}.fmu0.IMR.pitchOut1"],
+		"{6cc2b481-6ad4-11e7-975c-080027489296}.fmu3.IMR.rollOut":["{93209562-2d19-4f77-a8eb-738600cc8186}.fmu5.roll", "{b6ba2291-46bb-11e7-9932-080027489296}.fmu0.IMR.rollOut1"],
+		"{6cc2b481-6ad4-11e7-975c-080027489296}.fmu3.IMR.yawOut":["{93209562-2d19-4f77-a8eb-738600cc8186}.fmu5.yaw", "{b6ba2291-46bb-11e7-9932-080027489296}.fmu0.IMR.yawOut1"],
+		"{75a7c630-6ad4-11e7-a3e9-080027489296}.fmu4.IMR.throttleOut":["{93209562-2d19-4f77-a8eb-738600cc8186}.fmu6.throttle", "{b6ba2291-46bb-11e7-9932-080027489296}.fmu0.IMR.throttleOut2"],
+		"{75a7c630-6ad4-11e7-a3e9-080027489296}.fmu4.IMR.pitchOut":["{93209562-2d19-4f77-a8eb-738600cc8186}.fmu6.pitch", "{b6ba2291-46bb-11e7-9932-080027489296}.fmu0.IMR.pitchOut2"],
+		"{75a7c630-6ad4-11e7-a3e9-080027489296}.fmu4.IMR.rollOut":["{93209562-2d19-4f77-a8eb-738600cc8186}.fmu6.roll", "{b6ba2291-46bb-11e7-9932-080027489296}.fmu0.IMR.rollOut2"],
+		"{75a7c630-6ad4-11e7-a3e9-080027489296}.fmu4.IMR.yawOut":["{93209562-2d19-4f77-a8eb-738600cc8186}.fmu6.yaw", "{b6ba2291-46bb-11e7-9932-080027489296}.fmu0.IMR.yawOut2"],
+		"{75a7c630-6ad4-11e7-a3e9-080027489296}.fmu4.IMR.UAVin1a":["{5a5aca80-6ad4-11e7-b683-080027489296}.fmu1.IMR.U2Ein1a"],
+		"{75a7c630-6ad4-11e7-a3e9-080027489296}.fmu4.IMR.UAVin1p1":["{5a5aca80-6ad4-11e7-b683-080027489296}.fmu1.IMR.U2Ein1p1"],
+		"{75a7c630-6ad4-11e7-a3e9-080027489296}.fmu4.IMR.UAVin1p2":["{5a5aca80-6ad4-11e7-b683-080027489296}.fmu1.IMR.U2Ein1p2"],
+		"{75a7c630-6ad4-11e7-a3e9-080027489296}.fmu4.IMR.UAVin1p3":["{5a5aca80-6ad4-11e7-b683-080027489296}.fmu1.IMR.U2Ein1p3"],
+		"{93209562-2d19-4f77-a8eb-738600cc8186}.fmu5.posX":["{6cc2b481-6ad4-11e7-975c-080027489296}.fmu3.IMR.posX"],
+		"{93209562-2d19-4f77-a8eb-738600cc8186}.fmu5.posY":["{6cc2b481-6ad4-11e7-975c-080027489296}.fmu3.IMR.posY"],
+		"{93209562-2d19-4f77-a8eb-738600cc8186}.fmu5.posZ":["{6cc2b481-6ad4-11e7-975c-080027489296}.fmu3.IMR.posZ"],
+		"{93209562-2d19-4f77-a8eb-738600cc8186}.fmu5.velZ":["{6cc2b481-6ad4-11e7-975c-080027489296}.fmu3.IMR.velZ"],
+		"{93209562-2d19-4f77-a8eb-738600cc8186}.fmu5.velX":["{6cc2b481-6ad4-11e7-975c-080027489296}.fmu3.IMR.velX"],
+		"{93209562-2d19-4f77-a8eb-738600cc8186}.fmu5.velY":["{6cc2b481-6ad4-11e7-975c-080027489296}.fmu3.IMR.velY"],
+		"{93209562-2d19-4f77-a8eb-738600cc8186}.fmu6.posX":["{75a7c630-6ad4-11e7-a3e9-080027489296}.fmu4.IMR.posX"],
+		"{93209562-2d19-4f77-a8eb-738600cc8186}.fmu6.posY":["{75a7c630-6ad4-11e7-a3e9-080027489296}.fmu4.IMR.posY"],
+		"{93209562-2d19-4f77-a8eb-738600cc8186}.fmu6.posZ":["{75a7c630-6ad4-11e7-a3e9-080027489296}.fmu4.IMR.posZ"],
+		"{93209562-2d19-4f77-a8eb-738600cc8186}.fmu6.velZ":["{75a7c630-6ad4-11e7-a3e9-080027489296}.fmu4.IMR.velZ"],
+		"{93209562-2d19-4f77-a8eb-738600cc8186}.fmu6.velX":["{75a7c630-6ad4-11e7-a3e9-080027489296}.fmu4.IMR.velX"],
+		"{93209562-2d19-4f77-a8eb-738600cc8186}.fmu6.velY":["{75a7c630-6ad4-11e7-a3e9-080027489296}.fmu4.IMR.velY"]
+	},
+    "livestream": {
+		"{b6ba2291-46bb-11e7-9932-080027489296}.fmu0": [
+            "IMR.targetX1", 
+            "IMR.targetY1", 
+            "IMR.targetZ1", 
+            "IMR.targetX2", 
+            "IMR.targetY2", 
+            "IMR.targetZ2"
+        ], 
+		"{93209562-2d19-4f77-a8eb-738600cc8186}.fmu5": [
+            "posX",
+            "posY",
+            "posZ"
+        ],
+		"{93209562-2d19-4f77-a8eb-738600cc8186}.fmu6": [
+            "posX",
+            "posY",
+            "posZ"
+        ]
+	}, 
+    "logVariables": {
+		"{b6ba2291-46bb-11e7-9932-080027489296}.fmu0": [
+            "IMR.targetX1", 
+            "IMR.targetY1", 
+            "IMR.targetZ1", 
+            "IMR.targetX2", 
+            "IMR.targetY2", 
+            "IMR.targetZ2"
+        ], 
+		"{93209562-2d19-4f77-a8eb-738600cc8186}.fmu5": [
+            "posX",
+            "posY",
+            "posZ"
+        ],
+		"{93209562-2d19-4f77-a8eb-738600cc8186}.fmu6": [
+            "posX",
+            "posY",
+            "posZ"
+        ]
+    }
+}

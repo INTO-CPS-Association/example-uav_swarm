@@ -1,0 +1,123 @@
+{
+	"parameters":{
+		"@GUID_UC1@.fmu3.interval":40,
+		"@GUID_UC2@.fmu4.interval":40
+	},
+    "algorithm": {
+        "type": "fixed-step", 
+        "size": 0.001
+    }, 
+    "fmus": {
+	   "@GUID_TP@":"file:/INTO-CPS/INTO_CPS_Pilot_Studies/case-study_uav_swarm/Test-Data-Generation/UAV_SWARM_RTT_MBT_2uavs/RTT_TestProcedures/TP-00/INTO-CPS-Demo.fmu",
+	   "@GUID_ETHER@":"file:/INTO-CPS/INTO_CPS_Pilot_Studies/case-study_uav_swarm/Test-Data-Generation/UAV_SWARM_RTT_MBT_2uavs/RTT_TestProcedures/Ether/INTO-CPS-Demo_sut.fmu",
+	   "@GUID_GC@":"file:/INTO-CPS/INTO_CPS_Pilot_Studies/case-study_uav_swarm/Test-Data-Generation/UAV_SWARM_RTT_MBT_2uavs/RTT_TestProcedures/GlobalCtrl/INTO-CPS-Demo_sut.fmu",
+	   "@GUID_UC1@":"file:/INTO-CPS/INTO_CPS_Pilot_Studies/case-study_uav_swarm/Test-Data-Generation/UAV_SWARM_RTT_MBT_2uavs/RTT_TestProcedures/UAVCtrl1/INTO-CPS-Demo_sut.fmu",
+	   "@GUID_UC2@":"file:/INTO-CPS/INTO_CPS_Pilot_Studies/case-study_uav_swarm/Test-Data-Generation/UAV_SWARM_RTT_MBT_2uavs/RTT_TestProcedures/UAVCtrl2/INTO-CPS-Demo_sut.fmu",
+	   "@GUID_U1@":"file:/INTO-CPS/INTO_CPS_Pilot_Studies/case-study_uav_swarm/Test-Data-Generation/UAV_SWARM_RTT_MBT_2uavs/RTT_TestProcedures/UAV1/UAV.fmu",
+	   "@GUID_U2@":"file:/INTO-CPS/INTO_CPS_Pilot_Studies/case-study_uav_swarm/Test-Data-Generation/UAV_SWARM_RTT_MBT_2uavs/RTT_TestProcedures/UAV2/UAV.fmu"
+	}, 
+	"connections":{
+		"@GUID_TP@.fmu0.IMR.targetX1":["@GUID_GC@.fmu2.IMR.targetX1"],
+		"@GUID_TP@.fmu0.IMR.targetX2":["@GUID_GC@.fmu2.IMR.targetX2"],
+		"@GUID_TP@.fmu0.IMR.targetY1":["@GUID_GC@.fmu2.IMR.targetY1"],
+		"@GUID_TP@.fmu0.IMR.targetY2":["@GUID_GC@.fmu2.IMR.targetY2"],
+		"@GUID_TP@.fmu0.IMR.targetZ1":["@GUID_GC@.fmu2.IMR.targetZ1"],
+		"@GUID_TP@.fmu0.IMR.targetZ2":["@GUID_GC@.fmu2.IMR.targetZ2"],
+		"@GUID_GC@.fmu2.IMR.GEin1a":["@GUID_ETHER@.fmu1.IMR.GEin1a"],
+		"@GUID_GC@.fmu2.IMR.GEin1p1":["@GUID_ETHER@.fmu1.IMR.GEin1p1"],
+		"@GUID_GC@.fmu2.IMR.GEin1p2":["@GUID_ETHER@.fmu1.IMR.GEin1p2"],
+		"@GUID_GC@.fmu2.IMR.GEin1p3":["@GUID_ETHER@.fmu1.IMR.GEin1p3"],
+		"@GUID_ETHER@.fmu1.IMR.GEout1a":["@GUID_GC@.fmu2.IMR.GEout1a"],
+		"@GUID_ETHER@.fmu1.IMR.GEout1p1":["@GUID_GC@.fmu2.IMR.GEout1p1"],
+		"@GUID_ETHER@.fmu1.IMR.GEout1p2":["@GUID_GC@.fmu2.IMR.GEout1p2"],
+		"@GUID_ETHER@.fmu1.IMR.GEout1p3":["@GUID_GC@.fmu2.IMR.GEout1p3"],
+		"@GUID_ETHER@.fmu1.IMR.GEout2a":["@GUID_GC@.fmu2.IMR.GEout2a"],
+		"@GUID_ETHER@.fmu1.IMR.GEout2p1":["@GUID_GC@.fmu2.IMR.GEout2p1"],
+		"@GUID_ETHER@.fmu1.IMR.GEout2p2":["@GUID_GC@.fmu2.IMR.GEout2p2"],
+		"@GUID_ETHER@.fmu1.IMR.GEout2p3":["@GUID_GC@.fmu2.IMR.GEout2p3"],
+		"@GUID_ETHER@.fmu1.IMR.U1Eout1a":["@GUID_UC1@.fmu3.IMR.UAVout1a"],
+		"@GUID_ETHER@.fmu1.IMR.U1Eout1p1":["@GUID_UC1@.fmu3.IMR.UAVout1p1"],
+		"@GUID_ETHER@.fmu1.IMR.U1Eout1p2":["@GUID_UC1@.fmu3.IMR.UAVout1p2"],
+		"@GUID_ETHER@.fmu1.IMR.U1Eout1p3":["@GUID_UC1@.fmu3.IMR.UAVout1p3"],
+		"@GUID_ETHER@.fmu1.IMR.U1Eout2a":["@GUID_UC1@.fmu3.IMR.UAVout2a"],
+		"@GUID_ETHER@.fmu1.IMR.U1Eout2p1":["@GUID_UC1@.fmu3.IMR.UAVout2p1"],
+		"@GUID_ETHER@.fmu1.IMR.U1Eout2p2":["@GUID_UC1@.fmu3.IMR.UAVout2p2"],
+		"@GUID_ETHER@.fmu1.IMR.U1Eout2p3":["@GUID_UC1@.fmu3.IMR.UAVout2p3"],
+		"@GUID_ETHER@.fmu1.IMR.U2Eout1a":["@GUID_UC2@.fmu4.IMR.UAVout1a"],
+		"@GUID_ETHER@.fmu1.IMR.U2Eout1p1":["@GUID_UC2@.fmu4.IMR.UAVout1p1"],
+		"@GUID_ETHER@.fmu1.IMR.U2Eout1p2":["@GUID_UC2@.fmu4.IMR.UAVout1p2"],
+		"@GUID_ETHER@.fmu1.IMR.U2Eout1p3":["@GUID_UC2@.fmu4.IMR.UAVout1p3"],
+		"@GUID_ETHER@.fmu1.IMR.U2Eout2a":["@GUID_UC2@.fmu4.IMR.UAVout2a"],
+		"@GUID_ETHER@.fmu1.IMR.U2Eout2p1":["@GUID_UC2@.fmu4.IMR.UAVout2p1"],
+		"@GUID_ETHER@.fmu1.IMR.U2Eout2p2":["@GUID_UC2@.fmu4.IMR.UAVout2p2"],
+		"@GUID_ETHER@.fmu1.IMR.U2Eout2p3":["@GUID_UC2@.fmu4.IMR.UAVout2p3"],
+		"@GUID_UC1@.fmu3.IMR.UAVin1a":["@GUID_ETHER@.fmu1.IMR.U1Ein1a"],
+		"@GUID_UC1@.fmu3.IMR.UAVin1p1":["@GUID_ETHER@.fmu1.IMR.U1Ein1p1"],
+		"@GUID_UC1@.fmu3.IMR.UAVin1p2":["@GUID_ETHER@.fmu1.IMR.U1Ein1p2"],
+		"@GUID_UC1@.fmu3.IMR.UAVin1p3":["@GUID_ETHER@.fmu1.IMR.U1Ein1p3"],
+		"@GUID_UC1@.fmu3.IMR.throttleOut":["@GUID_U1@.fmu5.throttle", "@GUID_TP@.fmu0.IMR.throttleOut1"],
+		"@GUID_UC1@.fmu3.IMR.pitchOut":["@GUID_U1@.fmu5.pitch", "@GUID_TP@.fmu0.IMR.pitchOut1"],
+		"@GUID_UC1@.fmu3.IMR.rollOut":["@GUID_U1@.fmu5.roll", "@GUID_TP@.fmu0.IMR.rollOut1"],
+		"@GUID_UC1@.fmu3.IMR.yawOut":["@GUID_U1@.fmu5.yaw", "@GUID_TP@.fmu0.IMR.yawOut1"],
+		"@GUID_UC2@.fmu4.IMR.throttleOut":["@GUID_U2@.fmu6.throttle", "@GUID_TP@.fmu0.IMR.throttleOut2"],
+		"@GUID_UC2@.fmu4.IMR.pitchOut":["@GUID_U2@.fmu6.pitch", "@GUID_TP@.fmu0.IMR.pitchOut2"],
+		"@GUID_UC2@.fmu4.IMR.rollOut":["@GUID_U2@.fmu6.roll", "@GUID_TP@.fmu0.IMR.rollOut2"],
+		"@GUID_UC2@.fmu4.IMR.yawOut":["@GUID_U2@.fmu6.yaw", "@GUID_TP@.fmu0.IMR.yawOut2"],
+		"@GUID_UC2@.fmu4.IMR.UAVin1a":["@GUID_ETHER@.fmu1.IMR.U2Ein1a"],
+		"@GUID_UC2@.fmu4.IMR.UAVin1p1":["@GUID_ETHER@.fmu1.IMR.U2Ein1p1"],
+		"@GUID_UC2@.fmu4.IMR.UAVin1p2":["@GUID_ETHER@.fmu1.IMR.U2Ein1p2"],
+		"@GUID_UC2@.fmu4.IMR.UAVin1p3":["@GUID_ETHER@.fmu1.IMR.U2Ein1p3"],
+		"@GUID_U1@.fmu5.posX":["@GUID_UC1@.fmu3.IMR.posX"],
+		"@GUID_U1@.fmu5.posY":["@GUID_UC1@.fmu3.IMR.posY"],
+		"@GUID_U1@.fmu5.posZ":["@GUID_UC1@.fmu3.IMR.posZ"],
+		"@GUID_U1@.fmu5.velZ":["@GUID_UC1@.fmu3.IMR.velZ"],
+		"@GUID_U1@.fmu5.velX":["@GUID_UC1@.fmu3.IMR.velX"],
+		"@GUID_U1@.fmu5.velY":["@GUID_UC1@.fmu3.IMR.velY"],
+		"@GUID_U2@.fmu6.posX":["@GUID_UC2@.fmu4.IMR.posX"],
+		"@GUID_U2@.fmu6.posY":["@GUID_UC2@.fmu4.IMR.posY"],
+		"@GUID_U2@.fmu6.posZ":["@GUID_UC2@.fmu4.IMR.posZ"],
+		"@GUID_U2@.fmu6.velZ":["@GUID_UC2@.fmu4.IMR.velZ"],
+		"@GUID_U2@.fmu6.velX":["@GUID_UC2@.fmu4.IMR.velX"],
+		"@GUID_U2@.fmu6.velY":["@GUID_UC2@.fmu4.IMR.velY"]
+	},
+    "livestream": {
+		"@GUID_TP@.fmu0": [
+            "IMR.targetX1", 
+            "IMR.targetY1", 
+            "IMR.targetZ1", 
+            "IMR.targetX2", 
+            "IMR.targetY2", 
+            "IMR.targetZ2"
+        ], 
+		"@GUID_U1@.fmu5": [
+            "posX",
+            "posY",
+            "posZ"
+        ],
+		"@GUID_U2@.fmu6": [
+            "posX",
+            "posY",
+            "posZ"
+        ]
+	}, 
+    "logVariables": {
+		"@GUID_TP@.fmu0": [
+            "IMR.targetX1", 
+            "IMR.targetY1", 
+            "IMR.targetZ1", 
+            "IMR.targetX2", 
+            "IMR.targetY2", 
+            "IMR.targetZ2"
+        ], 
+		"@GUID_U1@.fmu5": [
+            "posX",
+            "posY",
+            "posZ"
+        ],
+		"@GUID_U2@.fmu6": [
+            "posX",
+            "posY",
+            "posZ"
+        ]
+    }
+}

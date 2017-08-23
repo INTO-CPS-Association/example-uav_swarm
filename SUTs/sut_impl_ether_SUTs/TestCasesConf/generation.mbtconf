@@ -1,0 +1,27 @@
+{
+    "goals": [
+        {
+            "ltl-formula": "Finally ([_timeTick >= 25000])",
+            "ordered": false
+        }
+    ],
+    "model-config": [
+
+    ],
+    "solver-config": {
+        "abstract-interpretation": false,
+        "backtracking": false,
+        "cover-all-goals": true,
+        "ignore-test-oracles": false,
+        "max-simulation-steps": 0,
+        "max-solver-steps": 100,
+        "maximise-coverage": false,
+        "min-change-duration": 10,
+        "model-checking": false,
+        "robustness-percentage": 0,
+        "robustness-testing": false,
+        "sanity-checks": false,
+        "simultaneous-changes": 1,
+        "verbosity-level": 1
+    }
+}

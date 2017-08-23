@@ -1,0 +1,358 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fmiModelDescription fmiVersion="2.0" generationDateAndTime="2017-06-01T12:10:54" generationTool="RT-Tester MBT for FMI2.0 (v1.0.0)" guid="{fafdae00-46ba-11e7-81e6-080027489296}" modelName="INTO-CPS-UAVSwarm_Ether" variableNamingConvention="structured" version="1">
+  <CoSimulation canBeInstantiatedOnlyOncePerProcess="true" canHandleVariableCommunicationStepSize="true" modelIdentifier="INTO-CPS-UAVSwarm_Ether"/>
+  <LogCategories>
+    <Category description="Log all events which are send from the RT-Tester test processes." name="logRtTester"/>
+    <Category description="Log all events (during initialization and simulation)." name="logEvents"/>
+    <Category description="Log messages when returning fmi2Warning status from any function." name="logStatusWarning"/>
+    <Category description="Log messages when returning fmi2Discard status from any function." name="logStatusDiscard"/>
+    <Category description="Log messages when returning fmi2Error status from any function." name="logStatusError"/>
+    <Category description="Log messages when returning fmi2Fatal status from any function." name="logStatusFatal"/>
+    <Category description="Log messages when returning fmi2Pending status from any function." name="logStatusPending"/>
+    <Category description="Log all messages." name="logAll"/>
+  </LogCategories>
+  <ModelVariables>
+    <ScalarVariable description="TE2SUT" name="IMR.GEin1a" valueReference="1" causality="input" variability="discrete">
+      <Integer start="0" min="-1000000" max="1000000"/>
+      <Annotations>
+        <Tool name="RT-Tester">
+          <CodeGen CName="GEin1a" CType="signed int" ModelType="int"/>
+        </Tool>
+      </Annotations>
+    </ScalarVariable>
+    <ScalarVariable description="TE2SUT" name="IMR.GEin1p1" valueReference="2" causality="input" variability="discrete">
+      <Real start="0" min="-1000000000" max="1000000000"/>
+      <Annotations>
+        <Tool name="RT-Tester">
+          <CodeGen CName="GEin1p1" CType="double" ModelType="double"/>
+        </Tool>
+      </Annotations>
+    </ScalarVariable>
+    <ScalarVariable description="TE2SUT" name="IMR.GEin1p2" valueReference="3" causality="input" variability="discrete">
+      <Real start="0" min="-1000000000" max="1000000000"/>
+      <Annotations>
+        <Tool name="RT-Tester">
+          <CodeGen CName="GEin1p2" CType="double" ModelType="double"/>
+        </Tool>
+      </Annotations>
+    </ScalarVariable>
+    <ScalarVariable description="TE2SUT" name="IMR.GEin1p3" valueReference="4" causality="input" variability="discrete">
+      <Real start="0" min="-1000000000" max="1000000000"/>
+      <Annotations>
+        <Tool name="RT-Tester">
+          <CodeGen CName="GEin1p3" CType="double" ModelType="double"/>
+        </Tool>
+      </Annotations>
+    </ScalarVariable>
+    <ScalarVariable description="SUT2TE" name="IMR.GEout1a" valueReference="5" causality="output" variability="discrete">
+      <Integer min="-1000000" max="1000000"/>
+      <Annotations>
+        <Tool name="RT-Tester">
+          <CodeGen CName="GEout1a" CType="signed int" ModelType="int"/>
+        </Tool>
+      </Annotations>
+    </ScalarVariable>
+    <ScalarVariable description="SUT2TE" name="IMR.GEout1p1" valueReference="6" causality="output" variability="discrete">
+      <Real min="-1000000000" max="1000000000"/>
+      <Annotations>
+        <Tool name="RT-Tester">
+          <CodeGen CName="GEout1p1" CType="double" ModelType="double"/>
+        </Tool>
+      </Annotations>
+    </ScalarVariable>
+    <ScalarVariable description="SUT2TE" name="IMR.GEout1p2" valueReference="7" causality="output" variability="discrete">
+      <Real min="-1000000000" max="1000000000"/>
+      <Annotations>
+        <Tool name="RT-Tester">
+          <CodeGen CName="GEout1p2" CType="double" ModelType="double"/>
+        </Tool>
+      </Annotations>
+    </ScalarVariable>
+    <ScalarVariable description="SUT2TE" name="IMR.GEout1p3" valueReference="8" causality="output" variability="discrete">
+      <Real min="-1000000000" max="1000000000"/>
+      <Annotations>
+        <Tool name="RT-Tester">
+          <CodeGen CName="GEout1p3" CType="double" ModelType="double"/>
+        </Tool>
+      </Annotations>
+    </ScalarVariable>
+    <ScalarVariable description="SUT2TE" name="IMR.GEout2a" valueReference="9" causality="output" variability="discrete">
+      <Integer min="-1000000" max="1000000"/>
+      <Annotations>
+        <Tool name="RT-Tester">
+          <CodeGen CName="GEout2a" CType="signed int" ModelType="int"/>
+        </Tool>
+      </Annotations>
+    </ScalarVariable>
+    <ScalarVariable description="SUT2TE" name="IMR.GEout2p1" valueReference="10" causality="output" variability="discrete">
+      <Real min="-1000000000" max="1000000000"/>
+      <Annotations>
+        <Tool name="RT-Tester">
+          <CodeGen CName="GEout2p1" CType="double" ModelType="double"/>
+        </Tool>
+      </Annotations>
+    </ScalarVariable>
+    <ScalarVariable description="SUT2TE" name="IMR.GEout2p2" valueReference="11" causality="output" variability="discrete">
+      <Real min="-1000000000" max="1000000000"/>
+      <Annotations>
+        <Tool name="RT-Tester">
+          <CodeGen CName="GEout2p2" CType="double" ModelType="double"/>
+        </Tool>
+      </Annotations>
+    </ScalarVariable>
+    <ScalarVariable description="SUT2TE" name="IMR.GEout2p3" valueReference="12" causality="output" variability="discrete">
+      <Real min="-1000000000" max="1000000000"/>
+      <Annotations>
+        <Tool name="RT-Tester">
+          <CodeGen CName="GEout2p3" CType="double" ModelType="double"/>
+        </Tool>
+      </Annotations>
+    </ScalarVariable>
+    <ScalarVariable description="TE2SUT" name="IMR.U1Ein1a" valueReference="13" causality="input" variability="discrete">
+      <Integer start="0" min="-1000000" max="1000000"/>
+      <Annotations>
+        <Tool name="RT-Tester">
+          <CodeGen CName="U1Ein1a" CType="signed int" ModelType="int"/>
+        </Tool>
+      </Annotations>
+    </ScalarVariable>
+    <ScalarVariable description="TE2SUT" name="IMR.U1Ein1p1" valueReference="14" causality="input" variability="discrete">
+      <Real start="0" min="-1000000000" max="1000000000"/>
+      <Annotations>
+        <Tool name="RT-Tester">
+          <CodeGen CName="U1Ein1p1" CType="double" ModelType="double"/>
+        </Tool>
+      </Annotations>
+    </ScalarVariable>
+    <ScalarVariable description="TE2SUT" name="IMR.U1Ein1p2" valueReference="15" causality="input" variability="discrete">
+      <Real start="0" min="-1000000000" max="1000000000"/>
+      <Annotations>
+        <Tool name="RT-Tester">
+          <CodeGen CName="U1Ein1p2" CType="double" ModelType="double"/>
+        </Tool>
+      </Annotations>
+    </ScalarVariable>
+    <ScalarVariable description="TE2SUT" name="IMR.U1Ein1p3" valueReference="16" causality="input" variability="discrete">
+      <Real start="0" min="-1000000000" max="1000000000"/>
+      <Annotations>
+        <Tool name="RT-Tester">
+          <CodeGen CName="U1Ein1p3" CType="double" ModelType="double"/>
+        </Tool>
+      </Annotations>
+    </ScalarVariable>
+    <ScalarVariable description="SUT2TE" name="IMR.U1Eout1a" valueReference="17" causality="output" variability="discrete">
+      <Integer min="-1000000" max="1000000"/>
+      <Annotations>
+        <Tool name="RT-Tester">
+          <CodeGen CName="U1Eout1a" CType="signed int" ModelType="int"/>
+        </Tool>
+      </Annotations>
+    </ScalarVariable>
+    <ScalarVariable description="SUT2TE" name="IMR.U1Eout1p1" valueReference="18" causality="output" variability="discrete">
+      <Real min="-1000000000" max="1000000000"/>
+      <Annotations>
+        <Tool name="RT-Tester">
+          <CodeGen CName="U1Eout1p1" CType="double" ModelType="double"/>
+        </Tool>
+      </Annotations>
+    </ScalarVariable>
+    <ScalarVariable description="SUT2TE" name="IMR.U1Eout1p2" valueReference="19" causality="output" variability="discrete">
+      <Real min="-1000000000" max="1000000000"/>
+      <Annotations>
+        <Tool name="RT-Tester">
+          <CodeGen CName="U1Eout1p2" CType="double" ModelType="double"/>
+        </Tool>
+      </Annotations>
+    </ScalarVariable>
+    <ScalarVariable description="SUT2TE" name="IMR.U1Eout1p3" valueReference="20" causality="output" variability="discrete">
+      <Real min="-1000000000" max="1000000000"/>
+      <Annotations>
+        <Tool name="RT-Tester">
+          <CodeGen CName="U1Eout1p3" CType="double" ModelType="double"/>
+        </Tool>
+      </Annotations>
+    </ScalarVariable>
+    <ScalarVariable description="SUT2TE" name="IMR.U1Eout2a" valueReference="21" causality="output" variability="discrete">
+      <Integer min="-1000000" max="1000000"/>
+      <Annotations>
+        <Tool name="RT-Tester">
+          <CodeGen CName="U1Eout2a" CType="signed int" ModelType="int"/>
+        </Tool>
+      </Annotations>
+    </ScalarVariable>
+    <ScalarVariable description="SUT2TE" name="IMR.U1Eout2p1" valueReference="22" causality="output" variability="discrete">
+      <Real min="-1000000000" max="1000000000"/>
+      <Annotations>
+        <Tool name="RT-Tester">
+          <CodeGen CName="U1Eout2p1" CType="double" ModelType="double"/>
+        </Tool>
+      </Annotations>
+    </ScalarVariable>
+    <ScalarVariable description="SUT2TE" name="IMR.U1Eout2p2" valueReference="23" causality="output" variability="discrete">
+      <Real min="-1000000000" max="1000000000"/>
+      <Annotations>
+        <Tool name="RT-Tester">
+          <CodeGen CName="U1Eout2p2" CType="double" ModelType="double"/>
+        </Tool>
+      </Annotations>
+    </ScalarVariable>
+    <ScalarVariable description="SUT2TE" name="IMR.U1Eout2p3" valueReference="24" causality="output" variability="discrete">
+      <Real min="-1000000000" max="1000000000"/>
+      <Annotations>
+        <Tool name="RT-Tester">
+          <CodeGen CName="U1Eout2p3" CType="double" ModelType="double"/>
+        </Tool>
+      </Annotations>
+    </ScalarVariable>
+    <ScalarVariable description="TE2SUT" name="IMR.U2Ein1a" valueReference="25" causality="input" variability="discrete">
+      <Integer start="0" min="-1000000" max="1000000"/>
+      <Annotations>
+        <Tool name="RT-Tester">
+          <CodeGen CName="U2Ein1a" CType="signed int" ModelType="int"/>
+        </Tool>
+      </Annotations>
+    </ScalarVariable>
+    <ScalarVariable description="TE2SUT" name="IMR.U2Ein1p1" valueReference="26" causality="input" variability="discrete">
+      <Real start="0" min="-1000000000" max="1000000000"/>
+      <Annotations>
+        <Tool name="RT-Tester">
+          <CodeGen CName="U2Ein1p1" CType="double" ModelType="double"/>
+        </Tool>
+      </Annotations>
+    </ScalarVariable>
+    <ScalarVariable description="TE2SUT" name="IMR.U2Ein1p2" valueReference="27" causality="input" variability="discrete">
+      <Real start="0" min="-1000000000" max="1000000000"/>
+      <Annotations>
+        <Tool name="RT-Tester">
+          <CodeGen CName="U2Ein1p2" CType="double" ModelType="double"/>
+        </Tool>
+      </Annotations>
+    </ScalarVariable>
+    <ScalarVariable description="TE2SUT" name="IMR.U2Ein1p3" valueReference="28" causality="input" variability="discrete">
+      <Real start="0" min="-1000000000" max="1000000000"/>
+      <Annotations>
+        <Tool name="RT-Tester">
+          <CodeGen CName="U2Ein1p3" CType="double" ModelType="double"/>
+        </Tool>
+      </Annotations>
+    </ScalarVariable>
+    <ScalarVariable description="SUT2TE" name="IMR.U2Eout1a" valueReference="29" causality="output" variability="discrete">
+      <Integer min="-1000000" max="1000000"/>
+      <Annotations>
+        <Tool name="RT-Tester">
+          <CodeGen CName="U2Eout1a" CType="signed int" ModelType="int"/>
+        </Tool>
+      </Annotations>
+    </ScalarVariable>
+    <ScalarVariable description="SUT2TE" name="IMR.U2Eout1p1" valueReference="30" causality="output" variability="discrete">
+      <Real min="-1000000000" max="1000000000"/>
+      <Annotations>
+        <Tool name="RT-Tester">
+          <CodeGen CName="U2Eout1p1" CType="double" ModelType="double"/>
+        </Tool>
+      </Annotations>
+    </ScalarVariable>
+    <ScalarVariable description="SUT2TE" name="IMR.U2Eout1p2" valueReference="31" causality="output" variability="discrete">
+      <Real min="-1000000000" max="1000000000"/>
+      <Annotations>
+        <Tool name="RT-Tester">
+          <CodeGen CName="U2Eout1p2" CType="double" ModelType="double"/>
+        </Tool>
+      </Annotations>
+    </ScalarVariable>
+    <ScalarVariable description="SUT2TE" name="IMR.U2Eout1p3" valueReference="32" causality="output" variability="discrete">
+      <Real min="-1000000000" max="1000000000"/>
+      <Annotations>
+        <Tool name="RT-Tester">
+          <CodeGen CName="U2Eout1p3" CType="double" ModelType="double"/>
+        </Tool>
+      </Annotations>
+    </ScalarVariable>
+    <ScalarVariable description="SUT2TE" name="IMR.U2Eout2a" valueReference="33" causality="output" variability="discrete">
+      <Integer min="-1000000" max="1000000"/>
+      <Annotations>
+        <Tool name="RT-Tester">
+          <CodeGen CName="U2Eout2a" CType="signed int" ModelType="int"/>
+        </Tool>
+      </Annotations>
+    </ScalarVariable>
+    <ScalarVariable description="SUT2TE" name="IMR.U2Eout2p1" valueReference="34" causality="output" variability="discrete">
+      <Real min="-1000000000" max="1000000000"/>
+      <Annotations>
+        <Tool name="RT-Tester">
+          <CodeGen CName="U2Eout2p1" CType="double" ModelType="double"/>
+        </Tool>
+      </Annotations>
+    </ScalarVariable>
+    <ScalarVariable description="SUT2TE" name="IMR.U2Eout2p2" valueReference="35" causality="output" variability="discrete">
+      <Real min="-1000000000" max="1000000000"/>
+      <Annotations>
+        <Tool name="RT-Tester">
+          <CodeGen CName="U2Eout2p2" CType="double" ModelType="double"/>
+        </Tool>
+      </Annotations>
+    </ScalarVariable>
+    <ScalarVariable description="SUT2TE" name="IMR.U2Eout2p3" valueReference="36" causality="output" variability="discrete">
+      <Real min="-1000000000" max="1000000000"/>
+      <Annotations>
+        <Tool name="RT-Tester">
+          <CodeGen CName="U2Eout2p3" CType="double" ModelType="double"/>
+        </Tool>
+      </Annotations>
+    </ScalarVariable>
+  </ModelVariables>
+  <ModelStructure>
+    <Outputs>
+      <Unknown dependencies="" index="5"/>
+      <Unknown dependencies="" index="6"/>
+      <Unknown dependencies="" index="7"/>
+      <Unknown dependencies="" index="8"/>
+      <Unknown dependencies="" index="9"/>
+      <Unknown dependencies="" index="10"/>
+      <Unknown dependencies="" index="11"/>
+      <Unknown dependencies="" index="12"/>
+      <Unknown dependencies="" index="17"/>
+      <Unknown dependencies="" index="18"/>
+      <Unknown dependencies="" index="19"/>
+      <Unknown dependencies="" index="20"/>
+      <Unknown dependencies="" index="21"/>
+      <Unknown dependencies="" index="22"/>
+      <Unknown dependencies="" index="23"/>
+      <Unknown dependencies="" index="24"/>
+      <Unknown dependencies="" index="29"/>
+      <Unknown dependencies="" index="30"/>
+      <Unknown dependencies="" index="31"/>
+      <Unknown dependencies="" index="32"/>
+      <Unknown dependencies="" index="33"/>
+      <Unknown dependencies="" index="34"/>
+      <Unknown dependencies="" index="35"/>
+      <Unknown dependencies="" index="36"/>
+    </Outputs>
+    <InitialUnknowns>
+      <Unknown index="5"/>
+      <Unknown index="6"/>
+      <Unknown index="7"/>
+      <Unknown index="8"/>
+      <Unknown index="9"/>
+      <Unknown index="10"/>
+      <Unknown index="11"/>
+      <Unknown index="12"/>
+      <Unknown index="17"/>
+      <Unknown index="18"/>
+      <Unknown index="19"/>
+      <Unknown index="20"/>
+      <Unknown index="21"/>
+      <Unknown index="22"/>
+      <Unknown index="23"/>
+      <Unknown index="24"/>
+      <Unknown index="29"/>
+      <Unknown index="30"/>
+      <Unknown index="31"/>
+      <Unknown index="32"/>
+      <Unknown index="33"/>
+      <Unknown index="34"/>
+      <Unknown index="35"/>
+      <Unknown index="36"/>
+    </InitialUnknowns>
+  </ModelStructure>
+</fmiModelDescription>
