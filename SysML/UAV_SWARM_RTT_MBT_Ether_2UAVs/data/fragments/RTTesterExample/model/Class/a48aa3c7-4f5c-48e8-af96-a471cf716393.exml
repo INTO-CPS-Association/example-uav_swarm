@@ -67,7 +67,6 @@
             </LINK>
             <LINK relation="Extension">
               <FOREIGNID name="Variable" mc="Standard.Stereotype" uid="9370cbd9-c177-4594-b614-2e9ed4c3a439"/>
-              <ID name="RESTRICTED" mc="Standard.Stereotype" uid="a3ddc420-5247-40a5-82ed-a31b65455595"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
@@ -95,7 +94,6 @@
             </LINK>
             <LINK relation="Extension">
               <FOREIGNID name="Variable" mc="Standard.Stereotype" uid="9370cbd9-c177-4594-b614-2e9ed4c3a439"/>
-              <ID name="RESTRICTED" mc="Standard.Stereotype" uid="a3ddc420-5247-40a5-82ed-a31b65455595"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
@@ -123,7 +121,6 @@
             </LINK>
             <LINK relation="Extension">
               <FOREIGNID name="Variable" mc="Standard.Stereotype" uid="9370cbd9-c177-4594-b614-2e9ed4c3a439"/>
-              <ID name="RESTRICTED" mc="Standard.Stereotype" uid="a3ddc420-5247-40a5-82ed-a31b65455595"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
@@ -151,7 +148,6 @@
             </LINK>
             <LINK relation="Extension">
               <FOREIGNID name="Variable" mc="Standard.Stereotype" uid="9370cbd9-c177-4594-b614-2e9ed4c3a439"/>
-              <ID name="RESTRICTED" mc="Standard.Stereotype" uid="a3ddc420-5247-40a5-82ed-a31b65455595"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
@@ -179,7 +175,6 @@
             </LINK>
             <LINK relation="Extension">
               <FOREIGNID name="Variable" mc="Standard.Stereotype" uid="9370cbd9-c177-4594-b614-2e9ed4c3a439"/>
-              <ID name="RESTRICTED" mc="Standard.Stereotype" uid="a3ddc420-5247-40a5-82ed-a31b65455595"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
@@ -207,7 +202,6 @@
             </LINK>
             <LINK relation="Extension">
               <FOREIGNID name="Variable" mc="Standard.Stereotype" uid="9370cbd9-c177-4594-b614-2e9ed4c3a439"/>
-              <ID name="RESTRICTED" mc="Standard.Stereotype" uid="a3ddc420-5247-40a5-82ed-a31b65455595"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
@@ -235,7 +229,6 @@
             </LINK>
             <LINK relation="Extension">
               <FOREIGNID name="Variable" mc="Standard.Stereotype" uid="9370cbd9-c177-4594-b614-2e9ed4c3a439"/>
-              <ID name="RESTRICTED" mc="Standard.Stereotype" uid="a3ddc420-5247-40a5-82ed-a31b65455595"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
@@ -263,7 +256,6 @@
             </LINK>
             <LINK relation="Extension">
               <FOREIGNID name="Variable" mc="Standard.Stereotype" uid="9370cbd9-c177-4594-b614-2e9ed4c3a439"/>
-              <ID name="RESTRICTED" mc="Standard.Stereotype" uid="a3ddc420-5247-40a5-82ed-a31b65455595"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
@@ -291,7 +283,6 @@
             </LINK>
             <LINK relation="Extension">
               <FOREIGNID name="Variable" mc="Standard.Stereotype" uid="9370cbd9-c177-4594-b614-2e9ed4c3a439"/>
-              <ID name="RESTRICTED" mc="Standard.Stereotype" uid="a3ddc420-5247-40a5-82ed-a31b65455595"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
@@ -319,7 +310,6 @@
             </LINK>
             <LINK relation="Extension">
               <FOREIGNID name="Variable" mc="Standard.Stereotype" uid="9370cbd9-c177-4594-b614-2e9ed4c3a439"/>
-              <ID name="RESTRICTED" mc="Standard.Stereotype" uid="a3ddc420-5247-40a5-82ed-a31b65455595"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
@@ -347,7 +337,6 @@
             </LINK>
             <LINK relation="Extension">
               <FOREIGNID name="Variable" mc="Standard.Stereotype" uid="9370cbd9-c177-4594-b614-2e9ed4c3a439"/>
-              <ID name="RESTRICTED" mc="Standard.Stereotype" uid="a3ddc420-5247-40a5-82ed-a31b65455595"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
@@ -375,7 +364,6 @@
             </LINK>
             <LINK relation="Extension">
               <FOREIGNID name="Variable" mc="Standard.Stereotype" uid="9370cbd9-c177-4594-b614-2e9ed4c3a439"/>
-              <ID name="RESTRICTED" mc="Standard.Stereotype" uid="a3ddc420-5247-40a5-82ed-a31b65455595"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
@@ -403,7 +391,6 @@
             </LINK>
             <LINK relation="Extension">
               <FOREIGNID name="Variable" mc="Standard.Stereotype" uid="9370cbd9-c177-4594-b614-2e9ed4c3a439"/>
-              <ID name="RESTRICTED" mc="Standard.Stereotype" uid="a3ddc420-5247-40a5-82ed-a31b65455595"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
@@ -431,7 +418,6 @@
             </LINK>
             <LINK relation="Extension">
               <FOREIGNID name="Variable" mc="Standard.Stereotype" uid="9370cbd9-c177-4594-b614-2e9ed4c3a439"/>
-              <ID name="RESTRICTED" mc="Standard.Stereotype" uid="a3ddc420-5247-40a5-82ed-a31b65455595"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
@@ -459,7 +445,6 @@
             </LINK>
             <LINK relation="Extension">
               <FOREIGNID name="Variable" mc="Standard.Stereotype" uid="9370cbd9-c177-4594-b614-2e9ed4c3a439"/>
-              <ID name="RESTRICTED" mc="Standard.Stereotype" uid="a3ddc420-5247-40a5-82ed-a31b65455595"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
@@ -487,7 +472,6 @@
             </LINK>
             <LINK relation="Extension">
               <FOREIGNID name="Variable" mc="Standard.Stereotype" uid="9370cbd9-c177-4594-b614-2e9ed4c3a439"/>
-              <ID name="RESTRICTED" mc="Standard.Stereotype" uid="a3ddc420-5247-40a5-82ed-a31b65455595"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
@@ -515,7 +499,6 @@
             </LINK>
             <LINK relation="Extension">
               <FOREIGNID name="Variable" mc="Standard.Stereotype" uid="9370cbd9-c177-4594-b614-2e9ed4c3a439"/>
-              <ID name="RESTRICTED" mc="Standard.Stereotype" uid="a3ddc420-5247-40a5-82ed-a31b65455595"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
@@ -617,7 +600,7 @@
         </OBJECT>
       </COMP>
       <COMP relation="OwnedBehavior">
-        <COMPID name="UAV1_CTRL" mc="Standard.StateMachine" uid="80861bfe-4bb3-4e2e-80c3-cf7c9ca44e34"/>
+        <COMPID name="UAV2_CTRL" mc="Standard.StateMachine" uid="80861bfe-4bb3-4e2e-80c3-cf7c9ca44e34"/>
       </COMP>
       <LINK relation="Extension">
         <FOREIGNID name="Block" mc="Standard.Stereotype" uid="00bc42a4-0000-19c9-0000-000000000000"/>

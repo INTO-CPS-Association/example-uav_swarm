@@ -67,7 +67,6 @@
             </LINK>
             <LINK relation="Extension">
               <FOREIGNID name="Variable" mc="Standard.Stereotype" uid="9370cbd9-c177-4594-b614-2e9ed4c3a439"/>
-              <ID name="RESTRICTED" mc="Standard.Stereotype" uid="a3ddc420-5247-40a5-82ed-a31b65455595"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
@@ -95,7 +94,6 @@
             </LINK>
             <LINK relation="Extension">
               <FOREIGNID name="Variable" mc="Standard.Stereotype" uid="9370cbd9-c177-4594-b614-2e9ed4c3a439"/>
-              <ID name="RESTRICTED" mc="Standard.Stereotype" uid="a3ddc420-5247-40a5-82ed-a31b65455595"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
@@ -123,7 +121,6 @@
             </LINK>
             <LINK relation="Extension">
               <FOREIGNID name="Variable" mc="Standard.Stereotype" uid="9370cbd9-c177-4594-b614-2e9ed4c3a439"/>
-              <ID name="RESTRICTED" mc="Standard.Stereotype" uid="a3ddc420-5247-40a5-82ed-a31b65455595"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
@@ -151,7 +148,6 @@
             </LINK>
             <LINK relation="Extension">
               <FOREIGNID name="Variable" mc="Standard.Stereotype" uid="9370cbd9-c177-4594-b614-2e9ed4c3a439"/>
-              <ID name="RESTRICTED" mc="Standard.Stereotype" uid="a3ddc420-5247-40a5-82ed-a31b65455595"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
@@ -179,7 +175,6 @@
             </LINK>
             <LINK relation="Extension">
               <FOREIGNID name="Variable" mc="Standard.Stereotype" uid="9370cbd9-c177-4594-b614-2e9ed4c3a439"/>
-              <ID name="RESTRICTED" mc="Standard.Stereotype" uid="a3ddc420-5247-40a5-82ed-a31b65455595"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
@@ -207,7 +202,6 @@
             </LINK>
             <LINK relation="Extension">
               <FOREIGNID name="Variable" mc="Standard.Stereotype" uid="9370cbd9-c177-4594-b614-2e9ed4c3a439"/>
-              <ID name="RESTRICTED" mc="Standard.Stereotype" uid="a3ddc420-5247-40a5-82ed-a31b65455595"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
