@@ -1,21 +1,25 @@
-# case-study_uav_swarm
+# Unmanned Aerial Vehicle Swarm
 
-## Example Description
+## Overview
+The Unmanned Aerial Vehicle (UAV) Swarm pilot study is concerned with a collection of UAVs that communicate in order to achieve some global behaviour.
 
-## Example Artefacts Overview
+![UAV](resources/drone.png)
 
-The example is available at https://github.com/into-cps/case-study_uav_swarm in the *master* branch. There are several subfolders for the various elements: FMU - contains the various FMUs of the study; Models - contains the constituent models defined using the INTO-CPS simulation technologies; Multi-models - contains the multi-model definitions and co-simulation configurations - with 3D and non-3D options; and SysML - contains the SysML model defined for the study.
+Each UAV is able to adjust its pitch, yaw and roll to move in 3D space using rotors. Each UAV has a controller which is able to communicate with its environment. In a swarm, the UAVs may cooperate in order to avoid collide, to achieve some predefined topology, or collaborate to provide some functionality. In this study, we demonstrate the use of a central controller to dictate the desired movements of the UAVs comprising the swarm.
 
-The case-study_uav_swarm folder can be opened in the INTO-CPS application to run various co-simulation experiments. The description of these is to follow. This study is a work in progress, and therefore there may be elements which are not yet working fully.
+## Supported Features
+This study supports the following INTO-CPS technologies:
 
-## INTO-CPS Technology
+* Multi-DE model
+* Multi-CT model
+* 20-Sim (for FMU)
+* VDM-RT (for FMU)
+* INTO-CPS SysML  
+* Co-simulation Engine (COE)
+* Test Automation
+* Model Checking
 
-### INTO-SysML Profile
+## Additional Information
+Additional Information about this case study can be found in the [Examples Compendium](http://projects.au.dk/fileadmin/D3.5_Examples_Compendium_2.pdf#page=57)
 
-### Models
-
-### Multi-Models
-
-### Co-simulation
-
-### Analyses and Experiments
+Alternatively, contact the case study owner, [Casper Thule](mailto:casper.thule@eng.au.dk).
