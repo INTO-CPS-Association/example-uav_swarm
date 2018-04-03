@@ -13,7 +13,7 @@
           <ID name="Problem" mc="Standard.NoteType" uid="00bc42a4-0000-1a1f-0000-000000000000"/>
           <ATTRIBUTES>
             <ATT name="IsHidden">false</ATT>
-            <ATT name="LabelKey"><![CDATA[%notetype.Problem.label]]></ATT>
+            <ATT name="LabelKey"><![CDATA[Problem]]></ATT>
             <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
             <ATT name="Name"><![CDATA[Problem]]></ATT>
             <ATT name="status">1970354901745664</ATT>
@@ -24,7 +24,7 @@
           <ID name="Rationale" mc="Standard.NoteType" uid="00bc42a4-0000-1a24-0000-000000000000"/>
           <ATTRIBUTES>
             <ATT name="IsHidden">false</ATT>
-            <ATT name="LabelKey"><![CDATA[%notetype.Rationale.label]]></ATT>
+            <ATT name="LabelKey"><![CDATA[Rationale]]></ATT>
             <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
             <ATT name="Name"><![CDATA[Rationale]]></ATT>
             <ATT name="status">1970354901745664</ATT>

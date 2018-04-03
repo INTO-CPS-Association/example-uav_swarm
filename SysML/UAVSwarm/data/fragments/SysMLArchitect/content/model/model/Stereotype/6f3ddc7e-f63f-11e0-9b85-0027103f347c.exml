@@ -7,7 +7,7 @@
       <ATT name="Image"></ATT>
       <ATT name="Icon"></ATT>
       <ATT name="IsHidden">true</ATT>
-      <ATT name="LabelKey"><![CDATA[%stereotype.FlowPort_Out.label]]></ATT>
+      <ATT name="LabelKey"><![CDATA[FlowPort]]></ATT>
       <ATT name="BaseClassName"><![CDATA[Port]]></ATT>
       <ATT name="Name"><![CDATA[FlowPort_Out]]></ATT>
       <ATT name="status">1970354901745664</ATT>

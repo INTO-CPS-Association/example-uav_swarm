@@ -7,7 +7,7 @@
       <ATT name="Image"></ATT>
       <ATT name="Icon"></ATT>
       <ATT name="IsHidden">false</ATT>
-      <ATT name="LabelKey"><![CDATA[%stereotype.ParticipantPropertyEnd.label]]></ATT>
+      <ATT name="LabelKey"><![CDATA[ParticipantPropertyEnd]]></ATT>
       <ATT name="BaseClassName"><![CDATA[Dependency]]></ATT>
       <ATT name="Name"><![CDATA[ParticipantPropertyEnd]]></ATT>
       <ATT name="status">1970354901745664</ATT>

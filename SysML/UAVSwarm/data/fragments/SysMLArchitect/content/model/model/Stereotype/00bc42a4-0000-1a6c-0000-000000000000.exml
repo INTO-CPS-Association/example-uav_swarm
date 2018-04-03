@@ -7,7 +7,7 @@
       <ATT name="Image"></ATT>
       <ATT name="Icon"></ATT>
       <ATT name="IsHidden">false</ATT>
-      <ATT name="LabelKey"><![CDATA[%stereotype.FlowProperty.label]]></ATT>
+      <ATT name="LabelKey"><![CDATA[FlowProperty]]></ATT>
       <ATT name="BaseClassName"><![CDATA[Feature]]></ATT>
       <ATT name="Name"><![CDATA[FlowProperty]]></ATT>
       <ATT name="status">1970354901745664</ATT>
@@ -21,7 +21,7 @@
             <ATT name="IsQualified">false</ATT>
             <ATT name="BelongToPrototype">false</ATT>
             <ATT name="IsHidden">true</ATT>
-            <ATT name="LabelKey"><![CDATA[%tagtype.FlowProperty_direction.label]]></ATT>
+            <ATT name="LabelKey"><![CDATA[direction]]></ATT>
             <ATT name="Name"><![CDATA[FlowProperty_direction]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>

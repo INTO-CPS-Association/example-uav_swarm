@@ -16,7 +16,7 @@
             <ATT name="IsQualified">false</ATT>
             <ATT name="BelongToPrototype">false</ATT>
             <ATT name="IsHidden">true</ATT>
-            <ATT name="LabelKey"><![CDATA[%tagtype.isConjugated.label]]></ATT>
+            <ATT name="LabelKey"><![CDATA[isConjugated]]></ATT>
             <ATT name="Name"><![CDATA[isConjugated]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>

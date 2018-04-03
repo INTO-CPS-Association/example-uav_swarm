@@ -5,9 +5,9 @@
     <PID name="sysml.diagrams" mc="Standard.Profile" uid="00bc42ac-0000-1013-0000-000000000000"/>
     <ATTRIBUTES>
       <ATT name="Image"></ATT>
-      <ATT name="Icon"><![CDATA[res/icons/internalblockdiagram.png]]></ATT>
+      <ATT name="Icon"><![CDATA[SysMLArchitect/res/icons/internalblockdiagram.png]]></ATT>
       <ATT name="IsHidden">false</ATT>
-      <ATT name="LabelKey"><![CDATA[%stereotype.InternalBlockDiagram.label]]></ATT>
+      <ATT name="LabelKey"><![CDATA[InternalBlockDiagram]]></ATT>
       <ATT name="BaseClassName"><![CDATA[StaticDiagram]]></ATT>
       <ATT name="Name"><![CDATA[InternalBlockDiagram]]></ATT>
       <ATT name="status">1970354901745664</ATT>

@@ -7,7 +7,7 @@
       <ATT name="Image"></ATT>
       <ATT name="Icon"></ATT>
       <ATT name="IsHidden">true</ATT>
-      <ATT name="LabelKey"><![CDATA[%stereotype.SysMLDiagram.label]]></ATT>
+      <ATT name="LabelKey"><![CDATA[SysMLDiagram]]></ATT>
       <ATT name="BaseClassName"><![CDATA[AbstractDiagram]]></ATT>
       <ATT name="Name"><![CDATA[SysMLDiagram]]></ATT>
       <ATT name="status">1970354901745664</ATT>

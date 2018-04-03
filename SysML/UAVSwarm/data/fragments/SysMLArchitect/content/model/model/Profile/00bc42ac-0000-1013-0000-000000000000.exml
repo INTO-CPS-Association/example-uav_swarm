@@ -21,7 +21,6 @@
         <COMPID name="ParametricDiagram" mc="Standard.Stereotype" uid="00bc42ac-0000-11be-0000-000000000000"/>
         <COMPID name="SysMLDiagram" mc="Standard.Stereotype" uid="00bc42d0-0000-c661-0000-000000000000"/>
         <COMPID name="SysMLActivityDiagram" mc="Standard.Stereotype" uid="374ff012-d57b-11e0-8ec9-0027103f347c"/>
-        <COMPID name="SysMLRequirementDiagram" mc="Standard.Stereotype" uid="44026286-d57b-11e0-8ec9-0027103f347c"/>
         <COMPID name="SysMLSequenceDiagram" mc="Standard.Stereotype" uid="0691339b-d7d7-11e0-9a40-0027103f347c"/>
         <COMPID name="SysMLStateMachineDiagram" mc="Standard.Stereotype" uid="0fd7b4e3-d7d7-11e0-9a40-0027103f347c"/>
         <COMPID name="SysMLUseCaseDiagram" mc="Standard.Stereotype" uid="1a667602-d7d7-11e0-9a40-0027103f347c"/>

@@ -7,7 +7,7 @@
       <ATT name="Image"></ATT>
       <ATT name="Icon"></ATT>
       <ATT name="IsHidden">false</ATT>
-      <ATT name="LabelKey"><![CDATA[%stereotype.ControlOperator_Behavior.label]]></ATT>
+      <ATT name="LabelKey"><![CDATA[ControlOperator]]></ATT>
       <ATT name="BaseClassName"><![CDATA[Behavior]]></ATT>
       <ATT name="Name"><![CDATA[ControlOperator_Behavior]]></ATT>
       <ATT name="status">1970354901745664</ATT>

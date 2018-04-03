@@ -7,7 +7,7 @@
       <ATT name="Image"></ATT>
       <ATT name="Icon"></ATT>
       <ATT name="IsHidden">false</ATT>
-      <ATT name="LabelKey"><![CDATA[%stereotype.Allocated.label]]></ATT>
+      <ATT name="LabelKey"><![CDATA[Allocated]]></ATT>
       <ATT name="BaseClassName"><![CDATA[ModelElement]]></ATT>
       <ATT name="Name"><![CDATA[Allocated]]></ATT>
       <ATT name="status">1970354901745664</ATT>
@@ -21,7 +21,7 @@
             <ATT name="IsQualified">false</ATT>
             <ATT name="BelongToPrototype">false</ATT>
             <ATT name="IsHidden">true</ATT>
-            <ATT name="LabelKey"><![CDATA[%tagtype.Allocated_allocatedTo.label]]></ATT>
+            <ATT name="LabelKey"><![CDATA[allocatedTo]]></ATT>
             <ATT name="Name"><![CDATA[Allocated_allocatedTo]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
@@ -34,7 +34,7 @@
             <ATT name="IsQualified">false</ATT>
             <ATT name="BelongToPrototype">false</ATT>
             <ATT name="IsHidden">true</ATT>
-            <ATT name="LabelKey"><![CDATA[%tagtype.Allocated_allocatedFrom.label]]></ATT>
+            <ATT name="LabelKey"><![CDATA[allocatedFrom]]></ATT>
             <ATT name="Name"><![CDATA[Allocated_allocatedFrom]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>

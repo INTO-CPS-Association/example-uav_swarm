@@ -6,7 +6,7 @@
       <ATT name="LicenseKey">0</ATT>
       <ATT name="MajVersion">3</ATT>
       <ATT name="MinVersion">4</ATT>
-      <ATT name="MinMinVersion"><![CDATA[5]]></ATT>
+      <ATT name="MinMinVersion"><![CDATA[6]]></ATT>
       <ATT name="MinBinVersionCompatibility"></ATT>
       <ATT name="JavaClassName"><![CDATA[com.modeliosoft.modelio.sysml.impl.SysMLModule]]></ATT>
       <ATT name="State">SoModuleStateActivated</ATT>
@@ -22,8 +22,8 @@
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="OwnedProfile">
-        <COMPID name="sysml.diagrams" mc="Standard.Profile" uid="00bc42ac-0000-1013-0000-000000000000"/>
         <COMPID name="sysml" mc="Standard.Profile" uid="00bc42a4-0000-1968-0000-000000000000"/>
+        <COMPID name="sysml.diagrams" mc="Standard.Profile" uid="00bc42ac-0000-1013-0000-000000000000"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>
