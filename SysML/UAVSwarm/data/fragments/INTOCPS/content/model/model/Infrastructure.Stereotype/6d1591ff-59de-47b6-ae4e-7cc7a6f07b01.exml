@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="InternalFunction" version="4">
+  <OBJECT>
+    <ID name="InternalFunction" mc="Infrastructure.Stereotype" uid="6d1591ff-59de-47b6-ae4e-7cc7a6f07b01"/>
+    <PID name="INTOCPS::DSE" mc="Infrastructure.Profile" uid="0b776c41-655f-4972-9b78-4a80a69be46e"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"></ATT>
+      <ATT name="IsHidden">false</ATT>
+      <ATT name="LabelKey"><![CDATA[%stereotype.internalfunction.label]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Class]]></ATT>
+      <ATT name="Name"><![CDATA[InternalFunction]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DefinedTagType">
+        <OBJECT>
+          <ID name="InternalFunction_functionTp" mc="Infrastructure.TagType" uid="b5f304e2-6a61-475a-bc76-e2fa8e60b6b5"/>
+          <ATTRIBUTES>
+            <ATT name="ParamNumber"><![CDATA[1]]></ATT>
+            <ATT name="IsQualified">false</ATT>
+            <ATT name="BelongToPrototype">false</ATT>
+            <ATT name="IsHidden">false</ATT>
+            <ATT name="LabelKey"><![CDATA[%tagtype.internalfunction.functiontp.label]]></ATT>
+            <ATT name="Name"><![CDATA[InternalFunction_functionTp]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

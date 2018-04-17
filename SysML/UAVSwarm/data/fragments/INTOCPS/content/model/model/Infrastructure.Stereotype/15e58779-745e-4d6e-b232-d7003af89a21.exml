@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ScriptParameter_Port" version="4">
+  <OBJECT>
+    <ID name="ScriptParameter_Port" mc="Infrastructure.Stereotype" uid="15e58779-745e-4d6e-b232-d7003af89a21"/>
+    <PID name="INTOCPS::DSE" mc="Infrastructure.Profile" uid="0b776c41-655f-4972-9b78-4a80a69be46e"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"></ATT>
+      <ATT name="IsHidden">false</ATT>
+      <ATT name="LabelKey"><![CDATA[%stereotype.scriptparameter.label]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Port]]></ATT>
+      <ATT name="Name"><![CDATA[ScriptParameter_Port]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DefinedTagType">
+        <OBJECT>
+          <ID name="ScriptParameter_Port_value" mc="Infrastructure.TagType" uid="b6e99b33-c1df-4eaa-91ea-9318ab313d42"/>
+          <ATTRIBUTES>
+            <ATT name="ParamNumber"><![CDATA[1]]></ATT>
+            <ATT name="IsQualified">false</ATT>
+            <ATT name="BelongToPrototype">false</ATT>
+            <ATT name="IsHidden">false</ATT>
+            <ATT name="LabelKey"><![CDATA[%tagtype.scriptparameter.value.label]]></ATT>
+            <ATT name="Name"><![CDATA[ScriptParameter_Port_value]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Robutness" version="4">
+  <OBJECT>
+    <ID name="Robutness" mc="Infrastructure.Stereotype" uid="4da88364-9384-4b68-9b9b-6556d680d06b"/>
+    <PID name="INTOCPS::Test" mc="Infrastructure.Profile" uid="9dfcbede-cfbf-4fb8-9d57-3fb950aaf9dc"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"></ATT>
+      <ATT name="IsHidden">false</ATT>
+      <ATT name="LabelKey"><![CDATA[%stereotype.robutness.label]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Transition]]></ATT>
+      <ATT name="Name"><![CDATA[Robutness]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

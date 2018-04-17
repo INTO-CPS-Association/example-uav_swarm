@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Literal_Value" version="4">
+  <OBJECT>
+    <ID name="Literal_Value" mc="Infrastructure.Stereotype" uid="4763b52b-4238-4000-a6e3-dcdf56f21b1f"/>
+    <PID name="INTOCPS::Test" mc="Infrastructure.Profile" uid="9dfcbede-cfbf-4fb8-9d57-3fb950aaf9dc"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"></ATT>
+      <ATT name="IsHidden">false</ATT>
+      <ATT name="LabelKey"><![CDATA[%stereotype.literal_value.label]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[EnumerationLiteral]]></ATT>
+      <ATT name="Name"><![CDATA[Literal_Value]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DefinedTagType">
+        <OBJECT>
+          <ID name="Literal_Value_Value" mc="Infrastructure.TagType" uid="22fdda6a-0ecb-4d8f-a1d8-266d1e7d096c"/>
+          <ATTRIBUTES>
+            <ATT name="ParamNumber"><![CDATA[1]]></ATT>
+            <ATT name="IsQualified">false</ATT>
+            <ATT name="BelongToPrototype">false</ATT>
+            <ATT name="IsHidden">false</ATT>
+            <ATT name="LabelKey"><![CDATA[%tagtype.literal_value.value.label]]></ATT>
+            <ATT name="Name"><![CDATA[Literal_Value_Value]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

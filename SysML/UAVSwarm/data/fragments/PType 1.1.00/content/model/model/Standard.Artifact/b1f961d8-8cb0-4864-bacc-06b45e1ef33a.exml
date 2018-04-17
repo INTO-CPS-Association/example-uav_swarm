@@ -1,0 +1,192 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="PType" version="4">
+  <OBJECT>
+    <ID name="PType" mc="Standard.Artifact" uid="b1f961d8-8cb0-4864-bacc-06b45e1ef33a"/>
+    <PID name="PType" mc="Standard.Package" uid="7f5fdc1e-52f7-49ce-be8f-4bf7d851e69d"/>
+    <ATTRIBUTES>
+      <ATT name="FileName"></ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[PType]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Utilized">
+        <OBJECT>
+          <ID name="" mc="Standard.Manifestation" uid="253acc97-7bf4-47c0-83ef-2aaf3e4c268b"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="UtilizedElement">
+              <ID name="Bool" mc="Standard.DataType" uid="adb8de67-7232-462f-b36c-c45585a37a74"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.Manifestation" uid="cbc62b61-7150-4809-9d59-416c46dbede8"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="UtilizedElement">
+              <ID name="Real" mc="Standard.DataType" uid="cf54ada1-c5bf-4eaf-9ef5-a2fc8c7edcad"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.Manifestation" uid="e9d60565-3c14-4674-91f2-e083a703ddc4"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="UtilizedElement">
+              <ID name="Interval" mc="Standard.DataType" uid="63a107d1-cba2-493b-8c18-86cbd8c41a7b"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.Manifestation" uid="32d7f486-4c6b-4dd7-91a9-bad7f4179ec1"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="UtilizedElement">
+              <ID name="String" mc="Standard.DataType" uid="6ba90c81-39b9-4015-8c47-1ab27cf9d19d"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.Manifestation" uid="b632c033-4cdf-49c8-899f-b149ecfb013f"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="UtilizedElement">
+              <ID name="Int" mc="Standard.DataType" uid="723773db-22ed-4325-bf11-83e380290b30"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.Manifestation" uid="678677d2-16e6-409f-9a7f-66a6d0aabda0"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="UtilizedElement">
+              <ID name="Nat" mc="Standard.DataType" uid="7a569746-3ff6-4bff-898a-d3c9dd2eddbb"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="ModelComponentArchive" mc="Infrastructure.Stereotype" uid="00140d80-0000-0110-0000-000000000000"/>
+      </LINK>
+      <COMP relation="Tag">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.TaggedValue" uid="1c4c206c-0455-494d-8e24-aa21ba92c4ac"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.TagParameter" uid="c3fb0a28-0dec-4c4f-8dbb-a906f8d2c80d"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[1.1.00]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="ModelComponentVersion" mc="Infrastructure.TagType" uid="00140d80-0000-020c-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.TaggedValue" uid="649ad44b-8a5b-4130-ab07-ec92dac1c019"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.TagParameter" uid="2f64189d-19c3-4857-91cd-06c7bae4e28f"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="ModelComponentProvider" mc="Infrastructure.TagType" uid="e4efc54e-225e-469e-903e-8df1b1e6f8cd"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.TaggedValue" uid="b981ceb8-8b20-488a-928f-3f907a8ca1ed"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Definition">
+              <FOREIGNID name="ModelComponentFiles" mc="Infrastructure.TagType" uid="00140d80-0000-0112-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.TaggedValue" uid="b1b1990a-b4e2-4be1-8cb7-9c6af0e8a086"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.TagParameter" uid="14b438c0-91a5-4fef-af04-10fc6aa83aee"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[ModelerModule#8.5.12]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="ModelComponentContributors" mc="Infrastructure.TagType" uid="9834df4e-84a3-4ec8-b216-fd2adda71578"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="6ec8f70e-f2a8-466e-be52-28cb3e7a7a5f"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[<p><strong>PType</strong> model component provides the primitive types for INTO-SysML Profile.</p>
+]]></ATT>
+            <ATT name="MimeType"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

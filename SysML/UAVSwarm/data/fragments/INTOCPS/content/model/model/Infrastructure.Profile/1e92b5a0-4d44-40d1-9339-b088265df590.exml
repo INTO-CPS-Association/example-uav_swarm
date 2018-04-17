@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="INTOCPS" version="4">
+  <OBJECT>
+    <ID name="INTOCPS" mc="Infrastructure.Profile" uid="1e92b5a0-4d44-40d1-9339-b088265df590"/>
+    <PID name="INTOCPS" mc="Infrastructure.ModuleComponent" uid="b9a03ce9-41b6-4c75-8db4-99022e752252"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[INTOCPS]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

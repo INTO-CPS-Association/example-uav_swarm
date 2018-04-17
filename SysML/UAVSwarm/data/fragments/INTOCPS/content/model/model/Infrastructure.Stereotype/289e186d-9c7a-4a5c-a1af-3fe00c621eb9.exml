@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Pareto" version="4">
+  <OBJECT>
+    <ID name="Pareto" mc="Infrastructure.Stereotype" uid="289e186d-9c7a-4a5c-a1af-3fe00c621eb9"/>
+    <PID name="INTOCPS::DSE" mc="Infrastructure.Profile" uid="0b776c41-655f-4972-9b78-4a80a69be46e"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"></ATT>
+      <ATT name="IsHidden">false</ATT>
+      <ATT name="LabelKey"><![CDATA[%stereotype.pareto.label]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Class]]></ATT>
+      <ATT name="Name"><![CDATA[Pareto]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

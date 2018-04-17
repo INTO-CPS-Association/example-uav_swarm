@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<ram-component manifest-version="2.0.02" name="PType" version="1" release="1" clevel="0" modelioVersion="3.7.01" provider="">
+  <description><![CDATA[<p><strong>PType</strong> model component provides the primitive types for INTO-SysML Profile.</p>
+]]></description>
+  <dependencies></dependencies>
+  <contributors>
+    <contributor name="ModelerModule" version="8.5.12"/>
+  </contributors>
+  <metamodels>
+    <metamodel name="Infrastructure" version="2.1.00"/>
+    <metamodel name="Standard" version="2.2.01"/>
+  </metamodels>
+  <roots>
+    <root metaclass="Standard.Project" name="INTOCPSPROFILETYPE" uuid="c6614438-5f3f-4b1d-b74d-95520436fd90"/>
+  </roots>
+</ram-component>

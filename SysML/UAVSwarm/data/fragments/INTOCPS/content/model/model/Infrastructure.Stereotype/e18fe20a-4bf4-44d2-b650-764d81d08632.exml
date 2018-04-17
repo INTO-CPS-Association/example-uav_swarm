@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Ranking" version="4">
+  <OBJECT>
+    <ID name="Ranking" mc="Infrastructure.Stereotype" uid="e18fe20a-4bf4-44d2-b650-764d81d08632"/>
+    <PID name="INTOCPS::DSE" mc="Infrastructure.Profile" uid="0b776c41-655f-4972-9b78-4a80a69be46e"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"></ATT>
+      <ATT name="IsHidden">false</ATT>
+      <ATT name="LabelKey"><![CDATA[%stereotype.ranking.label]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Class]]></ATT>
+      <ATT name="Name"><![CDATA[Ranking]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

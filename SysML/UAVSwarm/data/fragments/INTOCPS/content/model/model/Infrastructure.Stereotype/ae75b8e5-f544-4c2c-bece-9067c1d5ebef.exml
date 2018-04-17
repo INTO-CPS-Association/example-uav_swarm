@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ParetoValue" version="4">
+  <OBJECT>
+    <ID name="ParetoValue" mc="Infrastructure.Stereotype" uid="ae75b8e5-f544-4c2c-bece-9067c1d5ebef"/>
+    <PID name="INTOCPS::DSE" mc="Infrastructure.Profile" uid="0b776c41-655f-4972-9b78-4a80a69be46e"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"></ATT>
+      <ATT name="IsHidden">false</ATT>
+      <ATT name="LabelKey"><![CDATA[%stereotype.paretovalue.label]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Attribute]]></ATT>
+      <ATT name="Name"><![CDATA[ParetoValue]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DefinedTagType">
+        <OBJECT>
+          <ID name="ParetoValue_direction" mc="Infrastructure.TagType" uid="9d113f0a-c89e-482b-a170-52d476b18198"/>
+          <ATTRIBUTES>
+            <ATT name="ParamNumber"><![CDATA[1]]></ATT>
+            <ATT name="IsQualified">false</ATT>
+            <ATT name="BelongToPrototype">false</ATT>
+            <ATT name="IsHidden">false</ATT>
+            <ATT name="LabelKey"><![CDATA[%tagtype.paretovalue.direction.label]]></ATT>
+            <ATT name="Name"><![CDATA[ParetoValue_direction]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

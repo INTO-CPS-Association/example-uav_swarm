@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="INTOCPSPROFILETYPE" version="4">
+  <OBJECT>
+    <ID name="INTOCPSPROFILETYPE" mc="Standard.Project" uid="c6614438-5f3f-4b1d-b74d-95520436fd90"/>
+    <ATTRIBUTES>
+      <ATT name="ProjectContext"></ATT>
+      <ATT name="ProjectDescr"></ATT>
+      <ATT name="Name"><![CDATA[INTOCPSPROFILETYPE]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Model">
+        <COMPID name="PType" mc="Standard.Package" uid="7f5fdc1e-52f7-49ce-be8f-4bf7d851e69d"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

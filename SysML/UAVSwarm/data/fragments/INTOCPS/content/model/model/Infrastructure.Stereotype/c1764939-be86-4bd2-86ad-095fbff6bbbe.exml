@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Composition" version="4">
+  <OBJECT>
+    <ID name="Composition" mc="Infrastructure.Stereotype" uid="c1764939-be86-4bd2-86ad-095fbff6bbbe"/>
+    <PID name="INTOCPS::Modelling" mc="Infrastructure.Profile" uid="25337a0e-7f00-4647-ac49-414f8597ba57"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"><![CDATA[res/icons/composition.png]]></ATT>
+      <ATT name="IsHidden">false</ATT>
+      <ATT name="LabelKey"><![CDATA[%stereotype.composition.label]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Class]]></ATT>
+      <ATT name="Name"><![CDATA[Composition]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

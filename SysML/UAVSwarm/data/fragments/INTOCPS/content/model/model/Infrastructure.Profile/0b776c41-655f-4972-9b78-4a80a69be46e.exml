@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="INTOCPS::DSE" version="4">
+  <OBJECT>
+    <ID name="INTOCPS::DSE" mc="Infrastructure.Profile" uid="0b776c41-655f-4972-9b78-4a80a69be46e"/>
+    <PID name="INTOCPS" mc="Infrastructure.ModuleComponent" uid="b9a03ce9-41b6-4c75-8db4-99022e752252"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[INTOCPS::DSE]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DefinedStereotype">
+        <COMPID name="Reference" mc="Infrastructure.Stereotype" uid="f1ae046a-76f9-4c92-8a77-d20f77a2c03c"/>
+        <COMPID name="ParetoValue" mc="Infrastructure.Stereotype" uid="ae75b8e5-f544-4c2c-bece-9067c1d5ebef"/>
+        <COMPID name="DSEObjectiveDefinitionDiagram" mc="Infrastructure.Stereotype" uid="72b9cdb9-78de-4b93-a085-6995d60b8dbd"/>
+        <COMPID name="DSEObjectiveConnectionDiagram" mc="Infrastructure.Stereotype" uid="b0385dac-ad33-4198-b02c-fbe704830ff2"/>
+        <COMPID name="DSERankingDiagram" mc="Infrastructure.Stereotype" uid="57c988ca-69cc-4d39-94e2-559f956c08d8"/>
+        <COMPID name="DSEParameterDefinitionDiagram" mc="Infrastructure.Stereotype" uid="451bd352-7998-481b-8541-4643820d5890"/>
+        <COMPID name="DSEParameterConnectionDiagram" mc="Infrastructure.Stereotype" uid="a10fcfd0-2e47-4221-81f3-85478febdca3"/>
+        <COMPID name="ScriptParameter_Port" mc="Infrastructure.Stereotype" uid="15e58779-745e-4d6e-b232-d7003af89a21"/>
+        <COMPID name="DSEAnalysis" mc="Infrastructure.Stereotype" uid="37659a36-aa75-40fe-95e0-ed69ef2c0a56"/>
+        <COMPID name="ObjectiveConstraint" mc="Infrastructure.Stereotype" uid="77aca01c-5c59-4fd0-b24d-4697f856b129"/>
+        <COMPID name="ExternalScript" mc="Infrastructure.Stereotype" uid="bf3bc045-3cc8-48c9-997a-77cea68449a2"/>
+        <COMPID name="InternalFunction" mc="Infrastructure.Stereotype" uid="6d1591ff-59de-47b6-ae4e-7cc7a6f07b01"/>
+        <COMPID name="Ranking" mc="Infrastructure.Stereotype" uid="e18fe20a-4bf4-44d2-b650-764d81d08632"/>
+        <COMPID name="Pareto" mc="Infrastructure.Stereotype" uid="289e186d-9c7a-4a5c-a1af-3fe00c621eb9"/>
+        <COMPID name="DSEParameter" mc="Infrastructure.Stereotype" uid="389712c5-96e3-41a9-8995-60a4a50dfa50"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

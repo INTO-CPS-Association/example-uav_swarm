@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?><!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT version="4" object="UAVSwarm">
+  <OBJECT>
+    <ID uid="f686701f-408a-4595-9182-e371faf2ecd8" mc="Standard.Class" name="UAVSwarm"></ID>
+    <PID uid="95e76786-becf-4d05-91e6-304dcaaed193" mc="Standard.Package" name="UAVSwarm"></PID>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name">UAVSwarm</ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedEnd">
+        <OBJECT>
+          <ID uid="5e0a1eb5-6c05-44a8-978d-22a934bc7d2b" mc="Standard.AssociationEnd" name="uav"></ID>
+          <ATTRIBUTES>
+            <ATT name="Aggregation">KindIsComposition</ATT>
+            <ATT name="IsChangeable">true</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin">3</ATT>
+            <ATT name="MultiplicityMax">3</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name">uav</ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Target">
+              <ID uid="261a0578-ff88-4709-857d-d922161670d5" mc="Standard.Class" name="UAV"></ID>
+            </LINK>
+            <COMP relation="Opposite">
+              <OBJECT>
+                <ID uid="386fe31f-9bf3-4df7-b50e-3f0dc1054258" mc="Standard.AssociationEnd" name=""></ID>
+                <ATTRIBUTES>
+                  <ATT name="Aggregation">KindIsAssociation</ATT>
+                  <ATT name="IsChangeable">true</ATT>
+                  <ATT name="Changeable">ReadWrite</ATT>
+                  <ATT name="IsDerived">false</ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMin">1</ATT>
+                  <ATT name="MultiplicityMax">1</ATT>
+                  <ATT name="Visibility">Public</ATT>
+                  <ATT name="IsClass">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Opposite">
+                    <COMPID uid="5e0a1eb5-6c05-44a8-978d-22a934bc7d2b" mc="Standard.AssociationEnd" name="uav"></COMPID>
+                  </COMP>
+                  <COMP relation="Association">
+                    <OBJECT>
+                      <ID uid="5cc374c8-3733-41e4-86a5-ebd5dc1a9719" mc="Standard.Association" name=""></ID>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Association">
+              <COMPID uid="5cc374c8-3733-41e4-86a5-ebd5dc1a9719" mc="Standard.Association" name=""></COMPID>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID uid="61896818-4c17-4678-b684-a66d309abb2a" mc="Standard.AssociationEnd" name="uav controller"></ID>
+          <ATTRIBUTES>
+            <ATT name="Aggregation">KindIsComposition</ATT>
+            <ATT name="IsChangeable">true</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin">3</ATT>
+            <ATT name="MultiplicityMax">3</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name">uav controller</ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Target">
+              <ID uid="0f1758d6-dc10-49f2-83a8-03dd8164c824" mc="Standard.Class" name="UAV Controller"></ID>
+            </LINK>
+            <COMP relation="Opposite">
+              <OBJECT>
+                <ID uid="4a99e153-b5c1-4f85-9bef-80dd684d907a" mc="Standard.AssociationEnd" name=""></ID>
+                <ATTRIBUTES>
+                  <ATT name="Aggregation">KindIsAssociation</ATT>
+                  <ATT name="IsChangeable">true</ATT>
+                  <ATT name="Changeable">ReadWrite</ATT>
+                  <ATT name="IsDerived">false</ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMin">1</ATT>
+                  <ATT name="MultiplicityMax">1</ATT>
+                  <ATT name="Visibility">Public</ATT>
+                  <ATT name="IsClass">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Opposite">
+                    <COMPID uid="61896818-4c17-4678-b684-a66d309abb2a" mc="Standard.AssociationEnd" name="uav controller"></COMPID>
+                  </COMP>
+                  <COMP relation="Association">
+                    <OBJECT>
+                      <ID uid="5d232c0e-2814-48db-8254-ffa98337c2a9" mc="Standard.Association" name=""></ID>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Association">
+              <COMPID uid="5d232c0e-2814-48db-8254-ffa98337c2a9" mc="Standard.Association" name=""></COMPID>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID uid="e8af3b5e-765a-4bd6-942a-1fc15d55572e" mc="Standard.AssociationEnd" name="uav 3d"></ID>
+          <ATTRIBUTES>
+            <ATT name="Aggregation">KindIsComposition</ATT>
+            <ATT name="IsChangeable">true</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin">0</ATT>
+            <ATT name="MultiplicityMax">1</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name">uav 3d</ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Target">
+              <ID uid="7babbd4e-0f71-4a81-ae0b-20423a7457d5" mc="Standard.Class" name="UAV 3D"></ID>
+            </LINK>
+            <COMP relation="Opposite">
+              <OBJECT>
+                <ID uid="7c6debfc-cc14-4e91-95c4-7f7a8a874b61" mc="Standard.AssociationEnd" name=""></ID>
+                <ATTRIBUTES>
+                  <ATT name="Aggregation">KindIsAssociation</ATT>
+                  <ATT name="IsChangeable">true</ATT>
+                  <ATT name="Changeable">ReadWrite</ATT>
+                  <ATT name="IsDerived">false</ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMin">1</ATT>
+                  <ATT name="MultiplicityMax">1</ATT>
+                  <ATT name="Visibility">Public</ATT>
+                  <ATT name="IsClass">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Opposite">
+                    <COMPID uid="e8af3b5e-765a-4bd6-942a-1fc15d55572e" mc="Standard.AssociationEnd" name="uav 3d"></COMPID>
+                  </COMP>
+                  <COMP relation="Association">
+                    <OBJECT>
+                      <ID uid="1be16053-1aeb-4356-a733-51b01b0f6ba4" mc="Standard.Association" name=""></ID>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Association">
+              <COMPID uid="1be16053-1aeb-4356-a733-51b01b0f6ba4" mc="Standard.Association" name=""></COMPID>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID uid="ba8e9ac4-9dd1-4a56-8380-c22c0c6d1c5a" mc="Standard.AssociationEnd" name="uav global controller"></ID>
+          <ATTRIBUTES>
+            <ATT name="Aggregation">KindIsComposition</ATT>
+            <ATT name="IsChangeable">true</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin">1</ATT>
+            <ATT name="MultiplicityMax">1</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name">uav global controller</ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Target">
+              <ID uid="3c3b8af9-1a3d-44ce-8287-88812732b80d" mc="Standard.Class" name="UAV Global Controller"></ID>
+            </LINK>
+            <COMP relation="Opposite">
+              <OBJECT>
+                <ID uid="d6910490-6f48-42e4-876c-66163057f572" mc="Standard.AssociationEnd" name=""></ID>
+                <ATTRIBUTES>
+                  <ATT name="Aggregation">KindIsAssociation</ATT>
+                  <ATT name="IsChangeable">true</ATT>
+                  <ATT name="Changeable">ReadWrite</ATT>
+                  <ATT name="IsDerived">false</ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMin">1</ATT>
+                  <ATT name="MultiplicityMax">1</ATT>
+                  <ATT name="Visibility">Public</ATT>
+                  <ATT name="IsClass">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Opposite">
+                    <COMPID uid="ba8e9ac4-9dd1-4a56-8380-c22c0c6d1c5a" mc="Standard.AssociationEnd" name="uav global controller"></COMPID>
+                  </COMP>
+                  <COMP relation="Association">
+                    <OBJECT>
+                      <ID uid="6249c2f1-0596-4e73-b4c4-26903d9f5ecf" mc="Standard.Association" name=""></ID>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Association">
+              <COMPID uid="6249c2f1-0596-4e73-b4c4-26903d9f5ecf" mc="Standard.Association" name=""></COMPID>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID uid="c1fa91b1-ddd0-4521-b1ab-883550b7c337" mc="Infrastructure.Stereotype" name="System"></FOREIGNID>
+      </LINK>
+      <COMP relation="Tag">
+        <OBJECT>
+          <ID uid="03fe58ce-4cbd-4404-b65a-9695d15f8794" mc="Infrastructure.TaggedValue" name=""></ID>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID uid="a9a817d3-2a41-4064-a654-1e9476dd665e" mc="Infrastructure.TagParameter" name=""></ID>
+                <ATTRIBUTES>
+                  <ATT name="Value"> </ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID uid="4d3dea1a-7494-48e4-a74a-c13e045bfe84" mc="Infrastructure.TagType" name="Component_kind"></FOREIGNID>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
